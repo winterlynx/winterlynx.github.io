@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://github.com/FrontendSophie">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/frontendsophie/">
+                    LinkedIn
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    
+    <h2 class="post-title">
+        立秋
+    </h2>
+    <ul class="post-date">
+        <li>
+            2018-08-07
+        </li>
+        <li>
+            Lynx
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>近日多雨，几次周五回家都赶上暴雨，客车挡风玻璃模糊一片，辛勤的雨刷只显得连绵无力，体现不出半点存在感……每日必下的雷阵雨让原本燥热的夏天没有那么难熬。闽南是不常有这样的夏天的，往年盘踞在福建的副高移到了江浙一带，于是那里的人叫苦不迭，其实也就是往年闽南和广东承受的夏天。网上很多朋友似乎都很喜欢夏天，后来想来都是因为没有长时间体验过副高统治下的酷夏，这样的夏天到底是怎样也喜欢不起来的。副高的给人的印象总是虚无缥缈的，所以有时候也会突发奇想如果可以写一部奇幻小说，把副高作为里头的多元神中的一个，让天气变成神与神战斗的表现，或许会很有趣。</p>
+<a id="more"></a>     
+<p>大概在江边的关系，夜里的风竟有秋日的一点凉意。夏日里不爱出门，只7月的时候带表妹去了趟鼓浪屿。海底世界不好玩，厦门这类设施到底不太行，博物馆也没有什么好的。比起一个人出行，身边有个人需要时时关注，就总觉得不够自在。因为本身是比较在意对方感受的类型，所以关注点似乎都集中在这方面了，考虑对方对某一个路线或者景点有没有兴趣，会不会累了饿了……注意力都集中在这上面就没法很好地欣赏风景中的各种细节:(说起来这些也完全是自己的问题，真不知道这种性格假如有女朋友了，怎么约会。。。</p>
+<p>和yy聊天的时候被问到，我会因为什么喜欢一个人。大体上有感性的完全凭感觉的部分，也有经过思考，更理性的标准。感性的说，我总是会被聪明，独立，不太麻烦人，内心又有些不为外人道的痛苦和缺爱的人所吸引。大概我内心还是特别圣母的吧，本身也容易注意到人群中孤独的那个人，就想帮一把。比如转校来的同学，或者刚到新单位的同事什么的。等他们融入群体之后，我反而不太和他们说话。理性思考的话，则有三点，一个是有尽可能多的共同兴趣爱好。曾经的热情总是会被生活的琐碎渐渐地消磨殆尽，也可能渐渐没有话题。有共同的爱好，在工作之余生活中还能有很多共同的快乐的话题和时光，能一起经历的事情。二是理性之上的感性，有办法对事情理性的思考和判断，但是做很多决定的时候则能更感性一点。受过教育的人，多少都是能够理性思考的，可是很多人也只是变得刻薄而已。所以大概是希望对事的时候能理性，而对人的时候能有更多的宽容和温情。三是愿意沟通。遇到问题的时候不是憋着，而是愿意和对方沟通的，哪怕沟通的结果未必好，但是起码有愿意化解问题的心意……</p>
+<p>日子转眼已经到了八月，这一年更是快得可怕了。下一周又是可以预定的忙碌。看书的效率倒是还好。不过一年的7个月就这样过完了，也想不出做了什么。。。日子该如何过并不是很清楚。似乎有喜欢的人，可是实在不知道怎么接近一个不熟悉的人。和别人的来往中也会发现，如果一个并非在自己期望或者预期中的人进入自己的生活，多少是会有些排斥的，所以更不知道如何接近了。对方恰好又是只能自然而然慢慢熟悉的类型。不知道为什么感觉有些人恋爱就那么容易= =（9月10日更新，最后还是算了，对方一点不想回应，也挺痛苦）</p>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

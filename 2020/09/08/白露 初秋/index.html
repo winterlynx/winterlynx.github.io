@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://github.com/FrontendSophie">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/frontendsophie/">
+                    LinkedIn
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    
+    <h2 class="post-title">
+        白露 初秋
+    </h2>
+    <ul class="post-date">
+        <li>
+            2020-09-08
+        </li>
+        <li>
+            Lynx
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>8月，突然很想学习。恰好在网上遇到几个数学物理的公开课，于是下班时间都被这些东西占据，游戏也不太玩。（也不是自己特意去找的，就通过一些相关视频几次之后出现在我眼前的，也是有点神奇）齐的袋鼠拓扑讲得特别好，人也能看出很认真，我还蛮喜欢这样的老师的。可是音频采集设备非常成问题，底噪和人声几乎差不多大，有三分之一的词都只能靠猜的，有时候遇到关键时候真的非常崩溃。试着下载下来用噪声样本降噪或者滤波器降噪效果都很不好。所以只能强忍着听，因为他确实讲得很好，很多地方都让我受益匪浅。他还喜欢在课中留习题，我还挺喜欢这种有一点点探索性的问题的。不知道是不是哈佛传统，之前看Ravi Vakil的代数几何也是这种风格。太久没听课了，有点怀念在课堂上听课的感觉。如果老师讲得好，在课堂上听课还是比看书效率高很多的。很多细节书里没有讲，老师在课堂上，可能手指比划一下，或者口头点一下就能让人清晰很多，书本有时候表现不出这些东西。老师也可能会一遍又一遍强调关键点，这种关键点可能书本会因为避免重复只出现一次。今年的疫情似乎让网上的课程资源变多了。除了袋鼠拓扑也听了一点QFT的课，学数学的人看物理书经常看不下去，因为各种定义不明的概念。就到目前为止总感觉QFT比想象中简单很多，也可能还没有真正进入正题？</p>
+<a id="more"></a> 
+<p>之前过于堕落，于是重看了棋魂。距离最初相遇竟然已经过去那么久。op响起的时候想哭，ed响起的时候想哭，小亮全力以赴却输给佐为的时候想哭，小光和小亮在团队赛相遇却输掉的时候想哭，小光决定考院生不得不和围棋部诀别的时候……我这些年到底在做什么呢……恰逢下半年各种围棋比赛又开始重新举办，可以看的比赛又多了起来。于是又很想学多一点围棋，况且如今个人ai已经能够轻松赢过职业棋手，只要愿意探索，学棋的环境其实很好。只不过暂时没有那么多的精力了，围棋的专研模式和数学挺像的，需要一定强度的训练和思考。8月农心杯决赛，正好赶上周六，拿出很久没碰的棋子摆一摆，结果黑子裂开了一大片，想起来真是伤心。 看棋魂的时候也会想起高中时候的朋友，放学后一起牵着车在路上走着，有时候去桥边看湍流，聊数学和物理。看到小光退出围棋部去考院生，他问我如果是我会选择当鸡头还是凤尾，他说他可能会选择当鸡头……</p>
+<p>7月底的时候还买了双筒望远镜，上次买望远镜已经是初中时候的事情了。因为出门如果带长焦加机身已经是超级重了，实在不想再带一个望远镜出门。买的主要原因是在单位外面的树上看到一种有点奇怪的鸟。最终看清楚了才发现是白头鹎的亚成体。可是白头鹎的亚成体为什么没有白头呢。白头难道也是一种性状？这种差异到底有什么作用呢？这问题让我有点困惑，可是也没找到相关的研究。</p>
+<p>似乎每年到了申月我就变得很想学习。虽然能解释成申对我来说是印。但是流年里的申就没有这种明显的效果。有很多想做的事情，时间一下子就不够用了。因为天气还是很热所以也没有出门的想法，再过个一个月试着亲近下大自然把。真想回到学校啊，不知道目前的状态能持续多久，尽量多学点把。</p>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

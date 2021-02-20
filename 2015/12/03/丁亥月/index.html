@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://github.com/FrontendSophie">
+                    Github
+                </a>
+            </li>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/frontendsophie/">
+                    LinkedIn
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    
+    <h2 class="post-title">
+        丁亥月
+    </h2>
+    <ul class="post-date">
+        <li>
+            2015-12-03
+        </li>
+        <li>
+            Lynx
+        </li>
+    </ul>
+    <div class="post-content">
+        <p>刚参加完表妹的婚礼回来。夜里，雨渐渐地大了起来……最近总觉得有做不完的事情，所以也不大愿意睡觉。哪怕累得不行，看点闲书或者电影或许也是好的。</p>
+<p>下午，没我什么事，于是一个人待在角落里看闲书。没想到在陌生人家里反倒显得很自在而专注，各种喧闹也与我无关（也是因为没有了长辈的训诫或者应该与人说话的义务感）。看的书是村上的《远方的鼓声》，开始的几个小节并不算很有趣。林少华翻译的村上有点罗嗦，每隔几行就会出现“好也罢，不好也罢，反正也只能如此进行下去”这样的句子。很难估计这里面有点多少是翻译风格照成的影响，总之不大喜欢这样的文法，特别是初段的时候，对比着看了张爱玲的《雷峰塔》，更觉得语言天上地下（虽然张的这本书已经是经过他人英译汉的）。另一方面，小向说过我和村上有些相似的地方，好像也能够有所体会（大概是指喜欢补充说明的方式，同时也有罗嗦的地方）。待读到斯派赛斯岛的时候，故事开始有趣起来。海岛淡季，电影院，小说家的一天，以及暴风雨来了……</p>
+<a id="more"></a> 
+<p>看书的过程中，脑子时常有些稀奇古怪想法的，不过往往回头就半点想不起来了。虽然阅读是很私人的事情，但是我同时又期望着有人能够更深切地分享读书时的感受和喜悦。所以想着或许应该试着去做些记录。不过这到底不是我擅长和习惯的事情。</p>
+<p>瓦伦蒂娜里头提到，女性绘制地图往往缺乏空间感和正确的比例，她们会把她们印象深刻的东西画得更大，这点似乎很有趣，总觉得可以以此写部小说。也想到一个以前一直在意的问题，照镜子的时候，可以感受到镜子曲率的细微差别，可能会使得人的影像很不一样，人眼或许也是这样的吧，没有两个人的眼睛是完全一样的，看到同一个人也会有美丑，虽然这方面有更多的个人喜好和品味印数在里头（包括视觉信号传导到大脑之后的处理也因人而异的）</p>
+<p>小说家的一天，里头有着大段的景物描写，之前罗嗦的文风也一扫而空，村上有趣的地方大概在于他时常会在自己的作品里头介绍大量其他作者的作品。不过村上笔下的人物，大体都带着他本人的印记，生活习惯或者对个人感受缺乏准确把握的性格。不过也正因为这样的性格，照旧了很多“好也罢不好也罢，反正只能如此进行下去”的句式吧。这点或许也是村上的短板，他不是一个能深刻共情的作家。INFJ作为作家型，大概MBTI的研究者认为共情是一个作家必要的素质（理解他人的痛苦，从不同个体的角度看待世界），然后事实似乎并不是如此，西方文学还是太倾向于说理的。当然在我看来共情好的作家，自然都是最优秀的大家，曹雪芹，张爱玲和托尔斯泰……张的情况或许又有所不同，她更多地是出于自身经历中的痛苦。看到目前为止最喜欢的篇章应该是“暴风雨来了”，从小就喜欢台风和暴雨来临的感觉。风雨飘摇，雨打在门窗上的声响，对比起来室内则显得安静而温暖，慌乱和宁静的交织……想起初中时候家里租住的房子，雨天的时候可以坐在窗台看书，雨水偶尔会喷溅在书页上，不过依然很开心。房间的窗台上放着一盆不知名的仙人球类植物。并不是往常那种独株的仙人球，而是一种只要取了一小节放进土里几个星期就能铺满整个花盆的小球海，高低起伏。小球上生着茂密的绒毛雨后，会挂满晶莹的水珠。之所以说是绒毛，到底是可以轻轻抚摸的。当然若想着用力按压拍打，只能说是自讨没趣。</p>
+<p>试着写了几段，效果似乎不是很好，重要的感受很难表达。碎片化的想法也组织不好。:(</p>
+<p>随便终结下过去的的一个半月，10月底至11月上半月的那段相对比较惬意，可以自由地安排时间，读过的书和电影会让我有种真切活着的感觉。同时也能按照计划有条不稳地做事情。再往后则越来越忙，每天计划的单词量开始有点难以完成，最近连每天2页的英文版冰火也有点落下了。抽空看了点数学，依旧觉得很美。</p>
+<p>有天夜里想看闲书，把kindle翻了好几遍才确认如今kindle没存多少小说了。有段时间没有补充，也不知道看什么好。接受不了这样的状态于是爬起来找。不停地在网上找资料然后下载的这个过程会让我感觉很充实而且专注，并且有一种幸福感，有时候更是有甚于阅读本身，感觉是病= =</p>
+<p>前几天在友邻那里发现中华书局出了一本红楼梦日历，打算过几天买一本，刚开心一会，突然发觉周围都没有人能分享这种发现好东西的喜悦。随着年龄的增大，对读书品味，兴趣爱好相似度的要求也越来越具体，感觉好难找到喜欢的人。再则也不只是爱好品味的问题，发现如果生活状态或者人生目标差异太大的话，沟通起来也会有不少障碍…… </p>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
