@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                梦回大院
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2012-02-19
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>离开大院已经有13年了。如今的家距离大院并不算远——约莫15分钟的路程。然而那里终究是回不去的地方。</p>
+<p>前些日子，想着到和大院紧邻的芝山公园转转，或许可以从外围见见这童年的地方。</p>
+<p>大院正门较之以前拓宽了有一倍多，偏门站着一个手里拿刺（和谐）dao的小兄弟，正门则有三个仿佛胸前绑着手（和谐）榴（和谐）弹的家伙来回走正步。。</p>
+<p>绕进芝山公园的正门，是长长的上坡，这里与大院仅有一墙之隔，临墙栽着在其他地方少见的白千层。因为一年四季都在蜕皮显得苍老而不美观。想来该是三四十年前的道行树了吧。从google earth上看，大院内的房子大体都已经换了一轮。唯独小时候住过的房子竟不曾变过。</p>
+<a id="more"></a>
+<p>最初的房间是大院最深处的单间，侧面就是浓密的树林的，遮天的树形成了巨大的拱门，向着路口望去，里头漆黑一片。初到这里的时候我只有4岁，对那幽黑的树林有着莫名的恐惧，记得有一次父亲想给我照张相，要我往树林方向退后几步，我却是一点不敢。这大概便是我对大院最初的回忆吧（如今这张照片也还是在的）</p>
+<p>初来的时候，我自然一个人都不认识，多数时候我只能躲在床上玩父亲的一套小工具（小锤子，小螺丝刀什么的）要不也只能在走廊上吓跑，看到人自然是不敢应答。况且原来家乡里说的全是闽南语，这里则只有普通话。有一天看到走廊的尽头有个小孩子在玩变形金刚，是汽车人最大那个机器人（忘记名字了orz）玩具的体积也有40cm左右，那样的玩具在当时自然是十分憧憬的，不过自己也知道家里是不可能给我买的。父亲看到了，叫我们一起玩。我花了很长时间才说出了第一句话，也是交到的第一个朋友。hyh是个北方孩子，来自平顶山，算是个性格极度外向，喜欢吹牛的人。那一天所说的话，似乎还依稀记得……说来自己的性格似乎早在那之前就已经定死了。</p>
+<p>宿舍往前是低矮的青草地。边缘是清一色的蛇莓，红红的果实看起来很诱人，不过周围的人都说那是蛇吃的东西，人吃了会变哑巴，所以至今不曾吃过。在往外走，一遍是通往指挥所的楼梯，另一边则是长长的斜坡，斜坡上两旁多生海芋，最初的时候我们还把他们当做荷叶举着作为雨伞。住在隔壁的叔叔看到了，告诉我们这是有毒的。在一个晴朗的下午，我和hyh拿着树枝，一路把沿途的海芋打得稀烂……</p>
+<p>写不出自己想写的东西，那6年的时光里似乎每天都是那么真切地留着记忆中。一个秋日的午后，我一个人在阳台上。水桶里清澈的水在阳光下闪着晶莹的光，墙上是荡漾的波光。阳光照耀下水的触感，以及搅动后旋转的漩涡，记忆或许就这样可感却不可言说东西……</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

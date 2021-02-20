@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                夏日夜雨
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2011-08-19
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>夜里肆无忌惮地看闲书。纸质书看累了，换kindle。连kindle也拿累了，便索性听一会雨……除去台风，夏日的雨夜本是不多见的，这些年来就连台风也显得少了。</p>
+<p>雨滴答滴答地打在雨棚上，突然想起小学时，在奶奶家里度过的暑假。农村的夜关了灯便真是伸手不见五指，只从屋顶上透下两道瓦片大小的斑白。雨打在瓦片上的声音远比雨棚上的来得轻盈。午饭之前，我常常一个人躲在床上看书，中午的阳光透过两个长方形的孔洞照下来，可以看见纷飞的灰尘。我喜欢看它们恰似无规律的飘荡，就如同我也时常盯着咖啡表面卷动的小脂粒和腾升的热气（我总想知道它们的秘密）……透光孔上镶嵌着玻璃。在没有玻璃的古代，这样的透光孔又是如何防雨的呢？</p>
+<p>没有雨的夜，可以搬出竹床在房前乘凉。能看见许多星星，说是许多，细细的数，也不过五六十颗的样子，能认出的星座有天蝎和天鹅还有乌鸦，银河却是不曾见的，总觉得可惜。屋檐下有燕子筑巢，房前的灯正好在它们的窝旁，乘凉的时候就不可避免地变得吵吵喃喃的。：）燕子是认“家”的，每年都会在同一个地方繁殖。连着两三年都看得见燕子回巢。再过了些年，想起这事，却发现那个窝已不知在什么时候消失了，光阴的流逝大抵都是如此的吧。</p>
+<p>对于一些感情，不得不承认自己的后知后觉，奶奶走了半年，才突然想起这些旧事……</p>
+<a id="more"></a>
+<p>暑假开始后的一个星期，往往正逢荔枝收获，奶奶家有棵10来高的老荔枝树，如今也没有人说得出它的年龄，大概比爷爷的岁数还大吧。荔枝收获的时候，是需人看守的，以防别家孩子偷摘了去————在树下搭上简易的凉棚，说是凉棚，其实也只是一张带顶棚的竹床而已，对于过夜或者生活，这样也就够了。小时候的我是极喜欢到园子里玩的。也喜欢那个凉棚，从一头爬到另一头像穿隧道一样。（好吧，我喜欢各种幽闭的空间，阁楼，植物搭成的拱洞，火车，诸如此类）如今园子已不大有人料理，整个村庄似乎都笼罩着一种寂静，时世的变迁有时候快得让人难以接受……未曾在凉棚里过夜，始终是件憾事……</p>
+<p>奶奶家的普渡与中原节同一天，外婆家的则要早些，于是一家人常常在农历的七月十四从外婆家到奶奶家。早些年的时候还没有车，在这条路上，摩托，中巴，自行车都是坐过的。有一年午后，河岸边刮着很大的风，连骑车都很吃力，我们便牵着单车沿着河岸走着……风吹得耳朵呼呼的响，父母说的话变得很难听清。我们大声地喊着说话……</p>
+<p>窗外的雨渐渐停了，还不想睡，便接着看书，如今对自己的睡眠没有强制性的要求，累了睡觉，若是睡不着，只要看书就好。7月至今，总觉得自己的心境有了些变化。渐渐能够离开网络。</p>
+<p>乘火车沿亚欧大陆桥去旅行。想等找到合适的人便去做的，这样的旅行两个人刚刚好。沿途的签证或许太麻烦。目前只好让心跟着小说去旅行，前些日子突发奇想地想把小说里的地点串联起来去“旅行”。因为之前正好在看《东方快车谋杀案》只好从这里开始，然后是《伊斯坦布尔》和《昨日的欧洲》（这样是和故事里相反的方向，不过也算是东方快车的线路的）再然后到俄国，看《复活》最后可以到西伯利亚。然后是《在乌苏里的莽林中》此后似乎可以回到中国，不过读过白令海峡到西伯利亚也可，西伯利亚唯一能想到的书只有《星·雪·火》在这安静的时光里重读一次也好。加拿大似乎没有太多的文学作品。美国倒是有很多。中间还可以用《在路上》作为交通工具。其实这不是我很感兴趣的一条路线，只为了把闲置很久的书看完。</p>
+<p>我终于也困了，躺在床上看书，手总是太容易酸，若是坐着，则是脖子和脊椎。能想知道朋友们都是如何躺在看书的。总找不到合适的姿势。</p>
+<p>雨夜以及这些星星点点的回忆。时光竟过得那么快~</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

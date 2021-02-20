@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                故乡的记忆
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2016-02-20
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>年初三的时候，一个人回石码。7月一串串金黄的腊肠花，如今变成了深绿色的长条豆荚。山上的刺桐花开了，却比记忆里冷清一点，没看到往常活泼的暗绿绣眼鸟，反倒看到三只叉尾太阳鸟。山中的空气很好，还带着微微地凉意，走了很长的路，猛猛地吸一口便也不觉得累了。试着去找曾经的“秘密基地”，结果却没有找到。山上被改造过的景观很多，只好在人为痕迹下一点一点地去找记忆里的景观。多数人似乎不怎么相信命运，总觉得自己什么都能做。我大概是没法这样想的。记得初三那年，好多美好的事情突然就破灭了。和自己家一样熟悉的紫云岩突然迎来大改造，猫老师突然呕吐就这样走了，很懂事的小白在巡逻的时候似乎被捕狗人偷走了，这辈子最有归属感的班级突然间要分班了……这些事情都是在某个很短的时间段内突然一起发生的……所谓命运大概就是类似这样的东西吧……</p>
+<a id="more"></a>
+<p>下山的时候，走在熟悉的路上，路旁的树比记忆里高了很多。用双脚去丈量记忆大概和原先骑车经过时的感受大不相同。每走几步都能回忆起一些什么。经过港口桥的时候，想起曾经经常在放学后看桥墩后的湍流，有时候一看就是半个小时。记得有几次我还带皓来看。那时候我们还时常聊聊数学家和物理学家的故事，那时候他总说，要学很多很多的数学，然后去当一个农民，又或者去学校的图书馆当清洁工，去寻找图书馆里头费劲脑子解不出题目的学生，乘他们上厕所的空档把题目悄悄给做了……他一遍有一遍地讲着这个想法。后来才知道是他是受了《心灵捕手》的影响。其实历史上学了很多数学，最后却过着隐居生活（当农民）的人倒是真有一个—— Grothendieck。恰好是我非常喜欢的一个数学家。再后来似乎就很少有机会和皓讨论数学了，连他后来是否知道 Grothendieck也不得而知了……</p>
+<p>在山上想起曾经常读的杂志，下山之后就绕了远路想去曾经的报刊销售点看看，结果那里已经不买杂志了。因为到底是回忆，等回了漳州，又去了自己知道的一个比较齐全的报刊销售点。结果也找不到以前订阅的多数杂志了，只余下《围棋天地》。虽然没找到，可是在报停里看到堆叠的杂志还是能感受到曾经的一点记忆。经常去书店的自己，周日的下午有时候在书店一站就是2小时……很久没有这方面的体验了……</p>
+<p>总觉得石码始终是很有归属感的地方，因为搬家的缘故，又觉得自己已经不是这个地方的人了。可是又能属于哪里呢？一路上回忆了太多东西，多到连自己也快承受不住的程度。休息一会重新上路，所谓回忆也是为了不忘初心。</p>
+<p>和母亲闲聊的时候，才知道外公家是宗族来着的，后井的周氏，明代的东林七贤（后七君子）里的周起元是我们的祖辈。听说后井的祠堂里还有皇帝赐的匾额。如今全都没了，土地据说也被卖了，连祠堂都没了。挺后悔没去看过开发前的建筑……总觉得这一代人即不懂得历史也不尊重传统。很多人的观念正如钱穆在《国史大纲》的序言中所说的那样。稍微读点历史之后就会觉得过去的中国远不是教科书中所描述的那样，此外也越来越觉得术数其实是挺靠谱的东西（可是也没有功夫去琢磨了）。</p>
+<p>最近对围棋又恢复了兴趣，很想重新捡起来，围棋本身和数学也有一种奇特的相关性。不过围棋是很需要专注力的，实在不是很适合作为放松精神的娱乐活动。大前天的时候把很久没动过的围棋拿出来清洗。草藤编的棋篓，原本以为能保存很久，结果发现被虫子蛀坏了，只得把棋子暂时装在塑料袋了。晾干棋子的时候，用左手摆了一盘棋，感觉挺不错的。不过棋盘需要46cm长，平常时候也很难找到合适的摆放位置。洗棋子的时候，想起小时候到森家里玩的记忆。有时候我们坐着聊上一下午，又或者看周末的纪录片频道，再或者下上一盘围棋……童年的记忆遥远得像是上辈子似的。</p>
+<p>最近的生活还算充实，效率也挺高，可是我还是没办法做到数学和英语兼顾，每天的计划量总也做不完。一点点去追忆，才发觉被浪费的时间有多少……其他方面，这段时间对历史，艺术，音乐还有围棋都有特别浓厚的兴趣，有很多想学的东西和想看的书，不过大概没办法有那么多的时间了。只能在闲暇放松的时候穿插一点。因为《聆听音乐》，还特别想买个电钢，不过想到很难找出固定的空闲来只好作罢。</p>
+<p>差不多如此吧，接下去的半年大概有做不完的事情，希望不会太压抑。总希望有个可以思念的人，可是同时我大概也没有恋爱的气力了……</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

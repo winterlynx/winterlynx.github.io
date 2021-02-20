@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            
+<section class="posts">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/12/03/%E4%B8%81%E4%BA%A5%E6%9C%88/">
+                            丁亥月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            December 3, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>刚参加完表妹的婚礼回来。夜里，雨渐渐地大了起来……最近总觉得有做不完的事情，所以也不大愿意睡觉。哪怕累得不行，看点闲书或者电影或许也是好的。</p>
+<p>下午，没我什么事，于是一个人待在角落里看闲书。没想到在陌生人家里反倒显得很自在而专注，各种喧闹也与我无关（也是因为没有了长辈的训诫或者应该与人说话的义务感）。看的书是村上的《远方的鼓声》，开始的几个小节并不算很有趣。林少华翻译的村上有点罗嗦，每隔几行就会出现“好也罢，不好也罢，反正也只能如此进行下去”这样的句子。很难估计这里面有点多少是翻译风格照成的影响，总之不大喜欢这样的文法，特别是初段的时候，对比着看了张爱玲的《雷峰塔》，更觉得语言天上地下（虽然张的这本书已经是经过他人英译汉的）。另一方面，小向说过我和村上有些相似的地方，好像也能够有所体会（大概是指喜欢补充说明的方式，同时也有罗嗦的地方）。待读到斯派赛斯岛的时候，故事开始有趣起来。海岛淡季，电影院，小说家的一天，以及暴风雨来了……</p>
+                            <a href="/2015/12/03/%E4%B8%81%E4%BA%A5%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/12/03/%E6%88%8A%E5%AD%90%E6%9C%88/">
+                            丁亥月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            December 3, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>12月初的时候去了趟泉州。一个人慢慢走，慢慢看。对建筑的飞檐，斗拱，脊兽，抱鼓石或者其他装饰，我都饶有兴趣，这点在以前大概连自己都不自知。可能也因为出远门多半不是自己一人，没法很悠闲的观察。泉州市区的建筑大多很矮，并且古城区古建筑都保护得很好。5日的时候和舍友去了清源山，走了很久的路，只记得雨中的湖水很美……整个过程大概就没有一个人时候那种惬意了（这里不怪我舍友，他本身已经是性格很随和的人，只是我的关注点较之普通人有所不同）。所以时常在想是否真的有办法找到一个步调和兴趣都很一致的人。其他有趣的事情比如知道了带螺纹图案的抱鼓石也是椒图，所以才那么多见。</p>
+<p>去开元寺的路上经过条旧街，总觉得和曾经的漳州和石码都很相似。看到一家买花鸟的小店。想起小学的时候存了好久的红包钱，瞒着父母偷偷地买了两只虎皮鹦鹉。我提着鸟笼走了很久很久的路……那时候我和坐在我后座的同学炎关系很好。他家里也有两只鹦鹉，于是就经常带着鸟笼到彼此家里串门。有几次我把大院的小伙伴都一起带过去了。航是个吹牛大王，恰巧炎的父亲也是，于是两个人莫名其妙地相互吹起牛来了囧场面真是没法控制。。再后来，家里搬回石码就再没有联系了。炎的同座姓杨，我和她都很喜欢折纸，忍者镖就是从她拿里学来的。记得有一年暑假我们都报了折纸班，但是父亲要求我回石码去，所以没办法参加（后来她告诉我，老师教了好多东西）……对石码最奇妙的印象是很小时候到过的一个小市场，那时候地面自然还是青石板，里头的店铺看起来也都有点古老，有的店铺卖各种彩色的线头，纽扣还有毛线；有的则卖各种钓鱼用品，鱼竿，鱼线和浮标；还有的店铺卖红色为主色的暖水瓶，印有鲤鱼的脸盆，还有绿色的浇花水壶……总之是个色彩异常艳丽的地方，也不知道为什么对这样的小集市有种奇怪的好感，大概所卖的东西都不是什么紧俏货，日子过得比较闲适，即使在当时与现实也有一种隔离感……</p>
+                            <a href="/2015/12/03/%E6%88%8A%E5%AD%90%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/10/25/24%E6%97%A5-25%E6%97%A5%20/">
+                            24日-25日
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            October 25, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>24日一整天其实过得挺糟糕的，夜里一直睡不着觉，最后一次非常清醒地看时间是5点5分，5点半的时候就起床准备出门……傍晚参加zm的婚礼，见了些老同学，感觉还不错，只觉得日子过得太快……从高中开始，每次和记忆里的人重聚总被说我完全没有变化，大概真的是这样，不管是外貌还是内心，这样或许挺好。有些想念大学生活状态，在图书馆闲逛的日子，上课和自习必须经过的长长走廊，中午时候和搞一起赶着去买饭，美食街的鸡蛋卷饼，周末午后和舍友安静地做着各自的事，夜里的坐谈……</p>
+                            <a href="/2015/10/25/24%E6%97%A5-25%E6%97%A5%20/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/10/13/%E6%88%8C%E6%9C%88/">
+                            戌月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            October 13, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>今年的秋天冷得特别早，大概比得上同时间的北方了。秋雨不决，想起黛玉的诗“寒烟小院转萧条，疏竹虚窗时滴沥”。没有雨的夜里，空气中凝结着秋冬特有的萧肃，突然也有点受不了这种寂静。夜里睡觉的时候，心血来潮搜了《山野幽居》来听，结果在音乐响起的时候便再没办法睡着了……大概对红楼梦的各种感情全融在这首曲子里了。想找人说说话，大概也没办法吧，毕竟在认识的人里头懂这种情绪的人也只有唯一的那一个。几乎向所有聊得来的朋友安利了蒋勋细说红楼梦，真正愿意从头听到尾的人却一个也没有。大概没有人对宝黛的感情有那么多的执念。</p>
+                            <a href="/2015/10/13/%E6%88%8C%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/08/03/%E6%9C%AA%E6%9C%88/">
+                            未月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            August 3, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>七月的最后一天，回了趟石码。走在记忆里的路上，一切都显得亲切。工农路两旁种的腊肠树恰好开花，黄灿灿地垂在树下，像是人工吊上去的精致饰品。走在上山的路上，野外植物的味道，提水的人群，倒退着爬山的老人，还有远处爬山者吼叫声……这些大概都不属于我会时常回忆起的部分，如今也只觉得很是亲切。发现岁月中不曾改变的东西，大概总叫我高兴吧……前段时间和Tina聊天，才想起来第一块手表是小学一年级时候父亲的礼物，是块黄色表带有忍者神龟图案的电子表，记得那时候父亲的礼物总能让我开心上好一阵子，有些事情是不该忘记的。</p>
+                            <a href="/2015/08/03/%E6%9C%AA%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/04/10/%E8%BE%B0%E6%9C%88/">
+                            辰月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            April 10, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>清明过后，照例下起雨来。凄凄沥沥的，倒也不是春雨的那种细雨朦胧。记忆里的4月总是过得很快，也不过是月初多放一天假的差别。</p>
+<p>忙着论文的事儿，日子多少有些枯燥。最初听到几何分析，总以为是挺高上大的数学（毕竟也是几何），等自己熟悉以后，很多人的实力一下子全明了了:(。想到今年已经过了1/3,也有一些紧迫感。虽然觉得自己已经没有时间做到套磁的数学和英语兼顾，但还是只能尽力去做吧。</p>
+                            <a href="/2015/04/10/%E8%BE%B0%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/03/19/%E5%8D%AF%E6%9C%88/">
+                            卯月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            March 19, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>中午上豆瓣，偶然遇到yy小号。心里一怔，很认真地翻了一遍广播才确定是她，和某人的相遇总是带着一点神奇的成分。总想起红楼梦里的那句“这个妹妹我曾见过的”，纠结了下到底没说。  总是很惊叹这段感情在我心里留下的烙印和实感，古人把心当做情感的器官，真半点不假，岁月里的共同经历也时常给我一种不可取代感，这样的感情或许不是人人都有机会经历，该庆幸还是惋惜呢……</p>
+<p>花了很久很久才把《安娜·卡列尼娜》看完，有时想着快点做个了结，有时又是无尽的不舍。托尔斯泰确实是大家，共情能做到这个程度很是不易。即使是相爱的两个人，男女思维上的差异，也都难以调和，作者居然抓住这么一点的不同。某人确实和安娜很像……大概看的时间太久，欣喜和悲伤也都经历了不少……不该多想……</p>
+                            <a href="/2015/03/19/%E5%8D%AF%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2015/03/18/%E6%A4%8D%E7%89%A9%E5%9B%AD%20%E7%B4%AB%E4%BA%91%E5%B2%A9/">
+                            植物园 紫云岩
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            March 18, 2015
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>年前去了两次植物园，一次是和尧一起，交流了很多文学和阅读方面的想法。多数人都很喜欢充满构造型象征的现代文学。尧说现代文学的趋势是摆脱叙事和逻辑的束缚，所有的手法都仅仅是为了表达作者的想法。这样说来大体没错，可是这种类型的文学我始终喜欢不来，作者要表达的思想固然清晰了，可是读者个人的空间反而变少了。古典文学中繁琐的编织和叙述，能引导读者做自己的思考，读者的结论或许远不是作者想要表达的，可在我看来这才是文学的意义，人性毕竟是复杂的，寻找可能性的任务不该只由作家一方来完成。再则我实在受不了构造中逻辑的硬伤。现实中我找不到和我相同观点的人……</p>
+                            <a href="/2015/03/18/%E6%A4%8D%E7%89%A9%E5%9B%AD%20%E7%B4%AB%E4%BA%91%E5%B2%A9/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2014/12/31/%E5%88%9D%E4%B8%AD%E7%9A%84%E4%BA%8B/">
+                            初中的事
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            December 31, 2014
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>2014年的最后一天。这样的日子里，突然想起初中时候悄悄喜欢过的一个女生。坐在我的前排，遇到虫子的时候，会吓得大叫，很认真地让我写同学录，一起传看《三重门》……那时候她和她同桌是非常好的闺蜜，会一起给电台写信点歌……点点滴滴的回忆固然还都记得清楚，终究是记忆深处最个人的部分，也不想多讲。情窦初开的暗恋，到底是青涩而美好的……高中在同一个学校，偶尔还能在楼梯口见到。不过我向来不擅长与人来往，见了面也不好意思打招呼（和曾经的朋友大概也都如此）。有一次在楼道里，我走在前面，她突然上前拍了下我的与她站位方向相反的肩膀。（学生时代常有的作弄人方法，为了让人把头转向错误的方向）结果我直接找到了她，她说你怎么那么聪明都不会被骗……我也只是呆呆地站着，不知道说什么……不过是琐碎的记忆，也没有想表达什么……</p>
+                            <a href="/2014/12/31/%E5%88%9D%E4%B8%AD%E7%9A%84%E4%BA%8B/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2014/11/28/%E5%BA%8A%E4%B8%8A%E7%9A%84%E4%B9%A6%20/">
+                            床上的书
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            November 28, 2014
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>夜里没睡好，午后补了一觉。醒来的时候，窗外已经淅淅沥沥地下起雨来……</p>
+<p>先前回家，父亲给我房间换了新床。家里显得乱糟糟的，原先床上的书一摞摞地堆在墙角里，书顶也积满了灰……看着这样的情景总觉得伤感。一本一本地把他们擦干净摆回床边，这个过程竟也花了一下午。渐渐地也不觉得那么难过了，一本书一本书地翻，就想和老朋友叙了叙旧……习惯了网购以后，屯的书多了（有的至今没有翻开过）对书的感情大概也少了一点对记忆的承载感……那天夜里，空气中弥漫着潮湿的硬垫板的味道，怎么闻也找不到源头，后来心想着或许是屋外那株多年不曾开花的大树吧。早上醒来立马拉开窗帘——果然是呢。因此也终于知道那株大树是糖胶树。    </p>
+                            <a href="/2014/11/28/%E5%BA%8A%E4%B8%8A%E7%9A%84%E4%B9%A6%20/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+</section>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

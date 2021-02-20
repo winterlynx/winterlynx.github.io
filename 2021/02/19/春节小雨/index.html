@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                春节 小雨
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2021-02-19
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>今天把blog的clone弄好了，所以试试使用上是否正常。ps：结果在nuc11上一部署就变成白屏了，结果发现是hexo版本的问题3.0和5.0不兼容。只能把博文复制出来重新用hexo5初始化，然后修改主题。用似乎是能用，等会宿舍把宿舍电脑换成hexo5再看看克隆功能正不正常把，感觉好坑。<br>春节假期过得很快，感觉没做什么，7天的时间里有两天在鼓弄新买的nuc11以及玩游戏，把战锤的暗精档打通了。然后其中的3天是日常春节活动，拜年走亲戚什么的。等做完这些发现假期已经没有几天了，看了一天数学，最后一天基本都在返程的路上。这个春节并没有很堕落的感觉，基本每天都是早上9-10点起床，睡眠时间也相对正常，感觉精神状态也不错，可是还是觉得属于自己的时间太少了。</p>
+<a id="more"></a> 
+<p>因为买nuc11的缘故，把各种pc的各个部分又都折腾了一遍，看各种新的产品，搞得还挺想买台新电脑的，对比了半天，显卡如今的价格多少有点离谱，暂时还是作罢吧，原本的电脑买了3年半，到目前也没什么不好。当初的标配7700K即使在当时也不是一款性价比比较高的cpu。假如要买下一台电脑，大概可以试试全套的AMD……在假期的最后一天，尝试了一下微信读书，发现它家的ai朗读有点好，尽管并非完美，比如遇到破则号反而会加快读速，遇到引号和书名号，语气突然就变得机械。但总体已经是可以使用的程度了，遇到“慢慢地”这种形容词朗读的速度也真的会稍微放慢。听了2个小时还是很容易能感觉得这个ai确实是通过实际朗读为样本训练出来的，所以越接近日常用语ai的效果越好，并且完全没有对英文样本进行训练，一旦遇到英文就只能发出那种很不自然的合成音。至于书的库存，似乎只要是出版社有出版电子版的书都能进行朗读（偶尔也有出版社只允许试读的书）。不过可以说已经非常不错了。感觉打开了新世界的大门，又有很多可以鼓弄的东西。不过实际使用下来，如果想一边做事一边听书，大概还是小说比较合适，缺失一些信息也影响不大。</p>
+<p>至于假期的阅读，读完了猎魔人的第四卷轻蔑时代，然后也看了一点《中国古代文化常识》和《海鸟的哭泣》。文化常识这本书比许想象中的还有趣，除了所谓常识的部分，在每章后半部分也会拿出一些相对应的物件进行介绍，第一章里头介绍了伏羲女娲尾巴缠绕成中国结样的壁画，由此引出中国结的来历及意义。所谓结发夫妻的结发居然就是指的中国结。洞房花烛夜夫妻双方需要把头发剪下一缕，绑在一起形成中国结感觉还挺浪漫的。海鸟的哭泣这本书序章部分有点无聊，作者抒发了太多空洞的情感。正篇则非常有趣，这本书大体上一半（或者少于一半）会讲述和海鸟行为有关系的科学研究，剩下的讲述这种鸟类与人类文明之间种种。第一章中作者介绍了暴风鸌。这种鸟和企鹅类似，会轮流孵蛋和照顾幼鸟。另一只鸟会去觅食存储能量和食物。书中介绍的一只带有定位装置的暴风鹱会在大约15天左右的时间里飞到半个大西洋宽度距离的大西洋中脊附近觅食而后再返回。整个过程他会在多个不同的地方进行停留，觅食和等待合适的风…有趣的地方在于，这条线路是非常个人的，每只暴风鹱都有一条完全不同的觅食线路。有些暴风鹱会选择离巢穴很近的地方捕食。觅食地的选择和暴风鹱年轻时游历的经历密切相关，大西洋中脊对于这只暴风鹱来说大概是类似于美食圣地一样的吧。感觉暴风鹱更像奇幻世界里的冒险者:p然后暴风鹱是种在平时不太飞得起来的鸟，他们几乎只在暴风雨中飞行，以至于过去的人类认为是这种鸟类召唤出了暴风雨。加上暴风鹱有时候会发出类似恶魔大笑的叫声。以至于暴风鹱在很多本地传说中都充当着反派boss的角色:D</p>
+<p>1月底的周末去过一次湿地公园，没看到什么有趣的新鸟，本以为冬季说不定会有些候鸟在此栖息。褐头鹪莺很活跃，数量似乎也变多了，水边几乎都是它们的地盘跳上跳下，也不怕人。有个穿着迷彩服的大叔在拍黑喉石鵖。我本以为石鵖不是什么特别少见的鸟，不过大叔似乎对它情有独钟，和他攀谈了解到，有只雄石鵖一直生活在一个不高树的周围，并且很长时间都会在一个地方站立不动。待我绕过一圈离开的时候大叔还坐在椅子上守着相机和三脚架。我不太能体会整个下午都守着一点观鸟的心情，大概和钓鱼差不多吧？说道野外的便携式椅子，就自然想到摇曳露营第二季，看得人真的很想去露营，虽然从初中就有这样的想法，现在买个帐篷倒也不算难，但是在中国要需要合适的露营地真的有点不方便呢。一个人要装备那么多东西总觉得不够实在。</p>
+<p>最近这段时间也没怎么出门，今年的目标是多读点书。目前来说虽然还是不够满意，不过相较于去年，读的书似有多一点，一月的时候看了无职23本轻小说，已经很久没有一口气看那么多文字，稍微有点找回以前的感觉吧。觉得除了通常性的那些影响阅读的因素，一个可以随时在多个设备间同步进度的阅读平台也蛮重要的，无职因为有网页版，目录页页很详细，boox上的txt则能自动生成目录，所以利用目录在多平台之间转换非常方便。在kindle上买的书，也能在不同平台上同步，但是我之前试过同步效果很差，有时候我明明看到很后面了，它还反复是要把我拉回之前的一个节点，简直负作用。</p>
+<p>大概如此吧，日子总觉得过得很快。今年都快过去1/6了呢哎。</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

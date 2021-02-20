@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            
+<section class="posts">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2011/12/06/%E6%9F%AF%E5%8D%97%E6%BC%AB%E7%94%BB%E8%87%B3800%E8%AF%9D%E6%89%80%E5%BE%97%E4%B9%8B%E7%BA%BF%E7%B4%A2%E5%92%8C%E7%9B%B8%E5%85%B3%E6%8E%A8%E8%AE%BA/">
+                            柯南漫画至800话所得之线索和相关推论
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            December 6, 2011
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>首先说结论：昴是秀一（几乎是100%），世良是秀一的妹妹（这点证据尚不完全充分，但是可能性还是很大的）安室为波本(伤疤秀一也是他伪装的。证据不充分)</p>
+<p>我们回到水无打死秀一的现场。我想多数人都不相信秀一已经死。那么我们先假设他是活着的。那么当时的现场有两种可能。</p>
+<p>假设一:秀一当时无准备，在临死边缘逃脱，这样后面的伤疤秀一就可能是他本人，但是这个假设的问题是，当时燃烧的车上留下一具烧残的尸体，并且剩余手部的指纹可以在柯南手机上找到。如果秀一逃脱了，车上应该是没人的。因此该假设不成立</p>
+<p>假设二：秀一和水无是实现约定好的。水无入组织后是没有机会商量，事实上秀一诈死，水无嵌入都是柯南和秀一在水无病房里就已经商量好了的。仅三人知道，FBI中可能有内鬼，卡梅尔被怀疑为嫌疑人的时候组织马上就知道了，证据还不充分不提。水无应该也是不知道秀一诈死后的后续的。秀一性格上是希望独干得个性，FBI在他看来也是略微有些碍手碍脚的。同时水无的嵌入，是需要一些能让她得到信任的方法的，简单地被抢回去，gin明显不相信，这些柯南和秀一肯定已经想到了。</p>
+                            <a href="/2011/12/06/%E6%9F%AF%E5%8D%97%E6%BC%AB%E7%94%BB%E8%87%B3800%E8%AF%9D%E6%89%80%E5%BE%97%E4%B9%8B%E7%BA%BF%E7%B4%A2%E5%92%8C%E7%9B%B8%E5%85%B3%E6%8E%A8%E8%AE%BA/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2011/08/19/%E5%A4%8F%E6%97%A5%E5%A4%9C%E9%9B%A8/">
+                            夏日夜雨
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            August 19, 2011
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>夜里肆无忌惮地看闲书。纸质书看累了，换kindle。连kindle也拿累了，便索性听一会雨……除去台风，夏日的雨夜本是不多见的，这些年来就连台风也显得少了。</p>
+<p>雨滴答滴答地打在雨棚上，突然想起小学时，在奶奶家里度过的暑假。农村的夜关了灯便真是伸手不见五指，只从屋顶上透下两道瓦片大小的斑白。雨打在瓦片上的声音远比雨棚上的来得轻盈。午饭之前，我常常一个人躲在床上看书，中午的阳光透过两个长方形的孔洞照下来，可以看见纷飞的灰尘。我喜欢看它们恰似无规律的飘荡，就如同我也时常盯着咖啡表面卷动的小脂粒和腾升的热气（我总想知道它们的秘密）……透光孔上镶嵌着玻璃。在没有玻璃的古代，这样的透光孔又是如何防雨的呢？</p>
+<p>没有雨的夜，可以搬出竹床在房前乘凉。能看见许多星星，说是许多，细细的数，也不过五六十颗的样子，能认出的星座有天蝎和天鹅还有乌鸦，银河却是不曾见的，总觉得可惜。屋檐下有燕子筑巢，房前的灯正好在它们的窝旁，乘凉的时候就不可避免地变得吵吵喃喃的。：）燕子是认“家”的，每年都会在同一个地方繁殖。连着两三年都看得见燕子回巢。再过了些年，想起这事，却发现那个窝已不知在什么时候消失了，光阴的流逝大抵都是如此的吧。</p>
+<p>对于一些感情，不得不承认自己的后知后觉，奶奶走了半年，才突然想起这些旧事……</p>
+                            <a href="/2011/08/19/%E5%A4%8F%E6%97%A5%E5%A4%9C%E9%9B%A8/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2011/04/18/%E6%98%A5%E5%A4%A9%E4%B8%8E%E6%88%91%E6%97%A0%E5%85%B3/">
+                            春天与我无关
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            April 18, 2011
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>走在校道上，墙角是成片绽放的三角梅，连绵了有二，三百米，煞是好看。喜欢春天雨后的空气和植物。</p>
+<p>不知道鸟儿是否也喜欢这雨后的景致，凌晨4点就开始鸣叫。</p>
+<p>傍晚从后门去孙厝吃晚饭。才意识到后门门卫是个很悠闲的工作。一张小床和一张大书桌构成的房间。旁边是一个偌大的龙眼树，树下有石桌和石椅，大概是夏日里乘凉的好去处。稍走几步有一个成年的木棉，一半开着火红火红的花，另一半却是一片翠绿。麻雀正专心地在草地上寻找着什么，并不理会路过的行人。不过它们终究是些好动的小家伙，不一会儿就彼此蹦跳着打闹起来了……</p>
+                            <a href="/2011/04/18/%E6%98%A5%E5%A4%A9%E4%B8%8E%E6%88%91%E6%97%A0%E5%85%B3/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2010/01/03/%E5%B9%B4%E5%8D%8E%E4%BC%BC%E6%B0%B4/">
+                            年华似水
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            January 3, 2010
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>新年的假期，奔走于亲戚之间。正逢冬至时节，冬雨不绝，回到家后，各种消息蜂拥而至。昨天去看了曾外婆，貌似有了些许的好转，只是依旧不愿意吃饭，我也不知为啥总觉得，还是有转机的。探望病人的时候，我总是默默地看着，心里想说些什么却又说不出口。其他的屋子里有些喧闹，我便在屋外的房檐下看了1小时的雨。脑子里想些什么我大概也忘了，总觉得入了社会的人再亲密也未必看得清楚。对与错也以不见得清楚。想到这些我不由自主地想逃离。曾外婆家的猫突然从帘子里串出，它很新奇地看着我，当我回头看它时，它又将身体蜷缩成一团，匍匐前进了两步之后，一下子从我脚边穿了过去。曾外婆总是把猫养的很胖很胖，倒也不妨碍它抓老鼠。只可惜它不愿意让我摸它。</p>
+<p>在豆瓣上看到《花镜》的相猫术.倒不都有道理，可是很有爱，没办法我太喜欢猫了：）</p>
+<p>“猫一名蒙贵，又名家狸，捕鼠小兽也。以纯黄、纯黑、纯白者为上。”“相猫之法：必须身似狸，面似虎，柔毛利齿，口旁有刚须数茎，尾长腰短，目若金铃，上腭多棱者为良。”“俗云：猫口中有三坎者，捉鼠一季；五坎者，捉鼠二季；七坎者，捉鼠三季；九坎者，捉鼠四季”“鼻端常冷，惟夏至一日则暖”又，相猫决云“露爪能翻瓦，腰长会走家；面长鸡种绝，尾大懒如蛇”“凡猫吃青草，主天必大雨”</p>
+                            <a href="/2010/01/03/%E5%B9%B4%E5%8D%8E%E4%BC%BC%E6%B0%B4/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2009/04/05/%E5%81%B6%E5%B0%94%E7%9A%84%E5%87%BA%E6%B8%B8%20/">
+                            偶尔的出游
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            April 5, 2009
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>上个周末，很难得的去了趟岛内。想来在厦门待了这么久，我至今没有正经地玩过几次。倒不是不喜欢出游与旅行，只是一想到还有数不尽的书要看，便没有了兴致。（其实待在学校也时常很懒散- -）</p>
+<p>说来，我还是很喜欢厦门这座城市的。爬满高墙的常青藤，树影间斑斓的阳光，又或是仿佛唱着欢快的歌儿疯狂生长的三角梅……这一切都让我感到亲切。</p>
+<p>厦大周边的街区多是有些年纪的椴树。再者便是被人熟识的木棉与凤凰树。3月正值木棉的花期，火红火红的一片。硕大而沉重的花托上是略显得张扬的花瓣，然而她们终究是内敛的，只需微风偶然的轻抚又或是鸟儿的几句赞许，她们便又害羞地从树枝上落下。较之羞涩的木棉，我大概更喜欢略显沉默的椴树。起风时纷飞的落叶，有时不免让人忆起相互追逐的童年，又或是思念之人……但凡人所喜爱之静物，多半正是因为其中承载的故事吧。</p>
+                            <a href="/2009/04/05/%E5%81%B6%E5%B0%94%E7%9A%84%E5%87%BA%E6%B8%B8%20/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2009/03/14/%E9%9B%A8%E5%A4%A9%E7%9A%84%E8%AE%B0%E5%BF%86/">
+                            雨天的记忆
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            March 14, 2009
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p> 雨又开始稀稀落落地下。不想流水似地记叙最近的生活，因为除了忧郁与想念，大概不再有其他。</p>
+<p>安静地看了很久的雨幕，记忆像无声的电影，一幕幕地过……雨天特有的寂静与略微的感伤，总是让我沉醉……</p>
+<p>关于雨天的回忆，多半是些毫无声响的黑白片段。6年前的周末，我与森，窗外是霏霏的细雨，只看到自己的嘴欢快地动着，至于那时所聊的话题，已经全然不记得了。小白安静地躺在客厅的中央，它大概对刚刚做的那个梦不大满意，换了个姿势后，又沉沉地睡去了。突然想起前段时间在豆瓣上听人说，宠物叫小白会比较命苦。或许生命的存在本身就是必须承载一些东西的。没有太多的想法，仅仅雨天一些不着边际的怀念。</p>
+                            <a href="/2009/03/14/%E9%9B%A8%E5%A4%A9%E7%9A%84%E8%AE%B0%E5%BF%86/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2007/08/29/%E8%B5%B7%E9%A3%8E%E7%9A%84%E6%97%B6%E5%80%99%E6%88%91%E4%BB%AC%E5%92%8C%E6%9C%88%E4%BA%AE%E4%B8%80%E8%B5%B7%E5%A5%94%E8%B7%91/">
+                            起风的时候我们和月亮一起奔跑
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            August 29, 2007
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>夕阳渐渐沉入大地，回忆却开始在空气中蔓延。穿过三角梅的拱门，我又回到了那个有着无数回忆的地方，曾经的快乐似摆动的秋千，而如今却只剩冬日里发黄的忧伤。</p>
+<p>长椅上堆满了梧桐干瘪的忧伤，厚厚的，层层叠叠的。在也没有有愿意聆听梧桐写给风的情诗了吗？，落叶下，早以锈记斑斑的椅静静地坐着，他还在等着谁呢？再也不会有人在此述说理想，再也不会有人在此促膝长谈，曾经的理想和约定，还会有多少人记得？拂去长椅上梧桐的忧伤。一个人——只是静静地坐着。未被夕阳染红的半边天，破旧的老屋下，微微泛黄地爬山虎——它依旧努力地向上爬着……</p>
+                            <a href="/2007/08/29/%E8%B5%B7%E9%A3%8E%E7%9A%84%E6%97%B6%E5%80%99%E6%88%91%E4%BB%AC%E5%92%8C%E6%9C%88%E4%BA%AE%E4%B8%80%E8%B5%B7%E5%A5%94%E8%B7%91/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+</section>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

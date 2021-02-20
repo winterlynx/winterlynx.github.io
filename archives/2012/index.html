@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            
+<section class="posts">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/11/26/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%B9%B4pi%20/">
+                            关于少年pi
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            November 26, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>少年pi在最后让作家选讲哪个故事，作家说会选有老虎的那个，然后pi说他已经在追寻上帝了。</p>
+<p>人有生存的本能。这是人类作为一种生物不可分割的一部分。另一方面人有智慧，能思考，有感情，有同情心或者称之为人性，这些特点也使我们感觉到人与其他的生物是不同的。所以我们不应当只是为了生存而活着而应该有更高的追求。</p>
+<p>但是人与动物不同，这一点其实是一种先验的的观点，我们既没办法证明也没办法完全否定。所以这其实是人的一种信仰。而宗教归根到底也是一种信仰。而选择了前一个故事其实也就说选择相信了人是与动物不同的。</p>
+                            <a href="/2012/11/26/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%B9%B4pi%20/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/11/22/%E6%B8%85%E6%99%A8/">
+                            清晨
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            November 22, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>雨后的清晨，早早地醒了，空气中还弥漫着雨后泥土的气息。记得小学一二年级，有一次起的特别早，父亲便让我到楼下走走。水泥地与草地交界的地方，长着一种从来未曾见过的蘑菇，通体的灰白，“帽子”上有着放射状的纹理，像是雨伞的伞骨。从侧面看则像是个等边三角形，反复真的能够开合似的。待我上学的时候路过此地，却已经再也找不到了，草地上还有一点浅浅的白色，难道它就这样融化了吗？像这样在清晨中突然出现又在太阳出来前悄然逝去的蘑菇总让我觉得有些不可思议。</p>
+<p>小学时候，周末的早晨自然应该在赖床中度过，只不过每个周末的早晨8点，随风总会准时骑着自行车来楼下喊我。他的声音仿佛是伴着阳光的。我有些恼，却又很快精神起来。我们就这样沿着山上长长的斜坡走着，不需多想也总会有有趣的事情发生。那样的周末似乎每一个都是晴朗而温和的。</p>
+                            <a href="/2012/11/22/%E6%B8%85%E6%99%A8/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/10/29/10%E6%9C%8829%E6%97%A5/">
+                            10月29日
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            October 29, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>25日的时候是Galois的生日。突然想起在大一的时候告诉自己在本科期间一定要把五次以上方程的证明得看了。可是至今依旧还没有做到。coffee在转发微博的时候提到了谷山丰与志村五郎。越发觉得自己离数学正越来越远。这个的想法每过一段时间就会有一次，或许也不值得一提。</p>
+<p>电脑里存着《(二阶)有限单群—— 数学家的情歌》<a target="_blank" rel="noopener" href="http://v.youku.com/v_show/id_XMTQxNzg2ODU2.html%E6%AF%8F%E6%AC%A1%E5%90%AC%E9%83%BD%E6%9C%89%E4%BA%9B%E5%8A%A8%E5%AE%B9%E3%80%82">http://v.youku.com/v_show/id_XMTQxNzg2ODU2.html每次听都有些动容。</a></p>
+                            <a href="/2012/10/29/10%E6%9C%8829%E6%97%A5/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/09/26/%E6%A2%A6%E4%B8%80%E5%88%99/">
+                            梦一则
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            September 26, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>下午做了个有趣而真实的梦，细节丰富以至于就像真的经历了一个午后的出游一般。当然这对旁人大概是无聊透顶的故事。</p>
+<p>母亲要我陪她到一个她久未联系的朋友家玩，这样应酬我自然是毫无兴趣的，大概听说因为那位朋友家住在一个学校里，便想随便去走走也不错。她的儿子12岁读初一，我们居然还很聊得来。和他聊名著（现在小学和初中都是要求读名著的，考试需要）四驱车（事实上如今的小孩子是不玩四驱车的吧），以及我还告诉他老虎，灰熊和天鹅的生活习性。</p>
+                            <a href="/2012/09/26/%E6%A2%A6%E4%B8%80%E5%88%99/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/08/25/%E5%8F%B0%E9%A3%8E%E5%88%B0%E6%9D%A5%E5%89%8D%E7%9A%84%E4%BA%94%E7%BC%98%E6%B9%BE%E4%B9%8B%E8%A1%8C/">
+                            台风到来前的五缘湾之行
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            August 25, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>上一次和和森一起观鸟似乎已经是2年前的事情了。上午6点就早早出发，到了五缘湾也已经是9点了。不用担心时间，不用在乎景点，看到有趣的东西想停多久都好，这大概是和森一起出行最大的好处。（虽说自己一个人的时候也是这样晃悠的）</p>
+<p>中午的时候，坐在山坡间的石头和草地上休息。天空一会儿是艳阳高照的晴朗，一会儿是乌云密布的阴霾。风穿过湖面，唤起浅浅的波澜，芦苇们摇摆着枝干与之招呼。就这样静静地坐着。耳边除了除了风声，就只剩芦苇们沙沙的欢笑。在我看来，生活便应该这样才是好的。</p>
+<p>远端林间的草地，似乎是风没有关顾的领地。阳光打在午后静谧的草地上。一群黑领椋鸟聚在一起商量着什么，三只乌鸫蹦跳着过来，却一下子就被赶走了。另两颗树下，四只灰胸竹鸡并排站着，这是午后的茶话会还是来看打架的围观群众？在这个没有蝉鸣的午后，连鸟儿们都懒得赖在树间，一股脑地全聚在草地上了。</p>
+                            <a href="/2012/08/25/%E5%8F%B0%E9%A3%8E%E5%88%B0%E6%9D%A5%E5%89%8D%E7%9A%84%E4%BA%94%E7%BC%98%E6%B9%BE%E4%B9%8B%E8%A1%8C/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/07/23/%E9%81%87%E8%A7%81%E5%9B%9B%E5%B9%B4%E5%89%8D%E7%9A%84%E8%87%AA%E5%B7%B1/">
+                            遇见四年前的自己
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            July 23, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>翻自己在这四年间看过的书，以及那些一直期望看却至今没看的书。数学依旧是世间的最美~看过的添了伤感，没看过的依旧是种力量。F说看自己5年前的blog，觉得那时候的自己比现在成熟。不得不说我对自己也有相同的感觉。与四年前的自己面对面，我不知道有多少人能从自己看过的书和记忆中找回自己。这感觉或许有些像伏地魔的魂器吧。</p>
+<p>最近2年，我所学到的仅仅是对人的情感有了更多的了解和体谅。自然算不上什么坏事，只是付出的代价或许大了些。</p>
+                            <a href="/2012/07/23/%E9%81%87%E8%A7%81%E5%9B%9B%E5%B9%B4%E5%89%8D%E7%9A%84%E8%87%AA%E5%B7%B1/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/06/16/%E5%B0%8F%E8%81%9A/">
+                            小聚
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            June 16, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>夜里坐在回程的大巴上。 车窗上蒙着厚重的雾气 ，只见得远处发散的光点和昏暗车厢内座椅的倒影。想和舍友们好好地道别，却说不出什么话来……</p>
+<p>来时，沿途的风光尽是熟悉与亲切。这个季节校道上开满了大花紫薇和洋紫荆。对于“校园”始终是我一辈子不想离开的地方。想起来去年的6月，最难过的莫过于最后一次走出图书馆和宿舍大门的时候……</p>
+<p>和舍友们的小聚，也不过3,4小时，没有什么特别想做的事，听听熟悉的声音，知道有些东西还未改变便也就好了。尧要会南平了，很难想象在将来的日子还能有几次见面。</p>
+                            <a href="/2012/06/16/%E5%B0%8F%E8%81%9A/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/06/05/%E8%8A%92%E7%A7%8D%E7%9A%84%E6%97%A9%E6%99%A8/">
+                            芒种的早晨
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            June 5, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>清晨早早地从睡梦中醒来，突然一阵欣喜，感觉自己所遗失的东西又回来了。</p>
+<p>天还未亮，在闲书和正经书之间切换着看。一周以前开始重新看数学，渐渐恢复了点感觉，至于岁月对人有多大的影响还未可知。</p>
+                            <a href="/2012/06/05/%E8%8A%92%E7%A7%8D%E7%9A%84%E6%97%A9%E6%99%A8/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/05/24/%E5%A5%B9%E6%AF%8F%E6%AC%A1%E6%9D%A5%E6%97%B6%E9%83%BD%E6%98%AF%E9%9D%99%E9%9D%99%E7%9A%84%E9%9B%A8%E5%A4%9C/">
+                            她每次来时都是静静的雨夜
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            May 24, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>夜里翻来覆去地睡不着，断断续续地看着未读完的书，终究是倦了，却不想睡觉。恍惚间点开了KF里的《国境以南，太阳以西》。我本是少有重读习惯的，更何况这个短小的故事自觉得记得还算真切。</p>
+<p>书中的感情，记忆，以及当时的自己的感情，猛然间一股脑地膨胀开来。想起大二的日子，或许那才是自己真正的样子。或许人在阅读的过程中自然是在不断地汲取，但说不定也把什么落在了书里。</p>
+                            <a href="/2012/05/24/%E5%A5%B9%E6%AF%8F%E6%AC%A1%E6%9D%A5%E6%97%B6%E9%83%BD%E6%98%AF%E9%9D%99%E9%9D%99%E7%9A%84%E9%9B%A8%E5%A4%9C/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2012/02/19/%E6%A2%A6%E5%9B%9E%E5%A4%A7%E9%99%A2/">
+                            梦回大院
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            February 19, 2012
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>离开大院已经有13年了。如今的家距离大院并不算远——约莫15分钟的路程。然而那里终究是回不去的地方。</p>
+<p>前些日子，想着到和大院紧邻的芝山公园转转，或许可以从外围见见这童年的地方。</p>
+<p>大院正门较之以前拓宽了有一倍多，偏门站着一个手里拿刺（和谐）dao的小兄弟，正门则有三个仿佛胸前绑着手（和谐）榴（和谐）弹的家伙来回走正步。。</p>
+<p>绕进芝山公园的正门，是长长的上坡，这里与大院仅有一墙之隔，临墙栽着在其他地方少见的白千层。因为一年四季都在蜕皮显得苍老而不美观。想来该是三四十年前的道行树了吧。从google earth上看，大院内的房子大体都已经换了一轮。唯独小时候住过的房子竟不曾变过。</p>
+                            <a href="/2012/02/19/%E6%A2%A6%E5%9B%9E%E5%A4%A7%E9%99%A2/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+</section>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
