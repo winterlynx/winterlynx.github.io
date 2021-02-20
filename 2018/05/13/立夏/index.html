@@ -82,9 +82,17 @@
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-        </script>
+    </script>
 <meta name="generator" content="Hexo 5.3.0"></head>
-
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 <body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
     <div class="container">
         <header class="header">
@@ -139,10 +147,7 @@
                 <li>
                     Lynx
                 </li>
-                <li id="busuanzi_container_page_pv">
-                    &emsp;&emsp; 阅读量<span id="busuanzi_value_page_pv"></span>
-                  
-                </li>  
+               
             </ul>
             <div class="post-content">
                 <p>四月总是过得很快，一眨眼就结束了。四月中旬重新写了爬虫，因为豆瓣现在的反爬实在太严格，连40秒爬一次在3小时内超过500条都会被暂时封号。所以不得不考虑怎么用代理和构造cookie的事情。起先用的免费代理，花了很多精力写抓取网页上的代码以及代理的测试。结果免费代理的效果还是很不理想，90%都是不可用的，即使可用的部分，也经常是时断时连的，因为代理本身问题很多，在加上squid的配置，很难判断问题的真正缘由，这部分花了好多的时间。后来开始使用收费代理。有效代理数一下提高到98%以上……前前后后一共花了快10天在写代码上，写完之后的成就感似乎也挺淡薄的。爬下来的数据也特别懒得分析（我到底干嘛要做这样的事）。最近貌似pandownload有要关闭的迹象，又寻思着要不要自己写一个不限速的网盘下载。但是想了想，还是不鼓弄了，实在太花时间= =</p>
