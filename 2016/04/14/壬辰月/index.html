@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                壬辰月
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2016-04-14
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>一天夜里，梦里尽是初中时候的场景，记忆里的人都在，故事却是别样的，连她也依旧坐在我的前排……这样的梦或许连我也期盼着永远不会醒来。读张爱玲的《异乡记》，脑海里阴阳顿挫都是她的声音。想了些事情，远远地看着，毕竟是那么久以前的记忆了，如今彼此的生活或许一点交集都没有……</p>
+<p>三月份中旬之后，效率一直挺不好，先是感冒，紧接着很投入地关注人机大战，再然后又感冒了一次。这次的流感似乎相当厉害。好多人先是发烧，又紧接着是怎么都好不了的咳嗽。连着咳了很多天以后，开始吃川贝炖梨，居然一下子好了大半。转眼就到了四月，记忆里的四月终是过得很快的，经常一眨眼就消失得无隐无踪。回想了这四个月所做的。除了看完 Petersen的书，其他方面离原本的计划量都差了好远。日子一天天过，如今快到仿佛是一年一年过的。后来的那次感冒顺带着把我所有的热情都吸走了。突然不知道该干嘛，电影不想看，书也不想读。这样的状态持续了几天之后，开始看《棒球英豪》，效果倒是出奇的好，大概人类内心里的情感都是想通的吧，又或者故事里有满满的青春，小南太温柔。看到达也开始坚持每天跑步，我也大半夜从床上坐起来开始看书，渐渐地好了不少……最近开始看Ravi Vakil的AG的讲义，其实我也不知道这本书是否好，在选教材的初期有时候总是烦恼而纠结的。</p>
+<span id="more"></span>
+<p>今年关注了很多围棋比赛。大概是很欣赏柯洁的缘故。其实我很少欣赏人的，总觉得人都是不完美的，聚光灯下故事里的人永远只是很少很少的一面，觉得一个人的某一面好，但是我始终不会全盘地觉得一个人的所有都好。至于柯洁大概是因为他和我很像很像，起先实际觉得他说出来的观点我既然能全部认同，在然后发现思维的方式也几乎是一样……甚至连八字上都是异常相似的，都是身旺食伤泄身的两气格局。以前我总觉得真正的天才一定是偏印带伤官那样的（Grothendieck就是这种配置的，我对天才的要求是非常高的。）柯洁大概第一次让我看到了一种纯伤官的天才。用通俗的话讲，所谓偏印就是偏执，偏执并不一定能产生天才，但是偏执中往往蕴藏着一些独一无二的东西，不一定好，也不一定有价值，但这是天才的土壤。所谓伤官其实就是聪明，本质是对信息更高效更快速的利用，能够从相同的信息里得到更多的结论，或者更快地学会某种技能。过去我总觉得聪明和天才到底是不同的，天才必须是无法复刻的，而聪明虽然带来人与人之间的差距。但是很多情况下却能够被时间弥补，到底不是独一无二的。不过柯洁倒是让我确确实实看到了聪明确实能够产生一些独一无二无法复刻的东西，这就是对未来局势异常准确的判断力。几乎每个人都是依靠自己对未来的判断来做决策的，但是每个人对未来的判断一定都是有局限性的。观看人机大战比赛的时候，看了三组不同职业棋手的解说。柯洁每次都能比其他职业棋手早40-50步非常肯定地判断出结果。并且是在其他棋手反复验证，都还得不到很确定结论的情况下。不管其他棋手怎么说，他都没有改变最初的判断。（当然这种判断并不是局限在围棋上的）把柯洁的事情告诉尚西，尚西也说她觉得真正的天才都是只有两气的，很纯粹。我大概也觉得这样的人更纯粹，不过也只是其中一型。也有我完全看不懂的八字，比如被很多人誉为天才的吴清源……</p>
+<p>回到日常的记叙中来，过去的这一个月大概是心累，热情也被消磨了不少。有时候也会想找到那么一个她，然后踏踏实实地过日子或许也就挺好。可是我似乎也还有一点力气，那就在这条路上再走一走吧……</p>
+<p>ps：17日补觉的时候，做了开心的梦，记录在这里好了。<br>蹭我不在的时候，一只母猫叼着一只小猫来我们家里做窝。开始明目张胆地躺在我的书桌上。后来似乎是因为发现这里有人，就转移到床底下的鞋盒子里头了。这也是过了几天我看到鞋盒的位子有些移动才发现的。我叫母亲来看，想说服母亲养猫。结果母猫看到人多，从我卧室串出去，一溜烟到了客厅的窗户边上，跳了出去。梦里我并不知道窗户外面的地形，好担心它这样跳下去是否安全，也担心它是否还会回来，不知道小猫是否过了断奶期，该给它什么样的食物呢？再后来临睡觉的时候，又突然想起母猫来，发现卧室的窗户一直关着，感觉爬起来开窗，发现母猫真的在对面的屋顶上望着这边。再后来梦就醒了…… 突然没头没脑地想起那句话“我和小猫哪个好？”（和梦没有任何关系，就是突然想到）</p>
+<p>梦里同桌换成了我的舍友，他不小心摔了我的钢笔，不用的时候，钢笔也会一直漏水。我挺难过的，梦里这是陪了我很久的钢笔（实际上目前在用和用的最久的钢笔是Lamy,梦中则是一只宝蓝色的钢笔，不知道品牌。我对梦中的故事总有于现实不同的记忆这点很感兴趣。因为即使在梦中我也经常会依靠过去发生的事情做推断，正因为梦中有自己的记忆，而且逻辑性通常非常好，所以我总没办法发现自己在梦中），在我难过的时候，她用那只坏掉的钢笔，用一笔画的方式在我的本子上画了一座城堡。我说笔杆上都是墨水，她说没关系。在书包里找了半天面巾纸也没有找到……另一个梦的教室则有点奇怪，课间她给我看了一本叫做某某拓的书，好像说是某种文字的研究，我们就这样一直聊天聊到上课，课上她时不时地回过头来聊两句。后来老师盯得紧就没法了。这堂课似乎是法语课（我为什么要上法语课嘛）……虽然梦里很美，这样的梦哪怕永远都不醒也没有关系。可是终究是那么遥远的记忆，如今既然没有半点交集，大概也是没缘分吧。</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

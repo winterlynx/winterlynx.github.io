@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            
+<section class="posts">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2016/12/29/%E5%B9%B4%E6%9C%AB%E7%9A%84%E4%B8%89%E4%B8%AA%E6%9C%88/">
+                            年末的三个月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            December 29, 2016
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>前阵子有些忙碌，便连blog也懒得写了。9月底的时候，外公去世了。去世前两个月，外公还念叨着想带我们所有人一起去后井看看，最终也没有如愿。后续的很多事情，办了很长的时间。外婆总担心哪里没办好，周围邻里的各种意见全听了一遍，各种烦杂的风俗全都想着尽力去做，深怕落下话柄。这种活法实在太累，也远没有必要，其中好些意见完全相互矛盾，而且那些大妈连我一个外孙该穿什么衣服都不如我清楚……</p>
+<p>10月份的时候过得很堕落，大概是对未来的迷茫，一点正事没做。看了看豆瓣的记录，9月之后只读了全球通史。再然后就一本书也没读了。对我来说，始终还是要时常地阅读，才会有一种活着的感觉吧，有想知道的事，想学的东西，处在不断的思考和反省中。对于这一段时期，真的就像空白一样，实在不知道说什么。反省之后重新上路，理了一下在读的书目，詹森艺术史，国史大纲，约翰克利斯朵夫 手头上同时对着三本都超过1千页的大部头确实有点影响积极性吧。</p>
+                            <a href="/2016/12/29/%E5%B9%B4%E6%9C%AB%E7%9A%84%E4%B8%89%E4%B8%AA%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2016/09/20/%E4%B8%81%E9%85%89%E6%9C%88/">
+                            丁酉月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            September 20, 2016
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>台风登陆的夜里，风刮得乎乎响，实在没办法睡觉，只好一边看书一边关注微博上的天气实况。对闽南来说，这样的台风大抵是难得一见的，因为有台湾的阻挡，在经过台湾高山的切割之后威力通常也所剩无几。唯一可能的通路大概也只有穿过巴士海峡这一条了。听说别处的玻璃碎了很多，好在家里的倒还安好，只是风雨太大，雨水硬是从窗户边缘细小的缝隙喷溅进来，声音像是溪流一般。因为担心玻璃的状况还有点担心停水停电，书也没法看得很专心。上次足够大的台风已经是10年的事情了，那时候在宿舍里也没法入睡，到了中午因为没法去食堂吃饭，一群人去楼下小卖部里抢泡面，我自认为抢不到也就懒得去了……</p>
+                            <a href="/2016/09/20/%E4%B8%81%E9%85%89%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2016/05/25/%E7%99%B8%E5%B7%B3%E6%9C%88/">
+                            癸巳月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            May 25, 2016
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>五月是蓝花楹的花季，时不时能在路旁见到，大概中国不是出生地的缘故，开的花总是稀稀落落。当然即便如此，它的花始终是很漂亮的。初夏的正午，空气中飘着九里香和马樱丹的味道，竟有那么一种错觉，想回头喊童年玩伴的名字。路旁有几棵芒果树，突然让人想起小学时候斌说要请我们去看恐龙展结果却没去成的那个午后……夜里刚帮朋友解决了一些问题，终于可以稍微放松下，单词还没背完，却也不想背。这个月有点忙碌，这种忙碌反而让人无话可说。</p>
+<p>五月份比较大的收获在于发现自己的围棋似乎有了不小的进步（相对于自己），看比赛猜下一手的准确率高了不少，不需要解说，也能自己算些变化。后来我把从三月人机大战后到现在认真看过的棋数了一遍，一共也才只有11盘而已啊，除此之外我也没有花多少时间。这种进步速度其实是有点超出自己预期的。一方面说明我应该不算太笨（至少对比微博上遇到的不少关注同样棋局的人来说，我觉得我的提高似乎快得多），另一方面坚持全身心投入地做一件事情，可能效果比我想象的好和重要。当然如何做到这种投入程度，对我来说依旧是个难题，我通常只有在很发自内心喜爱的时候才能全身心投入的坚持。很多人说的那种强迫似的努力我从来做不来。况且那种被动但很花精力的努力虽然有一定作用，但是和我说的基于喜爱全身心投入的感觉差异还是很大的。其实总结起来就是人得花时间去思考，这点是非常重要的。</p>
+                            <a href="/2016/05/25/%E7%99%B8%E5%B7%B3%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2016/04/14/%E5%A3%AC%E8%BE%B0%E6%9C%88/">
+                            壬辰月
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            April 14, 2016
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>一天夜里，梦里尽是初中时候的场景，记忆里的人都在，故事却是别样的，连她也依旧坐在我的前排……这样的梦或许连我也期盼着永远不会醒来。读张爱玲的《异乡记》，脑海里阴阳顿挫都是她的声音。想了些事情，远远地看着，毕竟是那么久以前的记忆了，如今彼此的生活或许一点交集都没有……</p>
+<p>三月份中旬之后，效率一直挺不好，先是感冒，紧接着很投入地关注人机大战，再然后又感冒了一次。这次的流感似乎相当厉害。好多人先是发烧，又紧接着是怎么都好不了的咳嗽。连着咳了很多天以后，开始吃川贝炖梨，居然一下子好了大半。转眼就到了四月，记忆里的四月终是过得很快的，经常一眨眼就消失得无隐无踪。回想了这四个月所做的。除了看完 Petersen的书，其他方面离原本的计划量都差了好远。日子一天天过，如今快到仿佛是一年一年过的。后来的那次感冒顺带着把我所有的热情都吸走了。突然不知道该干嘛，电影不想看，书也不想读。这样的状态持续了几天之后，开始看《棒球英豪》，效果倒是出奇的好，大概人类内心里的情感都是想通的吧，又或者故事里有满满的青春，小南太温柔。看到达也开始坚持每天跑步，我也大半夜从床上坐起来开始看书，渐渐地好了不少……最近开始看Ravi Vakil的AG的讲义，其实我也不知道这本书是否好，在选教材的初期有时候总是烦恼而纠结的。</p>
+                            <a href="/2016/04/14/%E5%A3%AC%E8%BE%B0%E6%9C%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2016/03/09/%E5%8D%81%E5%B9%B4%E8%B8%AA%E8%BF%B9%E5%8D%81%E5%B9%B4%E5%BF%83/">
+                            十年踪迹十年心
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            March 9, 2016
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>26日一个人打包自己的房间，也用了一整天。其实除了书之外，我也没有什么其他的东西了。在把书放进箱子过程或许简单，同时对我来说又是很累心的。转眼之间，也已经在这个地方住了九年了。真的有那么久吗？还是难以相信。试着一点点地去回忆这些年发生的事情，看过的书，遇见的人，学到的东西……书一共打包了14箱。留了三箱书和书橱没有搬。这个书橱从我出生前就在了，也算伴了很久，始终是不舍吧。把书清空之后，才看到早已被压弯的架子……其实真的挺想和家里说还想要这个书架的……整理书架的时候还翻出好多红包来。都是往年爷爷奶奶外公外婆和舅公给的。我对钱不大上心，所以经常把红包放到两叠书之间的缝隙里，也没有细数，多数事情我都记得蛮清楚，惟独对自己还有多少钱很是模糊。看着一封封老旧的红包袋，大概才能真的能确信在这里已经住了很久了。有些东西或许是习俗，可是同时其中的包含的关心或许我总是得在很久之后才能察觉。想起奶奶以前总对我说“不可以太任性”……</p>
+<p>离开的时候看着空荡荡的房间，那种感觉大概和本科毕业时离开宿舍时的感觉很像，仿佛心里空了一块。从自己曾经的房间窗户望出去，还可以看到那棵茂密的糖胶树。不知道以后还有没有没有机会来看你，要好好活着。还记得大前年夏天，糖胶树生了虫子，叶子全都掉光。后来来了好多鸟儿，叽叽喳喳吵吵嚷嚷地持续了好几天，在后来倒真得重新抽出新芽来了。前年11月的时候，第一次看到糖胶树开花。虽然树木大体都能活很久，可是城市终究是变得太快了……</p>
+                            <a href="/2016/03/09/%E5%8D%81%E5%B9%B4%E8%B8%AA%E8%BF%B9%E5%8D%81%E5%B9%B4%E5%BF%83/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2016/02/20/%E6%95%85%E4%B9%A1%E7%9A%84%E8%AE%B0%E5%BF%86/">
+                            故乡的记忆
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            February 20, 2016
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>年初三的时候，一个人回石码。7月一串串金黄的腊肠花，如今变成了深绿色的长条豆荚。山上的刺桐花开了，却比记忆里冷清一点，没看到往常活泼的暗绿绣眼鸟，反倒看到三只叉尾太阳鸟。山中的空气很好，还带着微微地凉意，走了很长的路，猛猛地吸一口便也不觉得累了。试着去找曾经的“秘密基地”，结果却没有找到。山上被改造过的景观很多，只好在人为痕迹下一点一点地去找记忆里的景观。多数人似乎不怎么相信命运，总觉得自己什么都能做。我大概是没法这样想的。记得初三那年，好多美好的事情突然就破灭了。和自己家一样熟悉的紫云岩突然迎来大改造，猫老师突然呕吐就这样走了，很懂事的小白在巡逻的时候似乎被捕狗人偷走了，这辈子最有归属感的班级突然间要分班了……这些事情都是在某个很短的时间段内突然一起发生的……所谓命运大概就是类似这样的东西吧……</p>
+                            <a href="/2016/02/20/%E6%95%85%E4%B9%A1%E7%9A%84%E8%AE%B0%E5%BF%86/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+</section>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

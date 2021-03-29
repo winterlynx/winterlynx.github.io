@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                寒露
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2018-10-15
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>秋雨断断续续地下，每下一阵就添一份凉意。记忆里10月的雨没有很多，待到11月穿短袖也未尝不可。诸如衬衫一类的衣服一年可穿的日子寥寥无几，多少有些可惜。连这秋雨带来的凉意也总觉得不真切，反复要不了几天就会重新热起来。国庆节没有回家，7天都待在宿舍里反倒很舒服，少了很多催婚的唠叨。在单位值班的时候因为没人打扰，效率也都挺高。不管是看数学，读英语或者看闲书，仿佛回到了周日在图书馆里待上一整天的日子……那种感觉真是太让人怀念了。</p>
+<span id="more"></span>
+<p>晚上回宿舍之后玩了很多游戏，《太吾绘卷》，《刺客信条：奥德赛》以及《永恒之柱2》。太污这种自由度大的游戏确实挺有趣的，看别人玩，发现各种各样的脑洞的过程非常欢乐了。奥德赛则没什么新鲜的体验，使用和起源完全一样的系统，连操作也只是换了几个键位。任务依旧无趣。不过这游戏本体也只是希腊旅游而已。风景依旧很好，不过各种壁画的重复贴图让我有些介意。大体上我还是不怎么喜欢动作类游戏。最后通过《永恒之柱2》终于发现在RTS之外，TRPG才是最爱。不管是大量的文本描述，小队分工的战斗（控制单个人就很无聊），各种动作的鉴定公式，居然都挺戳我的点。《永恒之柱2》文本给我的代入感挺强的，《开拓者：拥王者》由于过于还原桌游的规则，给我的体验似乎就差一些。总觉得剧情平平淡淡的。虽然基本的设定挺喜欢的，不过攻击鉴定和伤害鉴定的方式我始终觉得永恒之柱更好。在pc上看到攻击双方不停地miss，然后击中一次就秒，随机性大得夸张（总希望战斗更平滑和可控一点）。在我的观点看来，D&amp;D本身有大量非常有趣的规则设定，不过既然平台在pc上计算都不是问题。总觉得规则可以改得更适合电脑游戏一些。总体来说还是很喜欢这类游戏。为了了解实际上的桌游D&amp;D是什么样的，跑去找来两集以前的TBBT来看。还是挺有趣的（不过打怪的时候还是一个技能死，就有点无聊了，不过桌游不适合不停地计算伤害，采用这样的规则大概是没办法的）</p>
+<p>9月，山竹到来前的周六一个人去鼓浪屿，想看展，结果因为预防台风的关系，岛上的多数景点直接都闭馆了。既没有通知，入岛的船票也照售。简直坑爹。。回家的时候，因为广东，广西，云南方向的动车有大量的停运，滞留了非常多的旅客。我也跟着在动车站里等了2个多小时。这一天下来完全在各种等待中消耗掉了。往常总是带着kindle出门，唯独这次没有。结果自然是很难受了2333回家的公交上，看到一个和s长得很像的初中生，扎着长长的马尾，在和同学很欢快地讨论藤野先生，呆呆地看了好久……</p>
+<p>下周若是没雨，大概还想去看次展，其实也想去山里面走走，10月份我还没有去过植物园，不知是否有些新奇的东西。大体来说9月至今，读书的效率也高了不少，有很多可做的事情，就是上班时候事情实在太多，很多业务上的事如今也得让我做，下班回家就没有那么多精力了。9月底买了Postcards from Penguin，有一百张企鹅出版书籍封面的明信片，真好看啊。配合Penguin by Design，一边看封面，一边了解企鹅封面设计背后的故事还是很有趣的~</p>
+<p><img src="/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181015193151.jpg"></p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

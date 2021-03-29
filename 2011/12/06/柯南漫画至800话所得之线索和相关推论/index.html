@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                柯南漫画至800话所得之线索和相关推论
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2011-12-06
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>首先说结论：昴是秀一（几乎是100%），世良是秀一的妹妹（这点证据尚不完全充分，但是可能性还是很大的）安室为波本(伤疤秀一也是他伪装的。证据不充分)</p>
+<p>我们回到水无打死秀一的现场。我想多数人都不相信秀一已经死。那么我们先假设他是活着的。那么当时的现场有两种可能。</p>
+<p>假设一:秀一当时无准备，在临死边缘逃脱，这样后面的伤疤秀一就可能是他本人，但是这个假设的问题是，当时燃烧的车上留下一具烧残的尸体，并且剩余手部的指纹可以在柯南手机上找到。如果秀一逃脱了，车上应该是没人的。因此该假设不成立</p>
+<p>假设二：秀一和水无是实现约定好的。水无入组织后是没有机会商量，事实上秀一诈死，水无嵌入都是柯南和秀一在水无病房里就已经商量好了的。仅三人知道，FBI中可能有内鬼，卡梅尔被怀疑为嫌疑人的时候组织马上就知道了，证据还不充分不提。水无应该也是不知道秀一诈死后的后续的。秀一性格上是希望独干得个性，FBI在他看来也是略微有些碍手碍脚的。同时水无的嵌入，是需要一些能让她得到信任的方法的，简单地被抢回去，gin明显不相信，这些柯南和秀一肯定已经想到了。</p>
+<span id="more"></span>
+<p>下面说明秀一逃脱的手法。当时秀一是带着针织帽的，所以帽内可以藏血袋。另外我们必须先说明实际上除了秀一还有个已经死去的人碰过柯南的手机。曾经组织安插在医院做侦查工作的陆南（我忘记名字了囧），最后那个人头部开枪自杀而死的。所以车子里最后发现的尸体其实是那个陆南。</p>
+<p>接下来说后续秀一“死亡”后的后续，朱迪拿柯南手机去验指纹。有些人很在意手机被换了，甚至怀疑高木是贝尔摩得假扮的。事实上手机作为证物留在警察局是正常的。柯南看到手机序列号变了却没有找朱迪问清楚，这其实是很反常的，因为柯南很谨慎，而且凡事都想搞清楚情况。这说明柯南其实是知道秀一的事情的。从手机序列号变了，柯南可以看到事件已经按原计划进行着。最后堂本找柯南谈了，他说FBI那边好像发生了一些骚动，某人死了。柯南则说没什么事。按柯南的个性肯定想知道发生了什么，而他则直接说没什么要紧，同时微笑。这也说明一切都在计划中。</p>
+<p>顺便说一下贝尔摩得和易容的事情。因为柯南里头有这么一个东西。所以很多人会很大胆地怀疑身边的人。其实这里有两点需要考虑，首先贝尔摩得已经完全退到辅助的位置，她是不会主动出击的，她已经知道小哀和柯南的身份，也就是说如果她想，是没有任何必要做舍近求远的麻烦事的。再则，易容还分成长期易容和短期易容两种，长期易容一般会变成一个完全陌生的人，或者必须把一个已知的人杀害（至少不能出现）。短期易容则又两种手法，一种是打时间差，确切地知道某人在某个时间段不会出现，从中冒充，这点最安全。或者限制某人自由，然后伪装（基德经常如此），这样做的缺点是事后一定会被发现。我们回头看贝尔摩得，她没有条件位置成高木，因为高木是警察，是一定在上班的，没有时间差，如果限制他的自由，事后被发现的话，这绝对是个重要的事件，警察局不可能简单了事。所以易容并不是无条件的，无需草木皆兵。</p>
+<p>再然后的事件是昴的出现。事件最后，柯南把昴安排到自己的家里。以柯南的性格是不可能把一个陌生人安排到自己家里的，况且他的家里有他个人大量的信息，而且他也说过那里是监视博士家最好的地点。而且这个陌生人还让小哀感到不安，柯南不会真的完全不理会。那么我们完全可以假设这也是计划中的一部分。昴其实就是秀一，小哀先有感觉，后来没有，应该是因为秀一曾经在组织里待过，带有组织的气息。小哀的反应其实是说明这个人即是又不是组织里的人。最后柯南还很邪恶的说，作为交换，要好好看家。</p>
+<p>然后我们还可以推断秀一和柯南在医院之后是没有在联系的。他们的计划也也只到秀一诈死，然后躲到暗处，随机应变。昴本来想住在博士家，但是柯南却让他住在自己家。最后他的坏笑其实是说这地方比他原来计划的还妥当呢。其实也是他对柯南的一种认可和有个人能很有默契的坏笑。再说柯南的目的，住在那个房子里一方面可以更好的保护小哀，另一方面还可以防止新一家被外人用来监视，最后和小哀保持距离，还可以防止有人通过怀疑昴，找到小哀。（后面波本的主要目标是秀一）</p>
+<p>再然后是伤疤秀一的出现。前面已经分析过伤疤秀一不可能是真秀一。这里继续假设这种可能性，如果伤疤秀一是真秀一。那么gin即使接到命令停止阻击，但是因为秀一是活着的，水无依旧得死。这样就全功尽弃了。所以我们看到很多事情只能有一个结果，73所能选的路其实很窄，这也是73在这个部分憋了4年多的原因，因为很难写。有太多的因素制约，特别是波本，因为他被定位为一个侦探，但是又没办法让他知道所有的事情。如果他最后小哀和柯南的事情都知道了。那么故事怎么往下演呢。他要不变成好人要不就得死。但是他什么都不知道的话又体现不出他的水平。随着故事的发展，我们会发现73在这个问题上花费了非常多的精力。</p>
+<p>继续，我们从gin的口中得到波本是个神秘主义者，喜欢单独行动（这些都是重要的线索，这个人物73是想塑造成一个男版的贝尔摩得，当然要有些不同，主要是想为最后的这个人物的后期的归属铺好路，他有知道了柯南的事情还不讲出去的可能性），完全可以假设伤疤秀一是波本，自然这不是他的本来面目，他的目的是引出真秀一。那么他首先要做的就是靠近FBI打探情报。这之后他发现了昴，这里还不确定波本是否确认昴就是秀一，至少他对昴是绝对有怀疑的。从他后来没有再假扮秀一的情况来看，他可能是知道的。再然后这集里头柯南听侦探团说见到了一个公车时间中见过的男的。他表示关心，我们反向想一下，照理来说柯南是不知道秀一的死的，那么有人看到秀一也没什么值得关系的。如果他确切地知道现在秀一在哪里，那么突然出现一个秀一就显然有问题，他是没办法放过的。这里还有些支持前面推论的线索，略去不讲。</p>
+<p>再然后是世良的出现。值得注意的事，世良从一开始就知道柯南是个侦探。我们知道一般人是不在意小孩子的。我们可以认为世良一开始就知道了柯南的事情。在第一次事件中，她故意说了错的推理，要让柯南来做，暗中观察，加上这之后在侦探所的事件，世良已经完全发现柯南就是工藤新一这件事了。证据是之后她让柯南代替新一和服部对决。当然我们不能就直接说这有什么恶意，都是侦探，彼此都视为对手，了解对手的实力自然是很重要的事（注意人物性格塑造）</p>
+<p>世良的身份，线索还很少。但是她自己说她是父母在美国，这个和秀一是一样的，日裔美国人，然后她最初的切入点是柯南，她从一开始就知道柯南是侦探，这点应该不可能是组织内的已知情报，知道的话就惨了。然后有人分析了世良眼睛的画法和秀一是一样，她应该是秀一的妹妹。另一个证据是fbi的胖子说他见过她。当然还有一些不确定性，证据不够多。也不排除她是波本的可能性，但是可能性不大。</p>
+<p>至于安室。没有任何证据证明他和组织有关，但是如果3个人要有一个人的话，自然是他最可能了。他的切入点是小五郎，小五郎在之前和组织相关的事件中被认为和fbi有关系，他的调查重心目前在小五郎身上，还没有对柯南的注意（虽然并不一定表示他没注意到，但是如果他没有足注意到，73会比较好收尾，要不这人过段时间不是死了，就是得变成好的（我猜他会爱上小兰的= =我估计73这次会让柯南一直处在暗处，不会进行张扬的推理。始终和安室有一定的距离）。另一方面他的背景目前是空白的，很好操作。刚刚加入剧情人气也不会特别旺。</p>
+<p>小哀在800中感到有组织靠近的感觉。至于电话，贝尔摩得说终于得到信任的意思是指救柯南这件事。和救援这件事相关的其实是安室和世良两个人。他们通过这个事件得到了小五郎和小兰的信任。这里两个人都还是有嫌疑的，但是假设安室是波本的话，你会发现波本很喜欢打入敌人的内部的做法，这可能是73塑造的人物风格。你也可以看到安室和昴一见面就有对视，大概是种宿敌的感觉。而且800中安室的内心独白是，为什么会出现在这里，也就是说他认识昴，这也说明之前和昴对视的伤疤男应该就是安室（波本）</p>
+<p>800中其他两个人在听什么目前还缺少线索。可以没什么依据地猜测那两个兄妹已经联系上了。</p>
+<p>我居然写了那么长。。。</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

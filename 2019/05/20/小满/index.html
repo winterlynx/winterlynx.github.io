@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                小满
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2019-05-20
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>从4月开始，似乎对各种游戏都没了兴趣，花在学习上的时间比之前多了不少。立夏之后，不知道是日照时间变长的原因还是什么，总觉得白天的精力也变好了。正当感觉效率明显提高时候，晚上总有些类似群防，组织学习一类的事情，把整个晚上的时间全都占掉。。。把剩余的时间规划一下，似乎还是不够用的。只能说自己确实很垃圾。</p>
+<p>这几天看双琴侠，感觉挺能体会到这类需要天赋的领域中(真正需要天赋的领域必然都是伴随着需要大量的努力的)，人的生活状态的相似之处。在乐团中不管是哪个位置，有时候都需要面对大量的休止符，还要数拍子，有的持续800多拍……这样的问题以前大概是不曾想过的……有些时候会觉得世界上很多事情只要做了，总是会有收获的，有些则没办法。</p>
+<span id="more"></span> 
+<p>昨天看星际比赛，一边是major。小色讲了他的一个故事，major从墨西哥跑到韩国当战队练习生，一直没机会上场，等到他不得不离开的时候，他请求战队上一次场，结果没有几分钟被教主野了个兵营打死了。然后time说他和major住一起的时候，每天他睡了，看到major还在练，他醒了，看到他也在打，你根本不知道他什么时候在休息。比赛当天他还发了个可怜兮兮的twitter“happy birthday to me（流鼻涕表情= =）”虽然进决赛也算很不容易了，结果在决赛上被serral打了个4:0.serral自然不必说，很强，可以说他完成了我对星际职业选手该有的样子的想象，异常敏锐的反应，多线串狗，意想不到且反复地侦查，决战时刻恰到好处的包夹。在虚空之遗早期时候，那时候很多玩家和观众普遍认为空投是人族才有的战术。我一直都很不理解为什么虫族不做多线和空投，明明t是静态防御最薄弱的种族。用比t多线其他种族低得多的成本就能骚扰t的，为什么没有z这么做，以及大后期为什么不用虫洞骚扰。最终真正实现我说的所有想法的人也只有serral。可见就仅仅是玩家水平和体系还没有达到成熟的程度而已。前段时间看了不少星际，lol以及dota的比赛。基本上选手的技术水平越高，体系越成熟，观赏性也会越好。原本看lol，lpl赛区的战队联赛的时候，感觉配合和技能衔接都挺不错的，可到了msi的时候反而有种奇怪的违和感，突然感觉大家的技能衔接都很成问题，和普通玩家玩的也没什么区别。dota也是只有少数几只队伍能表现出团队配合的舒适感。如今的中国战队普遍都没有那种感觉。总体来说观赏性最高的还是星际2，然后选手的总体水平在韩国职业体系崩溃之后还是普遍在下滑的。最近中国的战队联赛搞起来之后，似乎又有略微的提高……</p>
+<p>5月是粟喉蜂虎的繁殖季，还挺想看一看的。虽然知道厦门的五缘湾有，可是却不知道具体的位置在哪里，每次去五缘湾都有点无功而返，上次去看招潮蟹也没见到，况且湿地的核心区域似乎都被铁门锁起来了。加上距离还远，就更没有兴致。18日的时候是世界博物馆日，突然想去自然博物馆，结果搜了一圈发现福建在这方面完全是空白的，连好的博物馆本身也很少。周末依旧在下雨，下个周若是没雨，大概会去植物园走走，毕竟快7个月没有去hiking了。</p>
+<p>五一前后一共三个星期都没有回家，除了周末的早晨都是装修的声音，没法舒服地睡懒觉之外，倒没觉得有什么不方便的，每周来回4，5个小时的车也很累人。回家的时候，不停地被家里人催婚也是很烦了……</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

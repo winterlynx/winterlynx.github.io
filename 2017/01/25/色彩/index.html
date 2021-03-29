@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                色彩
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2017-01-25
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>上周一的时候一个人去植物园。夜里睡不太多，早早就醒了。大学之后便没有为了爬山4,5点起床的经历了。早班车上的人出乎意料的多，大概都是起早赶动车回家的人吧。起先天灰蒙蒙的，多少有些担心下雨，查了雷达图之后才总算安心。  </p>
+<p>走在植物园的路上，游客异常的多，走到哪里都是吵吵嚷嚷的，有很多带着放假小朋友来玩的父母。往年也是在未至春节前的寒假来的，并不见那么多的游客。过于吵闹便很难看到鸟儿，起先沿湖边的竹类植物区走，看到好多黑脸噪鹛，嬉闹着飞来飞去，躲在树枝里头，还不容易找准空隙，就总遇到游客经过，鸟也全都吓跑了……走到小溪边，见到一只异常安静的紫啸鸫。算是第二次见到，以前见过的只是在灌木丛中的黑影，拍了照片，回来的时候才发现的。它羽毛黑色（总觉得紫色的羽毛会更正统一点），双脚似乎比一般的鸟类更长一些，在溪边的石头上跳来跳去，算不上怕人却也不愿意我靠得太近……</p>
+<span id="more"></span>
+<p>10点种左右，路上风一直很大，天上的云也跑得飞快，天气已经由阴天变为多云，再然后阳光也时不时地从云间投射下来，渐渐占了上风……天气好得出奇，一边是带着凉意的微风，另一边是照在人身上暖洋洋的日光……已经走了很长时间的路，既不觉得冷也不觉得热。在这样的好天气里，总觉得会有些什么好事发生。走在路上东看西看，时不时地也注意抬头望望天空。果真看到了许久未见的黑耳鸢，在这样的好天气里，仿佛也能感受到它的喜悦呢。它飞得实在太高，试着拍了一下，只能拍到轮廓，很快就消失在太阳的光芒里，眯着眼睛等了半天也没能见到它从光芒中出来。。。午时，太阳照得人懒懒的，在花卉园的草地上躺了下来。阳光的温度真是让人完全不想动弹，难怪有那么多的人热衷于在山坡草地上睡午觉。思绪随意游荡着，很快又看到了很多次黑耳鸢，一次只是短暂的出现，见它飞快的坠下，消失在山的那头——大概在捕食吧。另一次是结伴的两只，时不时地还会发出叫声，像极了射雕英雄传中的场景……在这样的一片山林里，一共生活着几只黑耳鸢也实在让我有些好奇~</p>
+<p>路上见到的鸟很多，真正能拍下来的倒是很少。不过在这样的好天气里出游本身就是惬意的事情。再则除了鸟类也有一件很让自己开心的事情。在藤本植物区的草地上看到几只觅食的树鷚，在拍摄它们的时候恰逢太阳在云间穿梭，光线忽明忽暗的，也逼迫自己不得不多次调整参数，一来二回，对各种光照下的实际效果一下子就有了直观的感受。对如何拍出自己眼中景色的色彩这一问题，也算有了解答。过去拍照的时候，自动设置的部分太多了，特别是白平衡，机器自动调整的白平衡总是有点偏蓝，在加上有点毛病的曝光，所以总觉得色彩很奇怪。不同的场景和光线下一定要针对性地调整曝光补偿。有了这次的经历才真切地感受到单反比普通的手机和数码相机好的地方。对摄影本身也有了兴趣，突然很想去不同的地方走走。不过春运期间到处都是人，票也不好买，也只好暂行打消这个念头。</p>
+<p>既然没法出行，在家的日子，看看书倒也不错。每天都起得很早，看数学的过程中也蛮有动力。想起前段日子，或许只是因为我非常不擅长处理各种压力吧。在其他方面，生活似乎也同样有了色彩和神奇的感觉。月初，是和豆瓣相逢的9周年。原本也想写点什么，却依旧什么也没写。感谢的话，太直白的情话，于我反而难以出口……</p>
+<p>从植物园回来的路上，总想着或许应该写点什么，拖拖拉拉的竟也隔了9天。初中之后就几乎不写记叙文，这次多少写了一点，终究也仅是几个片段。想起初中时候的日记，和森去寻找小溪的源头。回来的时候写了10页的日记，愣是连上山路的一半都还没写到。最后实在是累了只好在结尾写上一个未完待续。等第二天就实在懒得接了……</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

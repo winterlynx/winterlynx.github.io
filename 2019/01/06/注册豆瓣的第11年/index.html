@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                住在豆瓣的第11年
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2019-01-06
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>1月5日，注册豆瓣的第11年。中午跑去看《四个春天》，本来以为这种一个城市只有一个电影院上映，一天唯一一场还安排在中午12点的小众电影肯定能包场，结果来观影的居然有6个之多。有趣的是里头大家都是一个人来的，大概这种电影实在找不到一起的人。也会这些人是否全有上豆瓣。散场的时候大家都匆匆地走，最终也没敢上前问。大家都在说想带自己的父母来看，我却有点不敢，岁月与年老这样的主题，每次想到都觉得悲伤，也不知道在这个问题上怎么面对父母。</p>
+<p>前段时间见有人推几个社交网站的流量变化，豆瓣下降得不多，微博却已经和豆瓣接近了。豆瓣对于我的意义我自是清楚明白的，我也知道生活在这样的小城市里，眼界是很容易受限的。初三到高中那段时间经常书荒，不知道能看什么。好在后来有了豆瓣，单是翻看别人读过的书也足够使我受益了。一本书哪怕没有读过，知道它在一个领域中的位置也是有意义的。看了看周围人日常的生活，大家似乎都很不愿意了解新的东西。大概人总是很难走出自己的舒适区。时间越久越是如此，这点对我大概也是适用的。人与人之间效率的差距还是很大的。回外婆家，看到一群人走着相互拖延一下，单是煮好饭，到把人交齐，真的开始吃都能花费个半小时。说好已经要走了，闲聊一下，直接就2个小时以后了……</p>
+<span id="more"></span> 
+
+<p>18年仔细想想也并非什么事都没做，只是觉得那些并不是我最期待的事情。一件是把编程运用到一些日常想法中，比如写了爬虫和用于获取代理ip的程序，在GitHub上建了blog，用pandas做excel没法处理的大量数据的处理和分析，考勤系统的计算，把拍成彩色照片的纸质文书转化成二值图像，过滤掉打印时会出现的大量灰色背景……其实其中一些事情特别简单，主要是想着把编程当做一种自身技能的自然延展，想到什么就能马上去做什么，DIY解决一些实际生活中的问题和想法，就像上一代人人手熟悉的水电工，木匠活一类的东西。18年我感觉差不多有做到了。另一件事大概是发现游戏和桌游的“新世界”。想了下dnd之所以吸引我，在于奇幻的设定以及规则的严谨性，提供了一套把文本故事转化成一个大家可以共同参与的游戏范式。这类问题其实我在很小的时候就一直在考虑，在电子游戏尚不普及的年代，我总是就着各种模型和卡片编撰各种故事，然而这类故事通常只能自己一个人依靠想象玩，我明白要想和其他人一起玩这样的游戏，就必须有套完善的规则，同时还得让游戏里的敌人强弱和行动具有一定的客观性且没有争议。就因为敌人的行动非玩家主观这点总觉得很难处理，所以我发明的游戏都是玩家对战或者过关类的。dnd挺好地解决了这个问题。除此之外类似战锤的战棋和对现实战斗进行模拟的兵棋也挺有趣的（一些及其简单的兵棋我似乎没看出合理性）。感觉这些东西若是能在小时候就接触到，一定是一件超级开心的事情。无奈小时候生活的环境没有机会接触到这些。这些都属于我前面说的眼界的问题，保持对新事物开放好奇的心固然是一方面，但是诸如桌游这样的对个人来说全新的领域，因为并非是在自己眼界之内的事物，做决定的时候是很难把他们包含进去的。这些很大程度上说就只能依靠所谓的机遇和运气了，提高信息的获取渠道和广度就显得尤为重要。除了信息之外，人这种生物还总是很难跳出自己固有的思维模式，并且在一个短期内沉浸在某种情绪或者想法中，难以跳出。等过上一段时间，换个角度，可能想法就会完全改变，更会困惑自己当初为什么没法从那种想法中摆脱出来。</p>
+<p>元旦前的时间，一个人在看《詹森艺术史》，把埃及部分看完了。每年的新年或者春节多少总有些孤寂感。看点书或者电影，大概也是某种仪式感，这些东西也算是和yy这么多年过节聊天中建立起来的吧。看过一点书这种孤寂感就少了一些。元旦的时候，听了维也纳新年音乐会。原本想找yy一起看，不过她也有自己需要忙碌的事情，想安慰可是感觉还是有些无力。前几天买了副万智牌，不知道要不要是试着进这个坑呢。总体来说这类需要依靠运气的卡片游戏，我向来没有那么喜欢，且观察一下吧。特别想进战锤的坑，可惜没有电子游戏。比起需要和人对战的桌游，还是电子游戏更适合我。如果是小时候大概拿着那些模型也够我自己一个人玩好久了。曾经以为自己永远不会失去对这类自己编故事玩的兴趣，结果还是改变了，大概本身把一堆玩具铺满整个床铺，这本身就是一个费时费事的事情……2019年，还是一个人，想认识合适的人越来越难的感觉……10月之后就没有去爬山徒步了，年底太累了，总说想看看秋天的植物园，连着几年也没去成。下次能去不知道是否需要等到2月。</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                丁亥月
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2015-12-03
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>12月初的时候去了趟泉州。一个人慢慢走，慢慢看。对建筑的飞檐，斗拱，脊兽，抱鼓石或者其他装饰，我都饶有兴趣，这点在以前大概连自己都不自知。可能也因为出远门多半不是自己一人，没法很悠闲的观察。泉州市区的建筑大多很矮，并且古城区古建筑都保护得很好。5日的时候和舍友去了清源山，走了很久的路，只记得雨中的湖水很美……整个过程大概就没有一个人时候那种惬意了（这里不怪我舍友，他本身已经是性格很随和的人，只是我的关注点较之普通人有所不同）。所以时常在想是否真的有办法找到一个步调和兴趣都很一致的人。其他有趣的事情比如知道了带螺纹图案的抱鼓石也是椒图，所以才那么多见。</p>
+<p>去开元寺的路上经过条旧街，总觉得和曾经的漳州和石码都很相似。看到一家买花鸟的小店。想起小学的时候存了好久的红包钱，瞒着父母偷偷地买了两只虎皮鹦鹉。我提着鸟笼走了很久很久的路……那时候我和坐在我后座的同学炎关系很好。他家里也有两只鹦鹉，于是就经常带着鸟笼到彼此家里串门。有几次我把大院的小伙伴都一起带过去了。航是个吹牛大王，恰巧炎的父亲也是，于是两个人莫名其妙地相互吹起牛来了囧场面真是没法控制。。再后来，家里搬回石码就再没有联系了。炎的同座姓杨，我和她都很喜欢折纸，忍者镖就是从她拿里学来的。记得有一年暑假我们都报了折纸班，但是父亲要求我回石码去，所以没办法参加（后来她告诉我，老师教了好多东西）……对石码最奇妙的印象是很小时候到过的一个小市场，那时候地面自然还是青石板，里头的店铺看起来也都有点古老，有的店铺卖各种彩色的线头，纽扣还有毛线；有的则卖各种钓鱼用品，鱼竿，鱼线和浮标；还有的店铺卖红色为主色的暖水瓶，印有鲤鱼的脸盆，还有绿色的浇花水壶……总之是个色彩异常艳丽的地方，也不知道为什么对这样的小集市有种奇怪的好感，大概所卖的东西都不是什么紧俏货，日子过得比较闲适，即使在当时与现实也有一种隔离感……</p>
+<span id="more"></span>
+<p>1月初的时候，和森一起去了植物园。仔细算来，也已经两年半没见了。和森爬山的时候似乎就和其他人不同，因为对山林关注点的相似，所以即使两个人在不停地聊天，也还是能发现一些山林中的细微之处，躲在灌木丛中的林鸟，路边奇怪叶子的植物，脚边忙碌的蚂蚁……路上我们也讨论了现在蝗虫变得特别少见的问题。开始我还是我自己观察力变弱，看不到很多细节。后来森说他也很久没见到了，而且是特意找过的。讨论了一下，结论是蝗虫生长需要的那种草地现在已经很少能见到了。回想起来我和森的友谊就是捉蝗虫的时候建立起来的，那时候他爷爷在气象观测站里头帮忙割草，我们就在里头捉蝗虫，记得那段时间我们时候发明了什么游戏，把短额负蝗和剑角蝗成为神偷卡门，把东亚飞蝗叫做神飞卡门……</p>
+<p>1月5日是与豆瓣相遇的8周年。总觉得是个值得纪念的日子，想了很多事情也想了很多人，可是我不知道该如何去写，也只好作罢了。点进好友分组里面，发现Sophia和尚西都注销了，虽然日常都还能联系，但是看到豆瓣账户就这样没了总觉得有些可惜。</p>
+<p>有时候在想品味这种东西到底是因为什么缘由形成的。比如看书，一次次偶然的相遇，以及一次次的自我选择……虽然我也同意有很多的后天因素在里头，可是我总觉得这里头有很多先天或者幼年期（和性格形成类似）的因数在里头。比如因为中学教育方面的缺陷，我曾经是异常厌恶古文的，但是如今我却非常喜欢。回想自己的整个认识过程，在离开了讨厌的老师之后，我几乎就没有什么偏见留存了，在合适的时间会自然地想去了解它们，总觉得这是件很奇妙的事情。记得zephyr和阿西都说过我有一种对美（好）的追求，这点似乎是关键，周围的多数人都没有这种东西。可是我又没办法表述得很清楚那是什么，品味，审美，或许是一种鉴赏力，但是这种鉴赏力是如何产生和形成的？记得花姐也提到过关于数学的品味（他说多数中国数学工作者缺少品味，没办法去追求好的（美的）数学）。我觉得二者应该是相同的。我一直以为这是种再普通不过的东西，也完全不需要天赋，人人都能拥有。可是多年观察下来多数人确实没有，哪怕读过很多书，学过很多数学都不一定有用（读书似乎只能让人学会理性思考，虽然理性本身也会产生审美）。这种所谓的对美的追求到底是如何形成的，似乎还是很困扰我的问题，是否是理想主义者的某种属性。其他的角度，在八字里头，我发现这似乎和丁壬合有些关系（丁壬合里头的描述倒是真的有一条很注重生活品味），照着这个思路，戊癸合可能形成另一种有些相似但又能明显看出不同的品味……讲了这么多，其实我只是想找个soul mate而已:(</p>
+<p>最近几天的效率倒还可以（时好时坏）。在看闲书方面，感觉自己也进入了一个更广阔的领域。也时常有些新奇的发现，有非常多想看的书和电影。今天才发现远方的鼓声我是有买纸质书的。要是在以前忘记自己买过什么书这种事大概是不可能发生的。也是促销批量买书的锅。看了一点远方的鼓声，觉得纸质书的体验比kindle里头的pdf重排版好上太多了。加上Janson的艺术史看起来也很舒服，所以想着或许应该尽可能地回归纸质书，多年没用的书签又开始排上用场（只是一本书的话，我是不用书签的）。想起小学时候，母亲收藏的一套花鸟的工笔画书签，一直很想要，今天在问母亲的时候，已经连她也不知道收在哪里了。到网上找了一圈也没找到好看的。如今倒是已经不想yy了，了解到彼此追求的是不同的东西也就释然了，我是非常需要深度交流和沟通的类型，而yy则是很排斥沟通的（月摩羯能不说话就不说话）。</p>
+<p>元旦回外公家，因为表妹结婚的缘由，所有的压力一下子全转移到我身上了。看着7，8个长辈聚在一起讨论着要给我介绍对象的架势实在太可怕了，甚至都没问我有什么要求。而且即使问了也没法沟通，我只能说想找个很喜欢很喜欢看书的。。。因为这件事对回外公家比以前更感到恐惧……</p>
+<p>以为无事可写，一直拖着，没想到居然写了这么多。。。</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
