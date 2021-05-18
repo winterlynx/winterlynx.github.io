@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+            <h2 class="post-title">
+                雨季不再来
+            </h2>
+            <ul class="post-date">
+                <li>
+                    2021-05-18
+                </li>
+                <li>
+                    Lynx
+                </li>
+               
+            </ul>
+            <div class="post-content">
+                <p>雨季还没开始就已结束。副高开始北抬，气温每天都是35度+……原本可以持续1,2个月的雨季仅下了4,5场阵雨。</p>
+<p>上周开始用健身环锻炼身体，我原本是非常讨厌和鄙视健身一类的事情，只觉得这很浪费时间。然而人到中年，肚子和脸都变胖，虽然对比身边的同龄人，我的情况算不上严重，但是多少也开始觉得有必要做出一些改变。实际试了一星期之后，感觉依靠健身环进行坚持锻炼并不是很难，烦恼的事情主要是锻炼的时长，不想花费大多的时间。晚饭过后的一小时不适合锻炼，但是因为血糖降低也不适合脑力活动。目前锻炼的时长大概是40分钟（游戏内时长只有15分钟），如果所有时间都用来锻炼时长应该是够的，但是健身环里头人物没说一句话都要确认一次，感觉很浪费时间，虽然有按压环就是了。。目前大概坚持了8,9天，时间并不算长，但体态上已经能看出一点点变化了。反馈还是挺高效，原本还想着可能要20来天才会有点变化。这些天下来一个感受就是体育锻炼实际上远比脑力活动（学习）容易坚持得多。一方面是身体的正反馈通常迅速且明显，另一方面几乎没有学习成本，也就没有挫败感，多数时候只是在做重复的动作。学习因为总是在接触新的东西，挫败感和精力花费都多得多。这大概是很多人沉迷撸铁的原因把。锻炼到底和体育运动不同，如果换成体育，比如足球，带球过人，射门，传球，每一项就都不是人人都能做好的……因为时长的问题，也在考虑要不要把锻炼项目换成跳绳，一边跳绳一边听有声书或许不错。</p>
+<span id="more"></span> 
+<p>最近看《失落的卫星》，对中亚特别不熟悉，总觉得要一边看地图一边看书才好。之前看《十字军的故事》也想着能去看看安条克的样子。在google earth里打开，就只有卫星图而已。3d街景只涉及很少的一部分核心街道。原本的google earth 是关联Panoramic的，在earth上能查看网友上传的当地照片，不只是风景名胜，路边的小路，城市里的拐角，各种随手拍的照片都有。选择一个陌生的城市，沿着任意地一条小路走，一遍点开沿途的图片，那种感觉就像真的走在那条小路上似的。我试着从亚历山大港出发一路“走到”胡夫金字塔，或者从加德满都，探索攀登珠穆拉玛峰的线路是怎么走的……如今earth上什么都没有，也不见什么人为此感怀难过，这么无聊的人，大概只有我一个把——可是我是真的喜欢那种感觉，心情不好的时候到远方走一走，看看世界不同地方的人都是怎么生活的，总觉得是件很有意思的事。</p>
+<p>家里的月季2,3月的时候抽出很多新芽，以为能活过来，结果4月的时候突然在2,3天里直接整株枯死了。枯萎的速度太快，我都来不及做出反应，也不知道什么原因。4,5月是北京月季的花期，尚西拍了好多照片，养月季的心情也达到了极高点。给我发照片和信息，几分钟没看，居然能有100多条。那种心情我挺能理解，然而我不懂月季，所以我不知道回复什么，这种状态感觉也挺让我不舒服。我突然想到之前和sy聊天的时候，主要都是我说，她不太说话，可能也是因为她不知道说什么，并且人在一方一直说，你却没法有效回应的状态其实可能挺难受的。感觉聊天找话题真的好难。还得预先知道对方了解或者感兴趣什么。。。当然我自己本身并没法从大量的闲聊中获得快乐，聊天本身是非常浪费时间的事情。</p>
+<p>这段时间玩得比较多的游戏是怪物猎人rise，原本我不太适应在ns上玩游戏，总觉得屏幕太小，原本的小按键手柄用起来也难受，加上我不太喜欢长时间低头。后来和软软联机之后总算重新找到怪猎的乐趣。但是我基本还是需要用底座模式+外接蓝牙手柄进行游戏，每次想玩的时候都必须连接一堆东西也是有点麻烦。对ns最初的向往原本是躺着玩游戏的愿望，但是通常躺着玩上一小会手就会很酸。可能买个能够投影到天花板的投影仪能解决这个问题？但是那东西好贵呀= = rise也通关了，该回去学习了~</p>
+
+            </div>
+                      
+</article>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EF%BF%BD%EF%BF%BD%CB%AE%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" rel="tag">��ˮ����</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
