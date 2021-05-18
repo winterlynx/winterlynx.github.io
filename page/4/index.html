@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Winter in December
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Winter in December
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Winter in December
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.douban.com/people/winterlynx/">
+                    douban
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            
+<section class="posts">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3619aa6fdeed656e040d724aaae9157";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2019/08/12/%E7%AB%8B%E7%A7%8B%E5%8F%8A%E4%BB%8E%E6%B8%B8%E6%88%8F%E4%B8%AD%E5%AD%A6%E5%88%B0%E7%9A%84%E4%B8%9C%E8%A5%BF/">
+                            立秋及从游戏中学到的东西
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            August 12, 2019
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>立秋的夜里下了场阵雨，雨后似乎隐隐能察觉出一点秋天的味道。结果紧接着的两天就迎来了今年气温的最高纪录38度，连午夜也能有32度。宿舍和家里都没有空调，凌晨5点还热得睡不着。燥热的空气吹过手臂，脑海里似乎浮现出一丝小学暑假的记忆。在奶奶家看一天的电视，家人午休时分一个人在水池玩水，看着阳光晶莹剔透地荡漾在桶底，在家里地板上用自己发明的规则操纵纸片人踢足球，黄昏时分莫名的伤感……</p>
+                            <a href="/2019/08/12/%E7%AB%8B%E7%A7%8B%E5%8F%8A%E4%BB%8E%E6%B8%B8%E6%88%8F%E4%B8%AD%E5%AD%A6%E5%88%B0%E7%9A%84%E4%B8%9C%E8%A5%BF/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2019/07/09/%E5%B0%8F%E6%9A%91/">
+                            小暑
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            July 9, 2019
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>周六趁着刚下过雨，天气或许凉爽些（并没有），去了趟植物园。去的路上坐的绿皮火车，感觉车上的人明显比动车上的压抑得多，位置都被各种人和物品分割占领了，在叫醒2轮休息中的乘客之后，我终于搞清楚自己的位置被换到哪去了。大概有些人已经在硬座上睡了1,2天了，大家都挺没精神的样子，这么说起来我好像都没见过需要1天以上的动车和高铁（查了下最长时间是14小时）。找到位置坐下后，才发现和检票时排在我前面的几个学生在同一车厢——三个女生和一个男生，女生分别穿着汉服，洛可可风以及调查兵团的衣服，男生则只穿着日常T恤。想来应该是去参加漫展的。这几年似乎漫展特别的多，连万智牌的推广都是以漫展作为主要平台的，大概是95-00后的一种潮流。下了火车，坐公交，听到旁边的两个小妹妹在做知识竞猜。“你知道四大洋是哪四大吗？”“你知道英国的全称是什么吗？”……突然就很怀念这种生活状态，觉得童年真是美好的时期……</p>
+                            <a href="/2019/07/09/%E5%B0%8F%E6%9A%91/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2019/06/10/%E8%8A%92%E7%A7%8D-%E7%AB%AF%E5%8D%88/">
+                            芒种-端午
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            June 10, 2019
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>端午节前，雨水始终不断。周末就着雨停的间隙，去拜访了几株较大的凤凰木。虽也有开得旺盛的，但是始终没有前年那种仿佛能够染红天空的灿烂感。说起来那样的景象至今也只见过一次。到底是什么原因导致植物会那样绽放呢？若说气候也没觉得什么特别。很多果实的收成似乎都有大小年，比如今年的杨梅收成就很不好，或许植物开花也是一样的道理。也在想，实际并不是有大小年这样的周期，而是每年植物的产量都是上上下下浮动的，而人类没办法把这种现象很细化地分成多个区间，但是分成多和少两个区间却是容易的。从师院回来的路上经过一家新开的花店，里头种的绣球超级漂亮，花瓣是从蓝紫到粉色的渐变，问了一下价钱，一盆要98元。回家后搜了一圈淘宝也没找到那个品种= =只知道可能是额紫阳花的改进品种。</p>
+                            <a href="/2019/06/10/%E8%8A%92%E7%A7%8D-%E7%AB%AF%E5%8D%88/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2019/05/20/%E5%B0%8F%E6%BB%A1/">
+                            小满
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            May 20, 2019
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>从4月开始，似乎对各种游戏都没了兴趣，花在学习上的时间比之前多了不少。立夏之后，不知道是日照时间变长的原因还是什么，总觉得白天的精力也变好了。正当感觉效率明显提高时候，晚上总有些类似群防，组织学习一类的事情，把整个晚上的时间全都占掉。。。把剩余的时间规划一下，似乎还是不够用的。只能说自己确实很垃圾。</p>
+<p>这几天看双琴侠，感觉挺能体会到这类需要天赋的领域中(真正需要天赋的领域必然都是伴随着需要大量的努力的)，人的生活状态的相似之处。在乐团中不管是哪个位置，有时候都需要面对大量的休止符，还要数拍子，有的持续800多拍……这样的问题以前大概是不曾想过的……有些时候会觉得世界上很多事情只要做了，总是会有收获的，有些则没办法。</p>
+                            <a href="/2019/05/20/%E5%B0%8F%E6%BB%A1/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+       
+            
+        <article class="post">
+            
+                    <h1 class="post-title">
+                        <a href="/2019/04/22/%E8%B0%B7%E9%9B%A8/">
+                            谷雨
+                        </a>
+                    </h1>
+
+                    <ul class="post-date">
+                        <li>
+                            April 22, 2019
+                        </li>
+                        <li>
+                            Lynx
+                        </li>
+                    </ul>
+                    
+                    <div class="post-content ">
+                        <p>转眼四月都快结束了。花了点时间才从这种不关注时间的状态中抽离出来。前几个周末都会试着去牌店待上一晚上，几次下来真的觉得很浪费时间，多数时候并不是在持续的游戏中的。垃圾时间实在太多了，而且总用相同的卡组和相同的人对战本身也不是很有趣。这段时间遇到的人，总让我思考人与人的差异，很多时候是由于对时间的利用率造成的。即使是玩，也是有效率差异的呀。到了四月突然就没那么想玩了，回复看书学习的状态。觉得还是这种日子更让自己觉得充实一些。数学倒是看得不少，不过理了一下需要看的书，还是有种怎么都没可能看完的绝望感T_T</p>
+                            <a href="/2019/04/22/%E8%B0%B7%E9%9B%A8/" class="more-link">Continue reading</a>
+                    </div>
+        </article>
+        
+</section>
+
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/">2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/">2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/">2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/">2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/">2007</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4/" rel="tag">似水流年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%86%E6%A2%A6%E9%9B%86/" rel="tag">忆梦集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%82%86%E6%84%8F%E7%94%9F%E9%95%BF%E7%9A%84%E6%80%9D%E7%BB%AA/" rel="tag">肆意生长的思绪</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
