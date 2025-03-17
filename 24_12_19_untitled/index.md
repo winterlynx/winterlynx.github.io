@@ -18,6 +18,7 @@
   <img src="/images/3body1.gif" alt="示例图片">
 </center>
 
+
 <center>
   <img src="/images/3body2.gif" alt="示例图片">
 </center>
@@ -33,13 +34,12 @@
 
 ![示例图片](/images/f5d39678-59a9-4c63-a5a3-0b69b7b9464d-1024x538.png)
 
+<center>
   <img src="/images/lifeg3.gif" alt="示例图片">
 </center>
 
-<center>
-  <img src="/images/4.jpg" alt="示例图片">
-</center>
 
+![示例图片](/images/4.jpg)
 
 
 
