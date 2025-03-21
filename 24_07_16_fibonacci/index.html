@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://winterlynx.github.io/24_07_16_fibonacci/"
-        },"genre": "posts","wordcount":  263 ,
+        },"genre": "posts","wordcount":  275 ,
         "url": "https://winterlynx.github.io/24_07_16_fibonacci/","datePublished": "2024-07-16T04:37:35+00:00","dateModified": "2024-07-16T04:37:35+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -204,12 +204,12 @@
     <a href="#1%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c" class="header-mark"></a>1准备工作</h2><p>我们首先需要一点植物学知识作为模型基础。不管是向日葵的花序或者茎上的叶子，都是在植物的小茎尖上形成的，顶端的圆形区域边缘会产生称为原基的细胞，这些原基随后会发育成诸如叶子，花序等各种植物器官。原基生成后会相对于顶点的中心径向移动，见图 2。1992年，Douady and Couder通过磁性油滴实验用纯物理的手段还原出原基出现在圆形区域位置的规则——新原基总是周期性生成的并且出现在圆盘边缘最不拥挤的地方（离其他原基最远处）[2]。我们把这个规则称为最大值原理，这样的描述还太模糊，晚些时候我们会用更数学的语言重新描述。</p>
 <center>
     <img src="/images/29ee8cf3-303a-4278-9234-b4af2dd11604-1024x279.png" alt="图2">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图2 两张电子显微镜下木兰花顶端图片以及原基示意图</div>
-    <br>
+<pre><code>&lt;div style=&quot;color:orange; border-bottom: 1px solid #d9d9d9;
+display: inline-block;
+color: #999;
+padding: 2px;&quot;&gt;图2 两张电子显微镜下木兰花顶端图片以及原基示意图&lt;/div&gt;
+&lt;br&gt;
+</code></pre>
 </center>
 <p>为了简化，我们采用一个半圆柱形$\mathcal{C}=\mathbb{S}^1 \times [0,+\infty )$作为原基与茎关系的表示。原基产生于$\mathbb{S}^1 \times { 0 }$之后向圆柱上方移动。${p_0,p_1,\dots,p_N }$表示原基的集合，其中$p_k=(\theta_k,y_k)$。因为原基是周期性产生的，显然$y_k=ky$, y称为节间距离，是一个固定值。</p>
 <p>我们把两个原基产生的时间间隔称为单位时间T。经过一个T时间之后的原基集合用${P_0,P_1,\dots,P_N }$表示。原基在一个T时间的位置变化关系用$\Phi$表示。$P_{k+1}=(\Theta_{k+1},Y_{k+1})=(\theta_k,(k+1)y)$，也就是原来的$p_k$点向上移动了一个y值，同时新下标也+1.$\Theta_0=F(\theta_0,\dots,\theta_N)$，新的原基由之前所有原基位置决定，F是最大值原理相关的。</p>
