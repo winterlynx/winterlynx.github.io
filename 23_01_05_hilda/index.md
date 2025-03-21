@@ -3,51 +3,19 @@
 
 
 Hilda asteroid是一类由5000多颗小行星组成，位于小行星带（asteroid belt）到木星轨道之间的小行星群。他们全体形成的图像看起来像是边略带弧线的三角形（图1），并且三角形的三个顶点刚好处于木星轨道的的三个Lagrange点上，L3，L4，L5。显得十分奇异有趣。（从图1中还能发现两个始终处于L4，L5附近的小行星群，称为特洛伊群（Jupiter trojan））。
-<center>
-    <img src="/images/QQ图片20230105083209.gif" alt="图1">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图1 红色为Hilda asteroid  青色为Jupiter trojan</div>
-    <br>
-</center>
-
-<center>
-    <img src="/images/Hilda1.gif" alt="自己用MMA画的Hilda asteroid和Jupiter trojan">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">自己用MMA画的Hilda asteroid和Jupiter trojan</div>
-    <br>
-</center>
+{{< figure src="/images/QQ图片20230105083209.gif" title="图1 红色为Hilda asteroid  青色为Jupiter trojan ">}}
+<!--more-->
+{{< figure src="/images/Hilda1.gif" title="自己用MMA画的Hilda asteroid和Jupiter trojan ">}}
 
 
 但实际上观察单独的某一颗小行星，它的轨迹依旧是椭圆，见图2。小行星与木星的周期比为2:3。并且其轨道的远日点正好在木星的一个Lagrange点附近。木星的L3，L4，L5之间的夹角正好是120度。每当小行星转过一圈回到远地点，木星在相同时间内转过了240度，此时小行星与木星的相对位置虽发生改变，但远日点依旧处于一个Lagrange点附近。
 
-<center>
-    <img src="/images/HildasOrbitWithLagrangePointsLousy.gif" alt="图2">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图2 153 Hilda（绿）运动轨迹示意图</div>
-    <br>
-</center>
+{{< figure src="/images/HildasOrbitWithLagrangePointsLousy.gif" title="图2 153 Hilda（绿）运动轨迹示意图 ">}}
 
 
 
 像Hilda asteroid与木星这样的整数比轨道（3:2）在天体中很常见，称之为轨道共振，锁频（orbital resonance）。比如，冥王星-海王星的2:3，土星卫星Dione–Enceladus的1:2，同样是土星卫星Hyperion–Titan的3:4，木星卫星Ganymede–Europa–Io的1:2:4。轨道共振除了使得一些特定天体运动变得稳定之外，还可能使某些特定轨道变得不稳定。在这样轨道上的天体很快就会被“抛离”，使得轨道变得空旷。例如土星光环上的间隙，以及木火间小行星带中著名的Kirkwood gaps（图3）
-<center>
-    <img src="/images/1280px-Kirkwood_Gaps.svg-1-1024x791-1.png" alt="图3">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图3 Kirkwood gaps</div>
-    <br>
-</center>
+{{< figure src="/images/1280px-Kirkwood_Gaps.svg-1-1024x791-1.png" title="图3 Kirkwood gaps ">}}
             
 
 
@@ -60,7 +28,7 @@ Hilda asteroid是一类由5000多颗小行星组成，位于小行星带（aster
 $$x_{n+1}=f(x_n)=x_n+A+\frac{K}{2\pi}sin(2\pi x_n)  \quad mod(1)$$
 
 
-同时令$F:\mathbb{R}\rightarrow \mathbb{R}$为f的lift ，$x_{n+1}=F(x_n)=x_n+A+\frac{K}{2\pi} sin(2\pi x_n)   $
+同时令$F:\mathbb{R}\rightarrow \mathbb{R}$为f的lift ，$x_{n+1}=F(x_n)=x_n+A+\frac{K}{2\pi} sin(2\pi x_n)$
 
 
 在天体相互作用中，我们可以选取两个天体质量相差巨大的情形，即大天体几乎不受小天体的影响，小天体则受到大天体周期性地影响。取大天体为静止参考系，把大天体对小天体发生一次作用看做f，${x_n}$序列则为小天体的相位，A可看做在一次作用下，大天体使小天体发生的相位变化，为固定值，取值范围为$0\leq A \leq 1 $，$\frac{K}{2\pi}  sin(2\pi x_n) $可看做是耦合项或微扰项，其中K的取值范围暂定为$0\leq K \leq 1 $，K完全可以取更大的值，但现象会因此变得更为复杂，故本文中暂且不做讨论。
@@ -170,15 +138,7 @@ $$|\frac{F^{(m)}(0)}{m}-\frac{F^{(n)}(0)}{n}|\leq 1/m+1/n$$
 
 然后我们在来了解下$M_{m/n}$在参数空间(A,K)的分布情况。如果$M_{m/n}$只是一个或几个孤立的点，那模式锁定无疑也不是容易发生的事情。从现实中的情况来说，我们也已经能猜到情况并非如此。我们已经知道$t^{(n)}(x)-m=0$的根以及$\frac{\partial t^{(n)}(y)}{\partial x}$决定了迭代的性质，这种性质是拓扑的，这些根之间的位置与距离都没有关系。如果我们轻微地改变A,K，根的位置会发生变化，但只要根的数量以及对应的$\frac{\partial t^{(n)}(y)}{\partial x}$符号不发生改变，那么变化后的函数g依旧和变化前的函数f有相同的u，即u(f)=u(g)=m/n。于是这样一簇有相同性质曲线可以用m,n,k刻画，称为$M_{m/n}^{k}$，其中k为稳定点的个数。这样的一个$M_{m/n}^{k}$是参数空间中的连通开集。同时我们立刻可以知道$M_{m/n}$应该包含$\cup^{\infty}_{k=1}M_{m/n}^{k}$。K=0的f称为$F_0$,为一个点也就是(1)中平凡的情况。可以证明每一个分支$M_{m/n}^{k}$都是与$F_0$连通的。所以$M_{m/n}$是一个连通集。此外在A,K变化至$t^{(n)}(x)-m=0$曲线与x轴相切时，为$M_{m/n}$的边界点。例如u=0,有$A+\frac{K}{2\pi}sin(2\pi x)=0$, 可解得$A=\pm \frac{K}{2\pi}$。即u=0的边界是两条直线。当u为其他分数时，边界就不在是直线了。由于是超越方程无法精确求解。u=1/2的情形，边界可以用$A= \frac{1}{2} \pm \frac{1}{4}(\frac{K}{2\pi})^2$近似。当然实际更简单有效的方法是用计算机算。
 
-<center>
-    <img src="/images/Arnold_tongues-1024x258-1.png" alt="图7">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图7 图片来源于wiki</div>
-    <br>
-</center>
+{{< figure src="/images/Arnold_tongues-1024x258-1.png" title="图7 图片来源于wiki ">}}
 
 
 
@@ -187,26 +147,10 @@ $$|\frac{F^{(m)}(0)}{m}-\frac{F^{(n)}(0)}{n}|\leq 1/m+1/n$$
 
 然后当$K>1$,从图中也可以猜测出，分属于不同$M_{m/n}$的区块，有可能重叠在一起。于是倍分叉与混沌也将接踵而至，这就是另一个故事了。
 
-<center>
-    <img src="/images/Circle_map_poincare_recurrence.jpeg" alt="图8">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">包含k>1的情况 图片同样来源于wiki 有点像eva中出现的画面呢（误）</div>
-    <br>
-</center>
+{{< figure src="/images/Circle_map_poincare_recurrence.jpeg" title="包含k>1的情况 图片同样来源于wiki 有点像eva中出现的画面呢（误） ">}}
 
 
-<center>
-    <img src="/images/circle6-768x1536.png" alt="图9">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">自己用MMA画的</div>
-    <br>
-</center>
+{{< figure src="/images/circle6-768x1536.png" title="自己用MMA画的 ">}}
 
 
 

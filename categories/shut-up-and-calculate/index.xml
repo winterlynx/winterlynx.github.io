@@ -14,49 +14,13 @@
     <title>从Hilda小行星群到模式锁定</title>
     <link>https://winterlynx.github.io/23_01_05_hilda/</link>
     <pubDate>Thu, 05 Jan 2023 13:41:57 &#43;0000</pubDate><author>
-        <name>xxxx</name>
+        <name>Lynx</name>
     </author><guid>https://winterlynx.github.io/23_01_05_hilda/</guid>
-    <description><![CDATA[<p>Hilda asteroid是一类由5000多颗小行星组成，位于小行星带（asteroid belt）到木星轨道之间的小行星群。他们全体形成的图像看起来像是边略带弧线的三角形（图1），并且三角形的三个顶点刚好处于木星轨道的的三个Lagrange点上，L3，L4，L5。显得十分奇异有趣。（从图1中还能发现两个始终处于L4，L5附近的小行星群，称为特洛伊群（Jupiter trojan））。</p>
-<center>
-    <img src="/images/QQ图片20230105083209.gif" alt="图1">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图1 红色为Hilda asteroid  青色为Jupiter trojan</div>
-    <br>
-</center>
-<center>
-    <img src="/images/Hilda1.gif" alt="自己用MMA画的Hilda asteroid和Jupiter trojan">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">自己用MMA画的Hilda asteroid和Jupiter trojan</div>
-    <br>
-</center>
-<p>但实际上观察单独的某一颗小行星，它的轨迹依旧是椭圆，见图2。小行星与木星的周期比为2:3。并且其轨道的远日点正好在木星的一个Lagrange点附近。木星的L3，L4，L5之间的夹角正好是120度。每当小行星转过一圈回到远地点，木星在相同时间内转过了240度，此时小行星与木星的相对位置虽发生改变，但远日点依旧处于一个Lagrange点附近。</p>
-<center>
-    <img src="/images/HildasOrbitWithLagrangePointsLousy.gif" alt="图2">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图2 153 Hilda（绿）运动轨迹示意图</div>
-    <br>
-</center>
-<p>像Hilda asteroid与木星这样的整数比轨道（3:2）在天体中很常见，称之为轨道共振，锁频（orbital resonance）。比如，冥王星-海王星的2:3，土星卫星Dione–Enceladus的1:2，同样是土星卫星Hyperion–Titan的3:4，木星卫星Ganymede–Europa–Io的1:2:4。轨道共振除了使得一些特定天体运动变得稳定之外，还可能使某些特定轨道变得不稳定。在这样轨道上的天体很快就会被“抛离”，使得轨道变得空旷。例如土星光环上的间隙，以及木火间小行星带中著名的Kirkwood gaps（图3）</p>
-<center>
-    <img src="/images/1280px-Kirkwood_Gaps.svg-1-1024x791-1.png" alt="图3">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图3 Kirkwood gaps</div>
-    <br>
-</center>
-<p>从这些不算多的数据中我们可以隐隐看出，1:2,1:3,2:3这样的比例出现频率明显较高，而诸如1:8，7:17这样的比例则很少出现，这又是为什么呢？</p>
-<p>天体的相互作用还是有点复杂，我们来考虑一个简单些的数学模型。一个circle map $f:S^1\rightarrow S^1$定义为</p>
-<p>$$x_{n+1}=f(x_n)=x_n+A+\frac{K}{2\pi}sin(2\pi x_n)  \quad mod(1)$$</p>]]></description>
+    <description><![CDATA[<p>Hilda asteroid是一类由5000多颗小行星组成，位于小行星带（asteroid belt）到木星轨道之间的小行星群。他们全体形成的图像看起来像是边略带弧线的三角形（图1），并且三角形的三个顶点刚好处于木星轨道的的三个Lagrange点上，L3，L4，L5。显得十分奇异有趣。（从图1中还能发现两个始终处于L4，L5附近的小行星群，称为特洛伊群（Jupiter trojan））。
+<figure><img src="/images/QQ%E5%9B%BE%E7%89%8720230105083209.gif"><figcaption>
+      <h4>图1 红色为Hilda asteroid  青色为Jupiter trojan </h4>
+    </figcaption>
+</figure>
+</p>]]></description>
 </item></channel>
 </rss>
