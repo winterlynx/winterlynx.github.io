@@ -18,15 +18,8 @@
 
 我们首先需要一点植物学知识作为模型基础。不管是向日葵的花序或者茎上的叶子，都是在植物的小茎尖上形成的，顶端的圆形区域边缘会产生称为原基的细胞，这些原基随后会发育成诸如叶子，花序等各种植物器官。原基生成后会相对于顶点的中心径向移动，见图 2。1992年，Douady and Couder通过磁性油滴实验用纯物理的手段还原出原基出现在圆形区域位置的规则——新原基总是周期性生成的并且出现在圆盘边缘最不拥挤的地方（离其他原基最远处）[2]。我们把这个规则称为最大值原理，这样的描述还太模糊，晚些时候我们会用更数学的语言重新描述。
 
-<center>
-    <img src="/images/29ee8cf3-303a-4278-9234-b4af2dd11604-1024x279.png" alt="图2">
-    
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图2 两张电子显微镜下木兰花顶端图片以及原基示意图</div>
-    <br>
-</center>
+{{< figure src="/images/29ee8cf3-303a-4278-9234-b4af2dd11604-1024x279.png" title="图2 两张电子显微镜下木兰花顶端图片以及原基示意图" >}}
+
 
 为了简化，我们采用一个半圆柱形$\mathcal{C}=\mathbb{S}^1 \times [0,+\infty )$作为原基与茎关系的表示。原基产生于$\mathbb{S}^1 \times \{ 0 \}$之后向圆柱上方移动。$\{p_0,p_1,\dots,p_N \}$表示原基的集合，其中$p_k=(\theta_k,y_k)$。因为原基是周期性产生的，显然$y_k=ky$, y称为节间距离，是一个固定值。
 
@@ -36,16 +29,7 @@
 
 p是$\mathbb{S}^1 \times \{ 0 \}$上的点，定义$D(p)=min_{1,\dots,N} ||P_k-p||$,也就是说D(p)给出了p点到所有原基中距离最近的那个点的距离值。而我们要找的新原基 则是满足$D(p_0)=max_{p \in \mathbb{S}^1 \times \{ 0 \}} D(p)$的p0点。这样的点有时候不是唯一的。对于给定的点p_k，$||p-p_k||=\sqrt{(\theta_0-\theta_k)^2+(ky)^2}$所以以$\theta_0$为横坐标，p到p_k的距离为纵坐标，可以得到一条开口向上，最低点在$(\theta_k , ky)$（这也是p_k的坐标）的曲线（可以理解成抛物线的纵坐标开方被压缩了）。p点和每一个p_k点都能画出这样一条曲线。最小距离函数D正是所有曲线的下包络（图3中用黑实线表示）。而我们要找的p0点，则一定在黑实线的最高点垂直对下来的地方。而黑实线的最高点，一定是某两条曲线的交点处。设这两条曲线是$p_m,p_n$相关的，这也表示p0到p_m,P_n的距离相等；p0在p_m,P_n连线的垂直平分线上。P_m和P_n一定在P0的左右两边。
 
-<center>
-    <img src="/images/482c94bd-5c41-4e63-8219-a52158eafbf4-1024x285.png" alt="图3">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图3</div>
-    <br>
-</center>
-
+{{< figure src="/images/482c94bd-5c41-4e63-8219-a52158eafbf4-1024x285.png" title="图3" >}}
 
 我们所研究的系统具有旋转对称性，坐标起点不是我们需要关心的，我们关心的是点的相对位置。定义发散角$x_k=\theta_{k+1}-\theta_k$.
 
@@ -73,28 +57,12 @@ $$\Lambda(x,y)=\{ k(x,y)+d(1,0)| k,d \in  \mathbb{Z} \}$$
 
 如果把$\Lambda(z)$上的点再投影回圆柱上(-1/2<x<=1/2)。我们有$z_k=\delta_k+iky=kx-\Delta_k+iky=kz-\Delta_k$，其中$\Delta_k$为和kx最接近的整数，如果这样的整数有两个选择最小的那个。如下图所示
 
-<center>
-    <img src="/images/d142bda5-c670-4d2f-a46a-8d183841799a-1024x300.png" alt="图4">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图4</div>
-    <br>
-</center>
-
+{{< figure src="/images/d142bda5-c670-4d2f-a46a-8d183841799a-1024x300.png" title="图4" >}}
 
 螺旋点阵上的一点$p_k=(\delta_k,ky)$。从原点到p_k的连线可以形成一个缠绕螺旋线，若原点和p_k之间没有其他点存在，这条螺旋线称为k-斜列线。如果有点p_i在原点和p_k之间,i肯定小于k，所以这条螺旋线就应该叫i-斜列线。水平平行移动一个x的长度我们还可以得到另一条k-斜列线。因为p_k的高度为k个单位y，也表示平移k次我们才会碰到最初的那条k-斜列线，所以$L(z)$中我们一共有k条k-斜列线。
 
-<center>
-    <img src="/images/QQ截图20240715221421-1024x357.png" alt="图5">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图5</div>
-    <br>
-</center>
+
+{{< figure src="/images/QQ截图20240715221421-1024x357.png" title="图5" >}}
 
 然后我们把讨论范围扩展到平面点阵。从原点出发得到的各种斜列线中，选择其上点阵元素离原点最近的两条。这两个点阵元素需在不同的两条斜列线上，表示为{$z_m,z_n$}.这形成了平面点阵$\Lambda(x,y)$的一组基（$z_m=mz-\Delta_m$,它可以是由d不等于0为起点生成的），称为规范基（canonical basis）。这组基所延展出的m，n-斜列线，恰好就是各种植物螺线图案中，人眼最容易识别到的。原因就在于点阵元素的间隔最近，其他点阵元素的距离就想对远一点，具体到一些植物上，因为点阵元素往往不只是一个点，而是有一定形状和面积的单元。离得近通常两个单元就是紧紧挨着的中间不会有其他单元穿插其中，离得远的单元之间，通常有属于其他元素的单元横隔其中。所以人眼不会优先识别这样的螺线。
 
@@ -108,16 +76,8 @@ $$\Lambda(x,y)=\{ k(x,y)+d(1,0)| k,d \in  \mathbb{Z} \}$$
 将圆柱展开后，得到的是一个上半复平面$\mathbb{H}$,这也是一个双曲平面。我们将根据斜列线数对点阵进行分类。
 令$z \in \mathbb{H}$使得{z,1}可以作为一组规范基生成一个点阵$\Lambda(z)$。{z,1}及其生成的阵列，可以作为一个生成元或者原型给出我们实际想要研究的任意{$z_m,z_n$}点阵。所以我们有必要先了解其性质。$A=-1/2+i\sqrt{3}/2$，$B=1/2+i\sqrt{3}/2$，把无穷远看作一个点。以0A∞B四个点为顶点，组成了一个双曲四边形，我们记为Q。0A，0B是圆心分别为-1,1，半径为1的圆上的一段圆弧。A ∞，B∞为垂直的射线。AB之间的灰色线是圆心在0点半径为1的一段圆弧。Q中和原点距离大于等于1的点的集合称为$Q^+$，和原点距离小于等于1的点的集合称为$Q^-$。Q中和原点距离在1/2到2之间的区域称为H,是一个双曲六边形。
 
-<center>
-    <img src="/images/QQ截图20240715221622-1024x482.png" alt="图6">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图6 右边的6个小图，表示不同的{z,1},它们的z值与左边的Q上标数字的点相对应。第一个图的z值即为左图的1，第二个图|z|=1，可以看到在左图中落在AB间的灰线上。</div>
-    <br>
-</center>
 
+{{< figure src="/images/QQ截图20240715221622-1024x482.png" title="图6" >}}
 
 我们有以下命题1成立：
 
@@ -142,41 +102,17 @@ $$\Lambda(x,y)=\{ k(x,y)+d(1,0)| k,d \in  \mathbb{Z} \}$$
 
 像$g_{mn}$这样具有形式$w \to \frac{aw+b}{cw+d}$的映射，称为mobius变换。abcd都为实数，且ad-bc>0时，这个变换是在双曲平面上是保距的。当ad-bc=1,这样的g_mn构成了PSL(2,Z)的一个子群。Q_mn在双曲几何中是全等于Q的，同理H_mn也全等于H，见图7，所有的Q_mn=g_mn（Q）构成了上半复平面H的一个密铺。特别地$g_{11}=1/(1-w)$。将AB代入g_11计算可以得到$A_{11}=1/2+\sqrt{3}/6i,B_{11}=1/2+\sqrt{3}/2i$.两个点的实值部分相同，所以形成的连线会是垂直与x轴的直线。观察图7，通过垂直的灰线，你应该能马上发现Q11。然后所有双曲四边形Q_mn的对角线，即连接AB的灰色圆弧，的并集形成了一个二叉树，称为van Iterson diagram，见图8。ps:值得一提的与Q_11相关的的规范基是两个{z_1,z_1}，且两个z_1并不相同，他们一个是z，另一个就是z-1（来自不同d值生成的点）
 
-<center>
-    <img src="/images/QQ截图20240715221806-1024x584.png" alt="图7">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图7</div>
-    <br>
-</center>
 
-<center>
-    <img src="/images/QQ截图20240715221929.png" alt="图8">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图8</div>
-    <br>
-</center>
+{{< figure src="/images/QQ截图20240715221806-1024x584.png" title="图7" >}}
 
+{{< figure src="/images/QQ截图20240715221929.png" title="图8" >}}
 
 ## 2.3 van Iterson diagram的分岔点
 
 van Iterson diagram是一个二叉树。其上的每一点，都给出了一个菱形点阵。我们可以观察到它在Q中的A点发生分岔。为了帮助我们理解van Iterson diagram，我们需要先了解下变换前A点附近的情况。以下讨论见图9，A点其实是3个双曲四边形的焦点。我们定义两个映射$\alpha:w \to w-1 ,\beta : w \to w/(1-w)$然后$L=\alpha (Q),R=\beta (Q)$，即为我们在图9中观察到的两个双曲四边形。
 
-<center>
-    <img src="/images/QQ截图20240715222010-1024x441.png" alt="图9">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图9</div>
-    <br>
-</center>
 
+{{< figure src="/images/QQ截图20240715222010-1024x441.png" title="图9" >}}
 
 定义$L'=g_{mn}(L), R'=g_{mn}(R)$，我们有如下的引理1,2和命题3成立
 
@@ -215,28 +151,12 @@ van Iterson diagram是一个二叉树。其上的每一点，都给出了一个�
 
 从条件1，我们能发现最大值原理允许的点阵的z值一定是在van Iterson diagram上的（其上的每一点，都给出了一个菱形点阵）。这个分岔图给出了随着节间距离y值的变化，允许的发散角x的取值。然后首先考虑节间距离很大，只有最近的一个原基对新生原基有影响的情况，此时新生原基无疑会出现在离最近原基180度的地方，也就是x=1/2处。这对应van Iterson diagram中的垂直线L（见图10）。随着节间距离y的缩小。存在某个y值使得第二近的原基P2开始对新生原基产生影响。这产生了一个分岔点。在这个分岔点A*上，两个原基与一个原基对新生原基的影响应正好效果相同。于是p0和p1的距离，应该和p0p2距离完全相等，见图11，由横向距离为1/2可以求得节间距离,$A^*=(1/2,\sqrt{3}/6)$之后允许的点阵z值在$\sigma_{12},\sigma_{21}$上。
 
-<center>
-    <img src="/images/QQ截图20240715222055-1024x523.png" alt="图10">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图10</div>
-    <br>
-</center>
+
+{{< figure src="/images/QQ截图20240715222055-1024x523.png" title="图10" >}}
 
 到这里我们还没用上最大值原理的条件2，因为$\sigma_{12},\sigma_{21}$实际上都满足该条件（regular的）。通过计算可以证明，如果一个Q_mn是regular的，其上AB段的弧（双曲几何中的直线）上的每一点z都对应到一组m,n-opposed基。 而如果Q_mn是irregular的，首先B_mn点是不满足opposed基的条件的，而A_mn点始终满足。于是在对于irregularQ_mn，其中从B_mn为起点的某一段弧线必须被排除在外。我们知道$A_{mn}=B_{m+n,n}=B_{m,m+n}$,同时有Q_mn下方的两个双曲四边形必然是一个regular一个irregular，于是在A*之外的每个分岔点上，都会有一条分岔路上的一段被去掉。形成的图形即为图10。每个不连续的独立分支我们有最开始的mn表示为C_mn。从图10我们能看到，所有分支中最大的一个是C_12,C_21，观察其上每一段mn字。这正是Fibonacci数列中的元素。随着节间距离的减少，mn值也越来越大，最后趋近的正是黄金率。图10中还有其他更小的分支。每一个分支是一条Fibonacci-like序列，最后收敛于一个无理数，称之为Noble Number。，可以验证的是C13分支在植物中是确实存在的，但已算少见了。至于更小的分支不太清楚。回到为什么Fibonacci系列最多的问题。我想一个额外的原因在于植物在生长过程节间距在不同的时期是不相同的，但是这个变化可能是能够看成连续发生的。包含跨度尽可能大的节间距的C12，C21显然是概率最大分布最广泛的情形。并且C12和L相连，这包括了最初没有原基到有两个原基的过程。多数植物可能都会经历一个这样的阶段，与之连续的C12，C21过程也理应是最容易过度到的状态。PS:发散角为1/2的轮生植物，本身也是相当多的。从现实中能观察到的植物发育和出现的Fibonacci数，似乎y值都较大的。我知道的最大的Fibonacci数都出现在花果中，或许是因为这些部位的原基的生发周期较短。
 
-<center>
-    <img src="/images/QQ截图20240715222220.png" alt="图11">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">图11</div>
-    <br>
-</center>
-
+{{< figure src="/images/QQ截图20240715222220.png" title="图11" >}}
 
 
 ## 参考文献
@@ -244,12 +164,9 @@ van Iterson diagram是一个二叉树。其上的每一点，都给出了一个�
 
 [1]Klar A J S. Plant mathematics: Fibonacci's flowers[J]. Nature, 2002, 417(6889): 595-595.
 
-
 [2]Douady S, Couder Y. Phyllotaxis as a physical self-organized growth process[J]. Physical review letters, 1992, 68(13): 2098.
 
-
 [3]Atela, Golé, Hotton. A dynamical system for plant pattern formation: a rigorous analysis[J]. Journal of Nonlinear Science, 2003, 12: 641-676.
-
 
 [4]Okabe T. Biophysical optimality of the golden angle in phyllotaxis[J]. Scientific reports, 2015, 5(1): 15358.
 
