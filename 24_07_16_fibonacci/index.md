@@ -243,7 +243,10 @@ van Iterson diagram是一个二叉树。其上的每一点，都给出了一个�
 
 
 [1]Klar A J S. Plant mathematics: Fibonacci's flowers[J]. Nature, 2002, 417(6889): 595-595.
+
 [2]Douady S, Couder Y. Phyllotaxis as a physical self-organized growth process[J]. Physical review letters, 1992, 68(13): 2098.
+
 [3]Atela, Golé, Hotton. A dynamical system for plant pattern formation: a rigorous analysis[J]. Journal of Nonlinear Science, 2003, 12: 641-676.
+
 [4]Okabe T. Biophysical optimality of the golden angle in phyllotaxis[J]. Scientific reports, 2015, 5(1): 15358.
 
