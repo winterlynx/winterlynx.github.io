@@ -81,6 +81,8 @@ $$\Lambda(x,y)=\{ k(x,y)+d(1,0)| k,d \in  \mathbb{Z} \}$$
 
 我们有以下命题1成立：
 
+**命题1**
+
 (i){z,1}是规范基，iff$z \in Q$.
 
 (ii){z,1}是斜列基，iff$z \in H$.
@@ -92,6 +94,8 @@ $$\Lambda(x,y)=\{ k(x,y)+d(1,0)| k,d \in  \mathbb{Z} \}$$
 定义$g_{mn}(w)=\frac{\Delta_n w-\Delta_m}{nw-m}$,同时Re(z)属于(0,1)
 
 我们有如下的命题2成立
+
+**命题2**
 
 (i){$z_m,z_n$}是$\Lambda(z)$的一对规范基 iff $z \in Q_{mn}=g_{mn}(Q)$ 同时$\Delta_m, \Delta_n$是使得$\Delta_m n -\Delta_n m=1$成立的唯一整数s,$[\Delta_n/n,\Delta_m/m] \subset [0,1]$
 
