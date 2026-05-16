@@ -47,7 +47,7 @@ $$
 ***
 将相空间扩展到一般的广义坐标,泊松括号的定义变为
 $$
-\lbrace f,g \rbrace:=\sum _{i}\left( \frac{\partial {f}}{\partial {q_{i}}}\frac{\partial {g}}{\partial {p_{i}}}-\frac{\partial {f}}{\partial {p_{i}}}\frac{\partial {g}}{\partial {q_{i}}} \right)
+\lbrace f,g \rbrace:=\sum \left( \frac{\partial {f}}{\partial {q_{i}}}\frac{\partial {g}}{\partial {p_{i}}}-\frac{\partial {f}}{\partial {p_{i}}}\frac{\partial {g}}{\partial {q_{i}}} \right)
 $$
 
 第一种思路变得不再可行，但第二种思路则完全没问题。
@@ -118,10 +118,10 @@ $$
 定义$\Phi:T_{x}M\to T_{x}^{*}M$,  $\Phi(v)=\omega(v,\cdot)$
 由于$\omega$是非退化的，只有$\omega(0,T_{x}M)=0$
 所以 $Ker\ \Phi=0$，$\Phi$是一个单射。
-对任意的$\beta=\sum _{i} a_{i}\alpha^{i}\in T_{x}^{*}M$
+对任意的$\beta=\sum a_{i}\alpha^{i}\in T_{x}^{*}M$
 $\alpha^{i}(e_{j})=\delta _{ij}$
 由$\omega(-Je_{i},e_{j})=\delta _{ij}$， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
-所以$\beta=\sum _{i}a_{i}\Phi(-Je_{i})=\Phi\left( \sum _{i}-a_{i}Je_{i} \right)$
+所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射
 ***
