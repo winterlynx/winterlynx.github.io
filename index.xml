@@ -3,9 +3,49 @@
         <title>Winter in December</title>
         <link>https://winterlynx.github.io/</link>
         <description>Winter in December</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2026 11:30:28 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2026 02:30:28 &#43;0800</lastBuildDate>
             <atom:link href="https://winterlynx.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>人是一根会思考的芦苇</title>
+    <link>https://winterlynx.github.io/2026_05_171-poisson/</link>
+    <pubDate>Sun, 17 May 2026 02:30:28 &#43;0800</pubDate><author>
+        <name>Lynx</name>
+    </author><guid>https://winterlynx.github.io/2026_05_171-poisson/</guid>
+    <description><![CDATA[<p>青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。
+这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。
+想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。</p>
+<hr>
+<p>假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义
+$$
+\lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
+$$
+其中$f,g:M\to \mathbb{R}$ 是光滑函数。
+并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
+这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
+通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。
+令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
+以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：</p>
+<hr>
+<p>思路1：
+这很像两个列向量并在一起形成的矩阵的行列式
+简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。
+$\lbrace f,g \rbrace$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。</p>
+<hr>
+<p>思路 2：
+先做些变换后再做内积
+我们如今有的是$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$，但如果要做内积，我们需要的是$\left( \frac{\partial {g}}{\partial {p}},-\frac{\partial {g}}{\partial {q}} \right)^{T}$
+这是一个顺时针的90度旋转，可以用一个线性变换J表示。
+于是泊松括号变为
+$$
+\lbrace f,g \rbrace=(\nabla f)^{T}J\nabla g
+$$
+或者表示为
+$$
+\lbrace f,g \rbrace=\omega(\nabla f,\nabla g)
+$$
+这是一个辛内积。</p>
+<hr>]]></description>
+</item><item>
     <title>260316</title>
     <link>https://winterlynx.github.io/2026_03_16/</link>
     <pubDate>Mon, 16 Mar 2026 20:45:28 &#43;0800</pubDate><author>
@@ -72,12 +112,5 @@
         <name>Lynx</name>
     </author><guid>https://winterlynx.github.io/24_02_17_1-2/</guid>
     <description><![CDATA[<p>又停了一个月没写blog，今天因为值班，白天已经学了不少时间，到了晚上有点累，但是还要继续值班，所以写一写。原本1月的时候写了一点，恰好遇到工作上事情多起来，打断了就再没捡起来。大体上从12月到1月的最后一星期之前都挺忙的。等忙完恰好遇到《大圣传》，15000页的网络小说，一共430万字。差不多花了10天左右，没日没夜才看完的。其实我觉得还不错，有很多可取之处。当然作为男频网络小说，一些爽文向和后宫向还是有的。老实说不太喜欢这部分，总想跳过。女性角色里特别喜欢如心，独立，低调聪明且善良，一点点都不攀附。平时和男主相互打趣嘲讽的时候也特别好玩。所有的宴会都没她。独自行走于世界上。背负着深仇，也没想过依靠别人的力量实现。既有一点点自己实现它的毅力，也绝不牵扯一个旁人。爱恨分明，在这样状态下能不失善良的人是很难得的。里头有个飞天蝗王。就是蝗虫的设定。铺天盖地到处产卵，亿万分身。就算一个人再有能力和力量其实也是很难消灭这样一个妖怪（这个设定很好），然后如心就发明出了一种能消灭虫卵和若虫状态蝗虫的病毒。能猜到主角秘密，但是她从来没有过问过。反倒帮了主角很多次，甚至我觉得主角其实有点还不完。当然如心从来没向主角要过什么。她还发明了忘水和忆水。忘水是因为，一个老画家技艺高到画出的画差不多是真人，然后以画为妻。到了他快死的时候，他希望他的“妻子”忘掉他。所以拜托如心研发了忘水。然后开会的时候主角正好对上一个手里有测谎仪的对手，眼看身份要暴露。如心看出主角窘迫（其实她从来没问过），给了主角忘水。对手问的问题如果主角忘记了，就不算说谎。这地方的设计还是不错的。然后是传闻主角被击杀，其他朋友都只是叹息，但还是只能继续自己的生活。她自己一个人默默地穿越万里去寻找~可惜后半段剧情如心完全没有再出场，大概作者忘记了。而且写作这种东西，有时候写着写着就偏掉了。</p>]]></description>
-</item><item>
-    <title>甲子</title>
-    <link>https://winterlynx.github.io/23_12_09_untitled/</link>
-    <pubDate>Sat, 09 Dec 2023 03:59:47 &#43;0000</pubDate><author>
-        <name>Lynx</name>
-    </author><guid>https://winterlynx.github.io/23_12_09_untitled/</guid>
-    <description><![CDATA[<p>又隔了一个月没写blog。这段时间总体工作都有点太忙，要给人描述在忙些什么似乎还挺快困难，有时候两三个突发情况一起来，解决起来就要很久。11月初因为想下个兵棋ASL的规则书，还中了病毒。导致电脑和blog的密码都换了一遍。blog因为不知道被改了什么，想着销毁服务器，重新建个站，居然告诉我要重新收费。看了一圈价钱涨得有点高了。就暂时先换到了企鹅云。似乎在国内反而不容易出现502的情况。从头折腾一遍也挺花时间。开始忘记行内Latex公式是怎么实现的，还想了想。评论验证码是哪个插件也不记得了。不知道之前有没有提过。做一些计算机编程相关的事情，完成后总觉得有点缺乏成就感（不过用键盘在vscode上敲代码的过程本身还行）。通常的内心状态都是：总算搞完了，不想再花时间。但是学数学就完全不是这样。每每不管是想出来难题，还是学到一些新东西，都非常开心。说到数学，这段时间因为工作忙，摸鱼时间断断续续，经常被人打断，还挺难集中注意力的，人自己都会有点应激。没有长时间可以集中注意力思考，也会觉得心里空唠唠的。大体上11月开始在读The Maslov index for paths ，然后发现Arnold这样牛b的人原来也会有大家都会有的思维盲点（虽然也算是理所当然的吧）。简单说就是（好像怎么也没法太简单说囧）L(n)表示Lagrangian子空间的集合，每一个元素都是一个Lagrangian子空间。每一个子空间可以用(X,Y)，两个nxn矩阵表示。称为Lagrangian form。当然这个表示不是唯一的，如果把L(n)看作base space，fiber就是GL(n)。所以只要XY是可逆的，一个Lagrangian子空间可以表示成(A,1)这样的形式。A是对称矩阵。然后Maslov index算是是$\Lambda(t)$ in L(n) 作为L(n)上的loop或者path的一个不变量。和$\Lambda(t)$与一个$V=R^n\times 0$ 这样一个固定Lagrangian子空间的交有关。$\Sigma _{k}(V)$表示dim $\Lambda \cap V=k$的$\Lambda$的集合。然后$\Sigma _{k}(V)$的codim是k(k+1)/2,同时$\Sigma _{k}(V)$的元素没法用(A,1)这样的形式表示出来。于是Arnold搞了一套局部旋转的的变换，使得$\Sigma _{k}(V)$的元素可以用(A,1)对应。我看完觉得还是挺厉害的。但是实际上里头有个更简单的办法。同一个$\Lambda$，不表成(A,1)而是表成（1,A），其实直接把所有问题都解决了(相当于选了另一个坐标)。。。。看90年代的论文发现里头默认就都是这么做的。这其实只是小问题，就觉得读论文的时候能发现一些这类小细节还挺有趣的。每个人都会有钻牛角尖的时候。前几天刚读完。在纠结接下去看什么，怎么看。有点像是站在迷宫岔路口，每条路稍微往前看看，进行隐匿侦查的状态。其中一条路是连看至少6篇系列论文，如果中间遇到问题可能还要再看别的。感觉有点慢了。看论文还是有意思的，比较接近当时作者所见所想。</p>]]></description>
 </item></channel>
 </rss>

@@ -120,8 +120,10 @@ $$
 定义$\Phi:T_{x}M\to T_{x}^{\star}M$,  $\Phi(v)=\omega(v,\cdot)$
 由于$\omega$是非退化的，只有$\omega(0,T_{x}M)=0$
 所以 $Ker\ \Phi=0$，$\Phi$是一个单射。
+
 对任意的$\beta=\sum a_{i}\alpha^{i}\in T_{x}^{\star}M$
-$\alpha^{i}(e_{j})=\delta _{ij}$
+
+已知$\alpha^{i}(e_{j})=\delta \_{ij}$
 由$\omega(-Je_{i},e_{j})=\delta _{ij}$， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
 $\Phi$是个满射。
