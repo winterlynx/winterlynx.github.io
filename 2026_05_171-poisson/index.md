@@ -110,7 +110,7 @@ V^{\circ }=\lbrace \alpha \in T_{x}^{\star}M|\alpha(v)=0,\forall v\in V \rbrace
 $$
 我们从V的基底$\lbrace v_{1},\dots,v_{k} \rbrace$出发，延拓出整个$T_{x}M$的一组基$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$. 其中$e_{i}=v_{i}$ , for $i\leq k$, and $e_{n+i}=f_{i}$. 我们从V中元素满足的性质$\omega(v_{i},v_{j})=0$可知$f_{i}=Jv_{i}\not\in V$, 因为$\omega(v_{i},f_{i})=1$.
 与$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$相对应的对偶基底表示为$\lbrace \alpha^{1},\dots,\alpha^{2n} \rbrace$
-满足$\alpha^{i}(e_{j})=\delta _{ij}$
+满足$\alpha^{i}(e_{j})=\delta\_{ij}$
 由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a_{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
 由此可知$dim\ V^{\circ}=2n-k$
 ***
