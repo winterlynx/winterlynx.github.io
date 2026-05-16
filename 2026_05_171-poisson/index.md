@@ -89,7 +89,7 @@ $$
 \begin{align}
 \omega(e_{i},e_{j})&=0 \\
 \omega(f_{i},f_{j})&=0 \\
-\omega(e_{i},f_{j})&=\delta _{ij}
+\omega(e_{i},f_{j})&=\delta_{ij}
 \end{align}
 $$
 我们可以说$e_{i}$是和任意$e_{j},f_{j}$，$i\neq j$, 辛正交的.
@@ -106,7 +106,7 @@ $$
 这样是否还能有$dim\ V+dim\ V^{\omega}=dim\ T_{x}M$ 这样的结论?
 定义
 $$
-V^{\circ }=\lbrace \alpha \in T_{x}^{*}M|\alpha(v)=0,\forall v\in V \rbrace
+V^{\circ }=\lbrace \alpha \in T_{x}^{\star}M|\alpha(v)=0,\forall v\in V \rbrace
 $$
 我们从V的基底$\lbrace v_{1},\dots,v_{k} \rbrace$出发，延拓出整个$T_{x}M$的一组基$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$. 其中$e_{i}=v_{i}$ , for $i\leq k$, and $e_{n+i}=f_{i}$. 我们从V中元素满足的性质$\omega(v_{i},v_{j})=0$可知$f_{i}=Jv_{i}\not\in V$, 因为$\omega(v_{i},f_{i})=1$.
 与$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$相对应的对偶基底表示为$\lbrace \alpha^{1},\dots,\alpha^{2n} \rbrace$
@@ -115,10 +115,10 @@ $$
 由此可知$dim\ V^{\circ}=2n-k$
 ***
 如果可能我们希望在$V^{\omega}$和$V^{\circ}$之间建立映射关系。
-定义$\Phi:T_{x}M\to T_{x}^{*}M$,  $\Phi(v)=\omega(v,\cdot)$
+定义$\Phi:T_{x}M\to T_{x}^{\star}M$,  $\Phi(v)=\omega(v,\cdot)$
 由于$\omega$是非退化的，只有$\omega(0,T_{x}M)=0$
 所以 $Ker\ \Phi=0$，$\Phi$是一个单射。
-对任意的$\beta=\sum a_{i}\alpha^{i}\in T_{x}^{*}M$
+对任意的$\beta=\sum a_{i}\alpha^{i}\in T_{x}^{\star}M$
 $\alpha^{i}(e_{j})=\delta _{ij}$
 由$\omega(-Je_{i},e_{j})=\delta _{ij}$， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
