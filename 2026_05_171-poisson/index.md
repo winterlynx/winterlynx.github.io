@@ -59,8 +59,8 @@ $$
 $$
 J=
 \begin{pmatrix}
-0&I \\
--I&0
+0 & I \\
+-I & 0
 \end{pmatrix}
 $$
 依旧有$\lbrace f,g \rbrace=(\nabla f)^{T}J\nabla g$
