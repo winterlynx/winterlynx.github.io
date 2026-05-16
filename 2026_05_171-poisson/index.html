@@ -181,7 +181,21 @@
 </div><main class="tw-mx-4"><dialog id="toc-dialog" class="tw-max-w-full tw-w-full tw-max-h-full tw-h-full tw-ml-16">
         <div class="toc tw-mx-4 tw-max-w-full">
             <h2 class="tw-mx-0 tw-my-6 tw-uppercase tw-text-2xl">Contents</h2>
-            <div class="toc-content"><nav id="TableOfContents"></nav></div>
+            <div class="toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#从这里可以看出2维的情形下最多只允许一个守恒量">由此我们得到了辛线性空间的标准基$\lbrace e_{1},\dots,e_{n},f_{1},\dots,f_{n} \rbrace$应该满足的关系
+$$
+\begin{align}
+\omega(e_{i},e_{j})&amp;=0 \
+\omega(f_{i},f_{j})&amp;=0 \
+\omega(e_{i},f_{j})&amp;=\delta_{ij}
+\end{align}
+$$
+我们可以说$e_{i}$是和任意$e_{j},f_{j}$，$i\neq j$, 辛正交的.
+到这里我们可以看出辛线性空间的一些性质:对于任意其上的一个向量v，由J完全决定了一个2维平面W. 在这一平面W内部，**任意的$v,u\in W$, 如果有$\omega(v,u)= 0$，那么可以推出$v=\lambda u$ **
+从这里可以看出2维的情形下，最多只允许一个守恒量。</a></li>
+  </ul>
+</nav></div>
         </div>
     </dialog><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single print:!tw-w-full print:!tw-max-w-none print:!tw-m-0 print:!tw-p-0"><h1 class="single-title" data-pagefind-meta="date:2026-05-17" data-pagefind-body>人是一根会思考的芦苇</h1><div class="post-meta">
             <div class="post-meta-line">
@@ -266,7 +280,8 @@ $$
 对任意的u，若满足$\omega(u,a_{1}e_{1}+b_{1}f_{1})=1$, 可以推出 $u=\lambda J(a_{1}e_{1}+b_{1}f_{1})$是这个二维子空间的一个向量。</p>
 <p>然后我们在剩余的2n-2维子空间中寻找新的基，显然新基$e_{2}$ 需满足$\omega(e_{2},e_{1})=0,\omega(e_{2},f_{1})=0$
 有了$e_{2}$, 自然有对应的$f_{2}$ ，$f_{2}$应满足$\omega(e_{2},f_{2})=1,\omega(f_{2},e_{1})=0,\omega(f_{2},f_{1})=0$</p>
-<p>由此我们得到了辛线性空间的标准基$\lbrace e_{1},\dots,e_{n},f_{1},\dots,f_{n} \rbrace$应该满足的关系
+<h2 id="从这里可以看出2维的情形下最多只允许一个守恒量" class="headerLink">
+    <a href="#%e4%bb%8e%e8%bf%99%e9%87%8c%e5%8f%af%e4%bb%a5%e7%9c%8b%e5%87%ba2%e7%bb%b4%e7%9a%84%e6%83%85%e5%bd%a2%e4%b8%8b%e6%9c%80%e5%a4%9a%e5%8f%aa%e5%85%81%e8%ae%b8%e4%b8%80%e4%b8%aa%e5%ae%88%e6%81%92%e9%87%8f" class="header-mark"></a>由此我们得到了辛线性空间的标准基$\lbrace e_{1},\dots,e_{n},f_{1},\dots,f_{n} \rbrace$应该满足的关系
 $$
 \begin{align}
 \omega(e_{i},e_{j})&amp;=0 \
@@ -275,10 +290,8 @@ $$
 \end{align}
 $$
 我们可以说$e_{i}$是和任意$e_{j},f_{j}$，$i\neq j$, 辛正交的.
-到这里我们可以看出辛线性空间的一些性质:对于任意其上的一个向量v，由J完全决定了一个2维平面W. 在这一平面W内部，<strong>任意的$v,u\in W$, 如果有$\omega(v,u)= 0$，那么可以推出$v=\lambda u$</strong>
-从这里可以看出2维的情形下，最多只允许一个守恒量。</p>
-<hr>
-<p>回到2n维，最多允许多少个守恒量的问题</p>
+到这里我们可以看出辛线性空间的一些性质:对于任意其上的一个向量v，由J完全决定了一个2维平面W. 在这一平面W内部，**任意的$v,u\in W$, 如果有$\omega(v,u)= 0$，那么可以推出$v=\lambda u$ **
+从这里可以看出2维的情形下，最多只允许一个守恒量。</h2><p>回到2n维，最多允许多少个守恒量的问题</p>
 <p>我们希望了解V的正交补，这里应该使用辛正交补$V^{\omega}$
 $$
 V^{\omega} = \lbrace u \in T_xM \mid \omega(u,v) = 0, \forall v \in V \rbrace
