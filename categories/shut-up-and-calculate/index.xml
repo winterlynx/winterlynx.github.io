@@ -3,47 +3,7 @@
         <title>Shut Up and Calculate - Category - Winter in December</title>
         <link>https://winterlynx.github.io/categories/shut-up-and-calculate/</link>
         <description>Shut Up and Calculate - Category - Winter in December</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2026 02:30:28 &#43;0800</lastBuildDate><atom:link href="https://winterlynx.github.io/categories/shut-up-and-calculate/" rel="self" type="application/rss+xml" /><item>
-    <title>人是一根会思考的芦苇</title>
-    <link>https://winterlynx.github.io/2026_05_171-poisson/</link>
-    <pubDate>Sun, 17 May 2026 02:30:28 &#43;0800</pubDate><author>
-        <name>Lynx</name>
-    </author><guid>https://winterlynx.github.io/2026_05_171-poisson/</guid>
-    <description><![CDATA[<p>青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。
-这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。
-想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。</p>
-<hr>
-<p>假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义
-$$
-\lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
-$$
-其中$f,g:M\to \mathbb{R}$ 是光滑函数。
-并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
-这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
-通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。
-令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
-以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：</p>
-<hr>
-<p>思路1：
-这很像两个列向量并在一起形成的矩阵的行列式
-简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。
-$\lbrace f,g \rbrace$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。</p>
-<hr>
-<p>思路 2：
-先做些变换后再做内积
-我们如今有的是$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$，但如果要做内积，我们需要的是$\left( \frac{\partial {g}}{\partial {p}},-\frac{\partial {g}}{\partial {q}} \right)^{T}$
-这是一个顺时针的90度旋转，可以用一个线性变换J表示。
-于是泊松括号变为
-$$
-\lbrace f,g \rbrace=(\nabla f)^{T}J\nabla g
-$$
-或者表示为
-$$
-\lbrace f,g \rbrace=\omega(\nabla f,\nabla g)
-$$
-这是一个辛内积。</p>
-<hr>]]></description>
-</item><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 16 Jul 2024 04:37:35 &#43;0000</lastBuildDate><atom:link href="https://winterlynx.github.io/categories/shut-up-and-calculate/" rel="self" type="application/rss+xml" /><item>
     <title>Fibonacci数列为什么经常出现在植物中</title>
     <link>https://winterlynx.github.io/24_07_16_fibonacci/</link>
     <pubDate>Tue, 16 Jul 2024 04:37:35 &#43;0000</pubDate><author>
