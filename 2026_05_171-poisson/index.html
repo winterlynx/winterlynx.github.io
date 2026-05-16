@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" /><title>人是一根会思考的芦苇 - Winter in December</title><meta name="Description" content=""><meta property="og:url" content="https://winterlynx.github.io/2026_05_171-poisson/">
+  <meta property="og:site_name" content="Winter in December">
+  <meta property="og:title" content="人是一根会思考的芦苇">
+  <meta property="og:description" content="青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。 这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。 想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。
+假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义 $$ \begin{align} { f,g }:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}} \end{align} $$ 其中$f,g:M\to \mathbb{R}$ 是光滑函数。 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义） 这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。 通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$ 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
+思路1： 这很像两个列向量并在一起形成的矩阵的行列式 简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。 ${ f,g }$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。
+思路 2： 先做些变换后再做内积 我们如今有的是$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$，但如果要做内积，我们需要的是$\left( \frac{\partial {g}}{\partial {p}},-\frac{\partial {g}}{\partial {q}} \right)^{T}$ 这是一个顺时针的90度旋转，可以用一个线性变换J表示。 于是泊松括号变为 $$ { f,g }=(\nabla f)^{T}J\nabla g $$ 或者表示为 $$ { f,g }=\omega(\nabla f,\nabla g) $$ 这是一个辛内积。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-17T02:30:28+08:00">
+    <meta property="article:modified_time" content="2026-05-17T02:30:28+08:00">
+    <meta property="og:image" content="https://winterlynx.github.io/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://winterlynx.github.io/logo.png">
+  <meta name="twitter:title" content="人是一根会思考的芦苇">
+  <meta name="twitter:description" content="青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。 这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。 想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。
+假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义 $$ \begin{align} { f,g }:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}} \end{align} $$ 其中$f,g:M\to \mathbb{R}$ 是光滑函数。 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义） 这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。 通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$ 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
+思路1： 这很像两个列向量并在一起形成的矩阵的行列式 简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。 ${ f,g }$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。
+思路 2： 先做些变换后再做内积 我们如今有的是$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$，但如果要做内积，我们需要的是$\left( \frac{\partial {g}}{\partial {p}},-\frac{\partial {g}}{\partial {q}} \right)^{T}$ 这是一个顺时针的90度旋转，可以用一个线性变换J表示。 于是泊松括号变为 $$ { f,g }=(\nabla f)^{T}J\nabla g $$ 或者表示为 $$ { f,g }=\omega(\nabla f,\nabla g) $$ 这是一个辛内积。">
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<link rel="canonical" href="https://winterlynx.github.io/2026_05_171-poisson/" /><link rel="prev" href="https://winterlynx.github.io/2026_03_16/" />
+<link rel="stylesheet" href="/css/main.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">{"@context": "https://schema.org","@type": "BlogPosting",
+        "headline": "人是一根会思考的芦苇",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://winterlynx.github.io/2026_05_171-poisson/"
+        },"genre": "posts","wordcount":  348 ,
+        "url": "https://winterlynx.github.io/2026_05_171-poisson/","datePublished": "2026-05-17T02:30:28+08:00","dateModified": "2026-05-17T02:30:28+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Lynx",
+                "url": "/"
+            },"description": ""
+    }</script></head>
+
+
+
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>
+  LA.init({id:"Kkzak8CddJs8vqf0", ck:"Kkzak8CddJs8vqf0"});
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+
+<body data-instant-intensity="viewport"><script type="text/javascript">
+    function setTheme(theme) {
+      document.body.setAttribute('theme', theme); 
+      document.documentElement.className = theme;
+      document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');
+      if (theme === 'light') {
+        document.documentElement.classList.remove('tw-dark')
+      } else {
+        document.documentElement.classList.add('tw-dark')
+      }
+      window.theme = theme;   
+      window.isDark = window.theme !== 'light' 
+    }
+    function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+    function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+    if (window.localStorage && localStorage.getItem('theme')) {
+        let theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') {
+        setTheme(theme);
+        } else {
+            if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+        }
+      } else { 
+        if ('auto' === 'light' || 'auto' === 'dark') 
+            setTheme('auto'), saveTheme('auto'); 
+        else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');
+    }
+    let metaColors = {'light': '#f8f8f8','dark': '#161b22'}
+    getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    window.switchThemeEventSet = new Set()
+</script><div id="back-to-top"></div>
+    <div id="mask"></div><header class="desktop print:!tw-hidden" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Winter in December">Winter in December</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item"
+                    href="/posts/" > 文章 </a><a class="menu-item"
+                    href="/tags/" > 标签 </a><a class="menu-item"
+                    href="/categories/" > 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                    <input type="text"
+                        placeholder="Search titles or contents..."
+                        id="search-input-desktop">
+                    <button class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                    <button class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg>
+                    </button>
+                    <span class="search-button search-loading tw-animate-spin" id="search-loading-desktop">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg>
+                    </span>
+                </span><button class="menu-item theme-select" aria-label="Switch Theme">
+                    <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
+                    <select class="color-theme-select" id="theme-select-desktop" aria-label="Switch Theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </button></div>
+        </div>
+    </div>
+</header><header class="mobile print:!tw-hidden" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Winter in December">Winter in December</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                <div class="search mobile" id="search-mobile">
+                    <input type="text"
+                        placeholder="Search titles or contents..."
+                        id="search-input-mobile">
+                    <button class="search-button search-toggle tw-h-10" id="search-toggle-mobile" title="Search">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                    <button class="search-button search-clear tw-h-fit" id="search-clear-mobile" title="Clear">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg>
+                    </button>
+                    <span class="search-button search-loading tw-animate-spin" id="search-loading-mobile">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg>
+                    </span>
+                </div>
+                <button class="search-cancel" id="search-cancel-mobile">
+                    Cancel
+                </button>
+            </div><a class="menu-item" href="/posts/" title="" >文章</a><a class="menu-item" href="/tags/" title="" >标签</a><a class="menu-item" href="/categories/" title="" >分类</a><button class="menu-item theme-select tw-w-full" aria-label="Switch Theme">
+                <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
+                <select class="color-theme-select" id="theme-select-mobile" aria-label="Switch Theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </button></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="tw-mx-4"><dialog id="toc-dialog" class="tw-max-w-full tw-w-full tw-max-h-full tw-h-full tw-ml-16">
+        <div class="toc tw-mx-4 tw-max-w-full">
+            <h2 class="tw-mx-0 tw-my-6 tw-uppercase tw-text-2xl">Contents</h2>
+            <div class="toc-content"><nav id="TableOfContents"></nav></div>
+        </div>
+    </dialog><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single print:!tw-w-full print:!tw-max-w-none print:!tw-m-0 print:!tw-p-0"><h1 class="single-title" data-pagefind-meta="date:2026-05-17" data-pagefind-body>人是一根会思考的芦苇</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><a href="/" title="Author" rel=" author" class="author">Lynx</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/shut-up-and-calculate/"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>Shut Up and Calculate</a></span></div>
+            <div class="post-meta-line"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;<time datetime="2026-05-17">2026-05-17</time>&nbsp;
+                    <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="content" id="content" data-pagefind-body><p>青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。
+这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。
+想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。</p>
+<hr>
+<p>假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义
+$$
+\begin{align}
+{ f,g }:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
+\end{align}
+$$
+其中$f,g:M\to \mathbb{R}$ 是光滑函数。
+并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
+这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
+通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。
+令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
+以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：</p>
+<hr>
+<p>思路1：
+这很像两个列向量并在一起形成的矩阵的行列式
+简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。
+${ f,g }$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。</p>
+<hr>
+<p>思路 2：
+先做些变换后再做内积
+我们如今有的是$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$，但如果要做内积，我们需要的是$\left( \frac{\partial {g}}{\partial {p}},-\frac{\partial {g}}{\partial {q}} \right)^{T}$
+这是一个顺时针的90度旋转，可以用一个线性变换J表示。
+于是泊松括号变为
+$$
+{ f,g }=(\nabla f)^{T}J\nabla g
+$$
+或者表示为
+$$
+{ f,g }=\omega(\nabla f,\nabla g)
+$$
+这是一个辛内积。</p>
+<hr>
+<p>从第一种思路得到的面积的解释，暂时没看出有什么特别的用法。我们顺着第二种思路继续，先考虑$J\nabla g$的意义。g的梯度可以理解为g增加最快的方向。乘以J之后得到的是一个垂直与梯度的方向。可以理解为g不变的方向，因此$J\nabla g$也形成了一个向量场，通过积分可以得到路径称为相流。$\nabla f$再与$J\nabla g$做内积，得到的结果可以理解成<strong>f在g不变方向上的方向导数</strong>，也就是f在g不变方向上的变化强度。</p>
+<p>到此，我们对泊松括号算是有了一个直观认识。接着取特殊值，看看是否有些特别的意义。</p>
+<p>假设${ f,g }= 0$，我们可以知道f在沿着g生成的相流移动的过程中f的值不会发生改变。反之，也可认为g在沿着f生成的相流移动的过程中g不变，这是对称的。所以f是g所生成系统的某种守恒量（还需要一些其他条件，但这里只是讲思考过程，就暂时无视掉了。比如对于2维辛流形，满足${ f,g }= 0$的守恒量实际只有一个。对于2n维的辛流形，最多有n个）</p>
+<p>特别一点，可以令g=H 是一个哈密顿量。</p>
+<hr>
+<p>将相空间扩展到一般的广义坐标,泊松括号的定义变为
+$$
+\begin{align}
+{ f,g }:=\sum <em>{i}\left( \frac{\partial {f}}{\partial {q</em>{i}}}\frac{\partial {g}}{\partial {p_{i}}}-\frac{\partial {f}}{\partial {p_{i}}}\frac{\partial {g}}{\partial {q_{i}}} \right)
+\end{align}
+$$</p>
+<p>第一种思路变得不再可行，但第二种思路则完全没问题。
+只要令
+$$
+\nabla f=\left( \frac{\partial {f}}{\partial {q_{1}}},\frac{\partial {f}}{\partial {q_{2}}},\dots,\frac{\partial {f}}{\partial {q_{n}}},\frac{\partial {f}}{\partial {p_{1}}},\dots,\frac{\partial {f}}{\partial {p_{n}}} \right)^{T}
+$$
+$$
+J=\begin{pmatrix}
+0&amp;I \
+-I&amp;0
+\end{pmatrix}
+$$
+依旧有${ f,g }=(\nabla f)^{T}J\nabla g$</p>
+<p>将空间扩展到2n维之后，延续上面的思考，用$I_{i}$表示守恒量，我们首先想问的是<strong>在2n维的辛流形上，最多允许有多少个 满足相互对易${ I_{i},I_{j} }=0$且$\nabla I_{i}$彼此线性独立的守恒量</strong>?</p>
+<p>这似乎是一个和辛结构$\omega$以及线性切空间相关的问题。假设允许的守恒量个数用k表示，在2n维辛流形上随意选取点x，我们先考虑x点处的切空间$T_{x}M$. 为了书写简便，令$v_{i}=\nabla I_{i}|<em>{x}$  s.t. $v</em>{i}\in T_{x}M$.
+这k个向量$v_{i}$张成的子空间用V表示，$V=\text{span}{v_{1},\dots,v_{k}}$, 子空间的任意两个元素$v,u$都满足$\omega(v,u)=0$
+为了求得V的维度k需要满足的约束，一个思路是考察V的某种补子集所具有的性质和关系。例如最常见的正交补，或者直和补W s.t. $W\oplus V=T_{x}M$. 但V本身是由辛结构$\omega$定义出的子集，它的补子集，要想和V相关，或许也应该从辛内积$\omega$入手。</p>
+<hr>
+<p>于是现在的首要问题变为了解$\omega$的性质。</p>
+<ol>
+<li>因为$J^{T}=-J$
+有$\omega(u,v)=u^{T}Jv=(Jv)^{T}u=v^{T}J^{T}u=-v^{T}Ju=-\omega(v,u)$</li>
+<li>for $\forall v\in T_{x}M$, 有$\omega(v,v)=0$。
+按照原本内积中的说法，向量变成总是自正交的。但因此我们没有了模长，也没有了长度的概念。但从前面$\omega(v,u)=v^{T}Ju$可以看出，$\omega(v,u)$给出了$v,u$为边的平行四边形的有向面积。并且对于任意的$v\in T_{x}M$，总能找到一个u  s.t. $\omega(v,u)=v^{T}Ju=1$。由此我们可以推出存在u  s.t. ${\color{red}v=Ju}$
+由于J可逆，u是唯一的。u无法用$av$， $a\in \mathbb{R}$表示。于是假如我们选v作为$T_{x}M$ 的一个基，u可以很自然地称为一组基的一份子。</li>
+</ol>
+<p>这样的两个基我们用$e_{1},f_{1}$表示。$e_{1}$本身的长度我们无从得知也无要求，反而通过$\omega(e_{1},f_{1})=1$将二者关联起来。$e_{1},f_{1}$共同决定了一个2维子空间，或者说平面。换个角度上说。这个平面是由$e_{1}$和J完全决定的。$e_{1}=Jf_{1},Je_{1}=-f_{1}$.
+对任意的u，若满足$\omega(u,a_{1}e_{1}+b_{1}f_{1})=1$, 可以推出 $u=\lambda J(a_{1}e_{1}+b_{1}f_{1})$是这个二维子空间的一个向量。</p>
+<p>然后我们在剩余的2n-2维子空间中寻找新的基，显然新基$e_{2}$ 需满足$\omega(e_{2},e_{1})=0,\omega(e_{2},f_{1})=0$
+有了$e_{2}$, 自然有对应的$f_{2}$ ，$f_{2}$应满足$\omega(e_{2},f_{2})=1,\omega(f_{2},e_{1})=0,\omega(f_{2},f_{1})=0$</p>
+<p>由此我们得到了辛线性空间的标准基${ e_{1},\dots,e_{n},f_{1},\dots,f_{n} }$应该满足的关系
+$$
+\begin{align}
+\omega(e_{i},e_{j})&amp;=0 \
+\omega(f_{i},f_{j})&amp;=0 \
+\omega(e_{i},f_{j})&amp;=\delta <em>{ij}
+\end{align}
+$$
+我们可以说$e</em>{i}$是和任意$e_{j},f_{j}$，$i\neq j$, 辛正交的.
+到这里我们可以看出辛线性空间的一些性质:对于任意其上的一个向量v，由J完全决定了一个2维平面W. 在这一平面W内部，<strong>任意的$v,u\in W$, 如果有$\omega(v,u)= 0$，那么可以推出$v=\lambda u$</strong>
+从这里可以看出2维的情形下，最多只允许一个守恒量。</p>
+<hr>
+<p>回到2n维，最多允许多少个守恒量的问题</p>
+<p>我们希望了解V的正交补，这里应该使用辛正交补$V^{\omega}$
+$$
+V^{\omega} = { u \in T_xM \mid \omega(u,v) = 0, \forall v \in V }
+$$
+容易知道$V\subseteq V^{\omega}$
+这样是否还能有$dim\ V+dim\ V^{\omega}=dim\ T_{x}M$ 这样的结论?
+定义
+$$
+V^{\circ }={ \alpha \in T_{x}^{*}M|\alpha(v)=0,\forall v\in V }
+$$
+我们从V的基底${ v_{1},\dots,v_{k} }$出发，延拓出整个$T_{x}M$的一组基${ e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} }$. 其中$e_{i}=v_{i}$ , for $i\leq k$, and $e_{n+i}=f_{i}$. 我们从V中元素满足的性质$\omega(v_{i},v_{j})=0$可知$f_{i}=Jv_{i}\not\in V$, 因为$\omega(v_{i},f_{i})=1$.
+与${ e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} }$相对应的对偶基底表示为${ \alpha^{1},\dots,\alpha^{2n} }$
+满足$\alpha^{i}(e_{j})=\delta <em>{ij}$
+由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a</em>{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
+由此可知$dim\ V^{\circ}=2n-k$</p>
+<hr>
+<p>如果可能我们希望在$V^{\omega}$和$V^{\circ}$之间建立映射关系。
+定义$\Phi:T_{x}M\to T_{x}^{<em>}M$,  $\Phi(v)=\omega(v,\cdot)$
+由于$\omega$是非退化的，只有$\omega(0,T_{x}M)=0$
+所以 $Ker\ \Phi=0$，$\Phi$是一个单射。
+对任意的$\beta=\sum <em>{i} a</em>{i}\alpha^{i}\in T_{x}^{</em>}M$
+$\alpha^{i}(e_{j})=\delta <em>{ij}$
+由$\omega(-Je</em>{i},e_{j})=\delta <em>{ij}$， 可以得到$\alpha^{i}=\omega(-Je</em>{i},\cdot)=\Phi(-Je_{i})$
+所以$\beta=\sum <em>{i}a</em>{i}\Phi(-Je_{i})=\Phi\left( \sum <em>{i}-a</em>{i}Je_{i} \right)$
+$\Phi$是个满射。
+所以$\Phi$是一个同构映射</p>
+<hr>
+<p>由$V^{\omega},V^{\circ}$的定义可以知道$\Phi(V^{\omega})=V^{\circ}$， 由$dim\ V^{\omega}=dim\ V^{\circ}=2n-k$</p>
+<p>所以有$\boxed{dim\ V+dim\ V^{\omega}=dim\ T_{x}M}$
+$V\subseteq V^{\omega}$ ,于是有$k\leq 2n-k$， $\implies k\leq n$。
+k的最大值为n。
+所以<strong>在2n维的辛流形上，最多允许有n个 满足相互对易${ I_{i},I_{j} }=0$且$\nabla I_{i}$彼此线性独立的守恒量</strong></p>
+<hr>
+<p>假设我们找到了$I_{1},\dots,I_{k}$作为守恒量, $k\leq n$，彼此满足${ I_{i},I_{j} }=0$,并且$\nabla I_{i}$彼此线性无关。
+每个守恒量对应着一个约束方程，或者说一个2n维辛流形上的2n-1维的子流形。k个子流形的交最终得到一个2n-k维的子流形。并且满足$\omega(\nabla I_{i},\nabla I_{j})=0$. 当k=n的时候，2n-n=n维的子流形正好是一个拉格朗日子流形，也称为完全可积系统。当$k&lt;n$时，2n-k维子流形的内部也可能包含了一个拉格朗日子流形（这需要能找到n个守恒量，这并不总是必然的）。并且这个2n-k维子流形是一个部分可积系统。
+我们完全还可以凭着自己的兴趣继续提出各种问题往下探索，但作为一个说明的举例，到此或许足够了。</p>
+<p>这样的情况每天的数学学习过程中都在发生。主要的问题在于我发现本来以为只是3句话的内容，想把思考过程中的细节尽量写出来的话，一下子就老长。</p></div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-05-17</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line print:!tw-hidden">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section class="print:!tw-hidden">
+            <span><button class="tw-text-fgColor-link-muted hover:tw-text-fgColor-link-muted-hover" onclick="window.history.back();">Back</button></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav print:tw-hidden"><a href="/2026_03_16/" class="prev" rel="prev" title="260316"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>260316</a></div>
+</div>
+</article></main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.143.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg> DoIt</a>
+                </div><div class="footer-line"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z"/></svg>2019 - 2026<span class="author">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer><div class="print:!tw-hidden tw-flex tw-flex-col tw-fixed tw-right-4 tw-bottom-4 tw-gap-2"><a href="#back-to-top" id="back-to-top-button" class="tw-transition-opacity tw-opacity-0 tw-block tw-bg-bgColor-secondary tw-rounded-full" style="padding: 0.6rem; line-height: 1.3rem; font-size: 1rem;" title="Back to Top">
+      <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg>
+  </a>
+
+  <button id="toc-drawer-button" class="tw-block tw-bg-bgColor-secondary tw-rounded-full md:tw-hidden" style="padding: 0.6rem; line-height: 1.3rem; font-size: 1rem;">
+      <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+  </button></div>
+<div id="cookieconsent-container"></div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css">
+<script>window.config={"autocomplete.min.js":"/lib/autocomplete/autocomplete.min.js","comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"fuse.min.js":"/lib/fuse/fuse.min.js","math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"table":{"sort":true}};</script><script
+    src="/lib/tablesort/tablesort.min.js"
+    
+  ></script><script
+    src="/lib/katex/katex.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/auto-render.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/copy-tex.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/mhchem.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/js/katex.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/lib/cookieconsent/cookieconsent.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/js/cookieconsent.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script>
+
+<script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "where": { "href_matches": "/*" },
+        "eagerness": "moderate"
+      }
+    ]
+  }
+</script>
+</body>
+
+</html>
