@@ -8,9 +8,7 @@
 ***
 假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义
 $$
-\begin{align}
-\{ f,g \}:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
-\end{align}
+\{f,g\}:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
 $$
 其中$f,g:M\to \mathbb{R}$ 是光滑函数。
 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
@@ -49,9 +47,7 @@ $$
 ***
 将相空间扩展到一般的广义坐标,泊松括号的定义变为
 $$
-\begin{align}
 \{ f,g \}:=\sum _{i}\left( \frac{\partial {f}}{\partial {q_{i}}}\frac{\partial {g}}{\partial {p_{i}}}-\frac{\partial {f}}{\partial {p_{i}}}\frac{\partial {g}}{\partial {q_{i}}} \right)
-\end{align}
 $$
 
 第一种思路变得不再可行，但第二种思路则完全没问题。
