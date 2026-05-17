@@ -9,7 +9,9 @@
   <meta property="og:title" content="人是一根会思考的芦苇">
   <meta property="og:description" content="青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。 这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。 想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。
 ==========================================
-假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义 $$ \lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}} $$ 其中$f,g:M\to \mathbb{R}$ 是光滑函数。 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义） 这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。 通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$ 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
+假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义 $$ \lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}} $$ 其中$f,g:M\to \mathbb{R}$ 是光滑函数。 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
+这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
+通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$ 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
 ==========================================
 思路1： 这很像两个列向量并在一起形成的矩阵的行列式 简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。 $\lbrace f,g \rbrace$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。">
   <meta property="og:locale" content="en_us">
@@ -24,7 +26,9 @@
   <meta name="twitter:title" content="人是一根会思考的芦苇">
   <meta name="twitter:description" content="青之芦苇中一直在强调踢球要不断地思考，以及衍生出的观点是球场上可以做到不需要语言进行沟通，沟通是可以通过足球本身传递的。然后关于思考与沟通本质上是，赛场上一大类问题，队友突然给你传球，但因为担心战术暴露，他无法和你进行语言沟通（时间也来不及），很多时候打手势或者眼神也来不及。然后书中就有这样的时刻，接到球的人，一开始对于传球人的动机完全不清楚，也不知道后续自己应该怎么配合。然后通过思考，比如这个传来的球的力度，落点，旋转，球的轨迹对视野的引导……最终推断出传球人的意图，想要自己做的事。 这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。 想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。
 ==========================================
-假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义 $$ \lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}} $$ 其中$f,g:M\to \mathbb{R}$ 是光滑函数。 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义） 这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。 通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$ 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
+假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义 $$ \lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}} $$ 其中$f,g:M\to \mathbb{R}$ 是光滑函数。 并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
+这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
+通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$ 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
 ==========================================
 思路1： 这很像两个列向量并在一起形成的矩阵的行列式 简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。 $\lbrace f,g \rbrace$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。">
 <meta name="application-name" content="DoIt">
@@ -41,7 +45,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://winterlynx.github.io/2026_05_171-poisson/"
-        },"genre": "posts","wordcount":  364 ,
+        },"genre": "posts","wordcount":  362 ,
         "url": "https://winterlynx.github.io/2026_05_171-poisson/","datePublished": "2026-05-17T10:30:28+08:00","dateModified": "2026-05-17T10:30:28+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -183,7 +187,17 @@
 </div><main class="tw-mx-4"><dialog id="toc-dialog" class="tw-max-w-full tw-w-full tw-max-h-full tw-h-full tw-ml-16">
         <div class="toc tw-mx-4 tw-max-w-full">
             <h2 class="tw-mx-0 tw-my-6 tw-uppercase tw-text-2xl">Contents</h2>
-            <div class="toc-content"><nav id="TableOfContents"></nav></div>
+            <div class="toc-content"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#在2n维的辛流形上最多允许有多少个-满足相互对易lbrace-i_ii_j-rbrace0且nabla-i_i彼此线性独立的守恒量"><strong>在2n维的辛流形上，最多允许有多少个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量</strong>?</a></li>
+        <li><a href="#于是现在的首要问题变为了解omega的性质"><strong>于是现在的首要问题变为了解$\omega$的性质。</strong></a></li>
+        <li><a href="#回到2n维最多允许多少个守恒量的问题"><strong>回到2n维，最多允许多少个守恒量的问题</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
         </div>
     </dialog><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single print:!tw-w-full print:!tw-max-w-none print:!tw-m-0 print:!tw-p-0"><h1 class="single-title" data-pagefind-meta="date:2026-05-17" data-pagefind-body>人是一根会思考的芦苇</h1><div class="post-meta">
             <div class="post-meta-line">
@@ -204,9 +218,9 @@ $$
 \lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
 $$
 其中$f,g:M\to \mathbb{R}$ 是光滑函数。
-并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）
-这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
-通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。
+并且未加说明地在之后突然大量使用。（这种情形在数学上是大量存在的。如果学过，后面的思考过程可能会显得trivial。数学大体就是如此，但作为例子，还是需要假设没学过才有意义）</p>
+<p>这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。</p>
+<p>通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。
 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：</p>
 <p>==========================================</p>
@@ -252,13 +266,13 @@ J=
 $$
 依旧有$\lbrace f,g \rbrace=(\nabla f)^{T}J\nabla g$</p>
 <p>将空间扩展到2n维之后，延续上面的思考，用$I_{i}$表示守恒量，我们首先想到的问题是</p>
-<p><strong>在2n维的辛流形上，最多允许有多少个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量</strong>?</p>
-<p>这似乎是一个和辛结构$\omega$以及线性切空间相关的问题。假设允许的守恒量个数用k表示，在2n维辛流形上随意选取点x，我们先考虑x点处的切空间$T_{x}M$. 为了书写简便，令$v_{i}=(\nabla I_{i})| _{x}$  s.t. $v_{i}\in T_{x}M$.</p>
+<h3 id="在2n维的辛流形上最多允许有多少个-满足相互对易lbrace-i_ii_j-rbrace0且nabla-i_i彼此线性独立的守恒量" class="headerLink">
+    <a href="#%e5%9c%a82n%e7%bb%b4%e7%9a%84%e8%be%9b%e6%b5%81%e5%bd%a2%e4%b8%8a%e6%9c%80%e5%a4%9a%e5%85%81%e8%ae%b8%e6%9c%89%e5%a4%9a%e5%b0%91%e4%b8%aa-%e6%bb%a1%e8%b6%b3%e7%9b%b8%e4%ba%92%e5%af%b9%e6%98%93lbrace-i_ii_j-rbrace0%e4%b8%94nabla-i_i%e5%bd%bc%e6%ad%a4%e7%ba%bf%e6%80%a7%e7%8b%ac%e7%ab%8b%e7%9a%84%e5%ae%88%e6%81%92%e9%87%8f" class="header-mark"></a><strong>在2n维的辛流形上，最多允许有多少个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量</strong>?</h3><p>这似乎是一个和辛结构$\omega$以及线性切空间相关的问题。假设允许的守恒量个数用k表示，在2n维辛流形上随意选取点x，我们先考虑x点处的切空间$T_{x}M$. 为了书写简便，令$v_{i}=(\nabla I_{i})| _{x}$  s.t. $v_{i}\in T_{x}M$.</p>
 <p>这k个向量$v_{i}$张成的子空间用V表示，$V=\text{span} \lbrace v_{1},\dots,v_{k}\rbrace$, 子空间的任意两个元素$v,u$都满足$\omega(v,u)=0$</p>
 <p>为了求得V的维度k需要满足的约束，一个思路是考察V的某种补子集所具有的性质和关系。例如最常见的正交补，或者直和补W s.t. $W\oplus V=T_{x}M$. 但V本身是由辛结构$\omega$定义出的子集，它的补子集，要想和V相关，或许也应该从辛内积$\omega$入手。</p>
 <p>==========================================</p>
-<p><strong>于是现在的首要问题变为了解$\omega$的性质。</strong></p>
-<ol>
+<h3 id="于是现在的首要问题变为了解omega的性质" class="headerLink">
+    <a href="#%e4%ba%8e%e6%98%af%e7%8e%b0%e5%9c%a8%e7%9a%84%e9%a6%96%e8%a6%81%e9%97%ae%e9%a2%98%e5%8f%98%e4%b8%ba%e4%ba%86%e8%a7%a3omega%e7%9a%84%e6%80%a7%e8%b4%a8" class="header-mark"></a><strong>于是现在的首要问题变为了解$\omega$的性质。</strong></h3><ol>
 <li>因为$J^{T}=-J$
 有$\omega(u,v)=u^{T}Jv=(Jv)^{T}u=v^{T}J^{T}u=-v^{T}Ju=-\omega(v,u)$</li>
 <li>for $\forall v\in T_{x}M$, 有$\omega(v,v)=0$。</li>
@@ -281,8 +295,8 @@ $$
 到这里我们可以看出辛线性空间的一些性质:对于任意其上的一个向量v，由J完全决定了一个2维平面W. 在这一平面W内部，<strong>任意的$v,u\in W$, 如果有$\omega(v,u)= 0$，那么可以推出$v=\lambda u$</strong></p>
 <p>从这里可以看出2维的情形下，最多只允许一个守恒量。</p>
 <p>==========================================</p>
-<p>回到2n维，最多允许多少个守恒量的问题</p>
-<p>我们希望了解V的正交补，这里应该使用辛正交补$V^{\omega}$
+<h3 id="回到2n维最多允许多少个守恒量的问题" class="headerLink">
+    <a href="#%e5%9b%9e%e5%88%b02n%e7%bb%b4%e6%9c%80%e5%a4%9a%e5%85%81%e8%ae%b8%e5%a4%9a%e5%b0%91%e4%b8%aa%e5%ae%88%e6%81%92%e9%87%8f%e7%9a%84%e9%97%ae%e9%a2%98" class="header-mark"></a><strong>回到2n维，最多允许多少个守恒量的问题</strong></h3><p>我们希望了解V的正交补，这里应该使用辛正交补$V^{\omega}$
 $$
 V^{\omega} = \lbrace u \in T_xM \mid \omega(u,v) = 0, \forall v \in V \rbrace
 $$
