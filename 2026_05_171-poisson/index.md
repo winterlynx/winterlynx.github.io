@@ -68,7 +68,7 @@ $$
 $$
 J=
 \begin{pmatrix}
-0 & I \\
+0 & I \\\
 -I & 0
 \end{pmatrix}
 $$
