@@ -39,7 +39,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://winterlynx.github.io/2026_05_171-poisson/"
-        },"genre": "posts","wordcount":  350 ,
+        },"genre": "posts","wordcount":  349 ,
         "url": "https://winterlynx.github.io/2026_05_171-poisson/","datePublished": "2026-05-17T02:30:28+08:00","dateModified": "2026-05-17T02:30:28+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -250,22 +250,22 @@ J=
 $$
 依旧有$\lbrace f,g \rbrace=(\nabla f)^{T}J\nabla g$</p>
 <p>将空间扩展到2n维之后，延续上面的思考，用$I_{i}$表示守恒量，我们首先想问的是<strong>在2n维的辛流形上，最多允许有多少个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量</strong>?</p>
-<p>这似乎是一个和辛结构$\omega$以及线性切空间相关的问题。假设允许的守恒量个数用k表示，在2n维辛流形上随意选取点x，我们先考虑x点处的切空间$T_{x}M$. 为了书写简便，令$v_{i}=(\nabla I_{i})| _{x}$  s.t. $v_{i}\in T_{x}M$.
-这k个向量$v_{i}$张成的子空间用V表示，$V=\text{span} \lbrace v_{1},\dots,v_{k}\rbrace$, 子空间的任意两个元素$v,u$都满足$\omega(v,u)=0$
-为了求得V的维度k需要满足的约束，一个思路是考察V的某种补子集所具有的性质和关系。例如最常见的正交补，或者直和补W s.t. $W\oplus V=T_{x}M$. 但V本身是由辛结构$\omega$定义出的子集，它的补子集，要想和V相关，或许也应该从辛内积$\omega$入手。</p>
+<p>这似乎是一个和辛结构$\omega$以及线性切空间相关的问题。假设允许的守恒量个数用k表示，在2n维辛流形上随意选取点x，我们先考虑x点处的切空间$T_{x}M$. 为了书写简便，令$v_{i}=(\nabla I_{i})| _{x}$  s.t. $v_{i}\in T_{x}M$.</p>
+<p>这k个向量$v_{i}$张成的子空间用V表示，$V=\text{span} \lbrace v_{1},\dots,v_{k}\rbrace$, 子空间的任意两个元素$v,u$都满足$\omega(v,u)=0$</p>
+<p>为了求得V的维度k需要满足的约束，一个思路是考察V的某种补子集所具有的性质和关系。例如最常见的正交补，或者直和补W s.t. $W\oplus V=T_{x}M$. 但V本身是由辛结构$\omega$定义出的子集，它的补子集，要想和V相关，或许也应该从辛内积$\omega$入手。</p>
 <hr>
 <p>于是现在的首要问题变为了解$\omega$的性质。</p>
 <ol>
 <li>因为$J^{T}=-J$
 有$\omega(u,v)=u^{T}Jv=(Jv)^{T}u=v^{T}J^{T}u=-v^{T}Ju=-\omega(v,u)$</li>
-<li>for $\forall v\in T_{x}M$, 有$\omega(v,v)=0$。
-按照原本内积中的说法，向量变成总是自正交的。但因此我们没有了模长，也没有了长度的概念。但从前面$\omega(v,u)=v^{T}Ju$可以看出，$\omega(v,u)$给出了$v,u$为边的平行四边形的有向面积。并且对于任意的$v\in T_{x}M$，总能找到一个u  s.t. $\omega(v,u)=v^{T}Ju=1$。由此我们可以推出存在u  s.t. ${\color{red}v=Ju}$
-由于J可逆，u是唯一的。u无法用$av$， $a\in \mathbb{R}$表示。于是假如我们选v作为$T_{x}M$ 的一个基，u可以很自然地称为一组基的一份子。</li>
+<li>for $\forall v\in T_{x}M$, 有$\omega(v,v)=0$。</li>
 </ol>
+<p>按照原本内积中的说法，向量变成总是自正交的。但因此我们没有了模长，也没有了长度的概念。但从前面$\omega(v,u)=v^{T}Ju$可以看出，$\omega(v,u)$给出了$v,u$为边的平行四边形的有向面积。并且对于任意的$v\in T_{x}M$，总能找到一个u  s.t. $\omega(v,u)=v^{T}Ju=1$。由此我们可以推出存在u  s.t. ${\color{red}v=Ju}$
+由于J可逆，u是唯一的。u无法用$av$， $a\in \mathbb{R}$表示。于是假如我们选v作为$T_{x}M$ 的一个基，u可以很自然地称为一组基的一份子。</p>
 <p>这样的两个基我们用$e_{1},f_{1}$表示。$e_{1}$本身的长度我们无从得知也无要求，反而通过$\omega(e_{1},f_{1})=1$将二者关联起来。$e_{1},f_{1}$共同决定了一个2维子空间，或者说平面。换个角度上说。这个平面是由$e_{1}$和J完全决定的。$e_{1}=Jf_{1},Je_{1}=-f_{1}$.
 对任意的u，若满足$\omega(u,a_{1}e_{1}+b_{1}f_{1})=1$, 可以推出 $u=\lambda J(a_{1}e_{1}+b_{1}f_{1})$是这个二维子空间的一个向量。</p>
-<p>然后我们在剩余的2n-2维子空间中寻找新的基，显然新基$e_{2}$ 需满足$\omega(e_{2},e_{1})=0,\omega(e_{2},f_{1})=0$
-有了$e_{2}$, 自然有对应的$f_{2}$ ，$f_{2}$应满足$\omega(e_{2},f_{2})=1,\omega(f_{2},e_{1})=0,\omega(f_{2},f_{1})=0$</p>
+<p>然后我们在剩余的2n-2维子空间中寻找新的基，显然新基$e_{2}$ 需满足$\omega(e_{2},e_{1})=0,\omega(e_{2},f_{1})=0$</p>
+<p>有了$e_{2}$, 自然有对应的$f_{2}$ ，$f_{2}$应满足$\omega(e_{2},f_{2})=1,\omega(f_{2},e_{1})=0,\omega(f_{2},f_{1})=0$</p>
 <p>由此我们得到了辛线性空间的标准基$\lbrace e_{1},\dots,e_{n},f_{1},\dots,f_{n} \rbrace$应该满足的关系
 $$
 \begin{align}
@@ -290,18 +290,18 @@ $$
 V^{\circ }=\lbrace \alpha \in T_{x}^{\star}M|\alpha(v)=0,\forall v\in V \rbrace
 $$
 我们从V的基底$\lbrace v_{1},\dots,v_{k} \rbrace$出发，延拓出整个$T_{x}M$的一组基$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$. 其中$e_{i}=v_{i}$ , for $i\leq k$, and $e_{n+i}=f_{i}$. 我们从V中元素满足的性质$\omega(v_{i},v_{j})=0$可知$f_{i}=Jv_{i}\not\in V$, 因为$\omega(v_{i},f_{i})=1$.
-与$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$相对应的对偶基底表示为$\lbrace \alpha^{1},\dots,\alpha^{2n} \rbrace$
-满足$\alpha^{i}(e_{j})=\delta_{ij}$
-由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a_{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
+与$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$相对应的对偶基底表示为$\lbrace \alpha^{1},\dots,\alpha^{2n} \rbrace$</p>
+<p>满足$\alpha^{i}(e_{j})=\delta_{ij}$</p>
+<p>由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a_{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
 由此可知$dim\ V^{\circ}=2n-k$</p>
 <hr>
-<p>如果可能我们希望在$V^{\omega}$和$V^{\circ}$之间建立映射关系。
-定义$\Phi:T_{x}M\to T_{x}^{\star}M$,  $\Phi(v)=\omega(v,\cdot)$
-由于$\omega$是非退化的，只有$\omega(0,T_{x}M)=0$
-所以 $Ker\ \Phi=0$，$\Phi$是一个单射。</p>
+<p>如果可能我们希望在$V^{\omega}$和$V^{\circ}$之间建立映射关系。</p>
+<p>定义$\Phi:T_{x}M\to T_{x}^{\star}M$,  $\Phi(v)=\omega(v,\cdot)$</p>
+<p>由于$\omega$是非退化的，只有$\omega(0,T_{x}M)=0$</p>
+<p>所以 $Ker\ \Phi=0$，$\Phi$是一个单射。</p>
 <p>对任意的$\beta=\sum a_{i}\alpha^{i}\in T_{x}^{\star}M$</p>
-<p>已知$\alpha^{i}(e_{j})=\delta _{ij}$
-由$\omega(-Je_{i},e_{j})=\delta <em>{ij}$， 可以得到$\alpha^{i}=\omega(-Je</em>{i},\cdot)=\Phi(-Je_{i})$
+<p>已知$\alpha^{i}(e_{j})=\delta_{ij}$</p>
+<p>由$\omega(-Je_{i},e_{j})=\delta <em>{ij}$， 可以得到$\alpha^{i}=\omega(-Je</em>{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射</p>
