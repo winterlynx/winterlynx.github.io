@@ -168,7 +168,7 @@ $\Phi$是个满射。
 $V\subseteq V^{\omega}$，$\impliesk\leq 2n-k$，i.e. $k\leq n$。
 k的最大值为n。
 
-所以**在2n维的辛流形上，最多允许有n个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量**
+所以**在2n维的辛流形上，最多允许n个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量**
 
 ==========================================
 
