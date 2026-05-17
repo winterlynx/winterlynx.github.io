@@ -21,7 +21,7 @@ $$
 令 $\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有 $\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
 以此为基础要得到 $\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$ 这样的交错形式。想到两种可行的思路：
 
-###
+==========================================
 
 思路1：
 这很像两个列向量并在一起形成的矩阵的行列式
