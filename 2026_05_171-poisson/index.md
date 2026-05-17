@@ -96,8 +96,8 @@ $$
 由此我们得到了辛线性空间的标准基$\lbrace e_{1},\dots,e_{n},f_{1},\dots,f_{n} \rbrace$应该满足的关系
 $$
 \begin{align}
-\omega(e_{i},e_{j})&=0 \\
-\omega(f_{i},f_{j})&=0 \\
+\omega(e_{i},e_{j})&=0 \\\
+\omega(f_{i},f_{j})&=0 \\\
 \omega(e_{i},f_{j})&=\delta_{ij}
 \end{align}
 $$
@@ -141,7 +141,7 @@ ___
 
 已知$\alpha^{i}(e_{j})= \delta_{ij}$
 
-由 $\omega(- Je_{i}, e_{j})= \delta_{ij}$ ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
+由 $\omega(-Je_{i}, e_{j})= \delta_{ij}$ ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射
