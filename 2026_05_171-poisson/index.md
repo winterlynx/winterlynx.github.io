@@ -18,8 +18,8 @@ $$
 这个定义第一眼看是有点懵的，和青之芦苇中的情节类似，我们会自然地想问为什么要定义这样一个结构？这东西有什么用？我们唯一有的信息就是定义本身。
 
 通过观察可以知道基本都是两个偏导数相乘再做加减法这样的形式。首先想到的这可能是某种二次型。
-令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
-以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
+令 $\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有 $\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
+以此为基础要得到 $\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$ 这样的交错形式。想到两种可行的思路：
 
 ==========================================
 
