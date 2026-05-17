@@ -96,8 +96,8 @@ $$
 由此我们得到了辛线性空间的标准基$\lbrace e_{1},\dots,e_{n},f_{1},\dots,f_{n} \rbrace$应该满足的关系
 $$
 \begin{align}
-\omega(e_{i},e_{j})&=0 \\\
-\omega(f_{i},f_{j})&=0 \\\
+\omega(e_{i},e_{j})&=0; \\\
+\omega(f_{i},f_{j})&=0; \\\
 \omega(e_{i},f_{j})&=\delta_{ij}
 \end{align}
 $$
@@ -127,7 +127,7 @@ $$
 由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a_{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
 由此可知$dim\ V^{\circ}=2n-k$
 
-___
+---------------
 
 如果可能我们希望在$V^{\omega}$和$V^{\circ}$之间建立映射关系。
 
@@ -146,7 +146,7 @@ ___
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射
 
-___
+---------------
 
 由$V^{\omega},V^{\circ}$的定义可以知道$\Phi(V^{\omega})=V^{\circ}$， 由$dim\ V^{\omega}=dim\ V^{\circ}=2n-k$
 
