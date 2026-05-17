@@ -127,7 +127,7 @@ $$
 由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a_{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
 由此可知$dim\ V^{\circ}=2n-k$
 
-<hr>
+___
 
 如果可能我们希望在$V^{\omega}$和$V^{\circ}$之间建立映射关系。
 
@@ -141,12 +141,12 @@ $$
 
 已知$\alpha^{i}(e_{j})=\delta_{ij}$
 
-由 \[\omega(- J e_{i},e_{j})=\delta_{ij}\] ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
+由 \(\omega (- J e_{i},e_{j})=\delta_{ij} \) ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射
 
-<hr>
+___
 
 由$V^{\omega},V^{\circ}$的定义可以知道$\Phi(V^{\omega})=V^{\circ}$， 由$dim\ V^{\omega}=dim\ V^{\circ}=2n-k$
 
