@@ -6,7 +6,8 @@
 这种过程在数学上其实蛮多，在经过多层逻辑链之后得出结论的过程也是比较爽的。不过我始终有点怀疑在足球比赛过程中根本不到1秒的时间内，真的有办法走过多层的逻辑链吗？关于思考这个话题，我感觉几乎人人都觉得自己特会思考，但实际上这其中有一个巨大差异就在于逻辑链一层一层有价值地持续推进。
 想说明这个问题或许还是得举个例子，但我也不确定这样的例子是否号。
 
-***
+==========================================
+
 假设我们未学过任何相关知识，看书的时候突然冒出一个泊松括号的定义
 $$
 \lbrace f,g\rbrace:=\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}
@@ -18,13 +19,15 @@ $$
 令$\nabla f=\left( \frac{\partial {f}}{\partial {q}},\frac{\partial {f}}{\partial {p}} \right)^{T}$，表为列向量形式。同理有$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$
 以此为基础要得到$\frac{\partial {f}}{\partial {q}}\frac{\partial {g}}{\partial {p}}-\frac{\partial {f}}{\partial {p}}\frac{\partial {g}}{\partial {q}}$这样的交错形式。想到两种可行的思路：
 
-***
+==========================================
+
 思路1：
 这很像两个列向量并在一起形成的矩阵的行列式
 简单尝试可以发现这个思路在只有两个变量的情况下没有问题。最终结果如果是行列式，那么为了便于理解可以暂时认为结果属于R，是一个数。
 $\lbrace f,g \rbrace$可以理解为以向量$\nabla f,\nabla g$为边围成的平行四边形的有向面积。
 
-***
+==========================================
+
 思路 2： 
 先做些变换后再做内积
 我们如今有的是$\nabla g=\left( \frac{\partial {g}}{\partial {q}},\frac{\partial {g}}{\partial {p}} \right)^{T}$，但如果要做内积，我们需要的是$\left( \frac{\partial {g}}{\partial {p}},-\frac{\partial {g}}{\partial {q}} \right)^{T}$
@@ -39,7 +42,7 @@ $$
 $$
 这是一个辛内积。
 
-***
+==========================================
 <!--more-->
 从第一种思路得到的面积的解释，暂时没看出有什么特别的用法。我们顺着第二种思路继续，先考虑$J\nabla g$的意义。g的梯度可以理解为g增加最快的方向。乘以J之后得到的是一个垂直与梯度的方向。可以理解为g不变的方向，因此$J\nabla g$也形成了一个向量场，通过积分可以得到路径称为相流。$\nabla f$再与$J\nabla g$做内积，得到的结果可以理解成**f在g不变方向上的方向导数**，也就是f在g不变方向上的变化强度。
 
@@ -49,7 +52,8 @@ $$
 
 特别一点，可以令g=H 是一个哈密顿量。
 
-***
+==========================================
+
 将相空间扩展到一般的广义坐标,泊松括号的定义变为
 $$
 \lbrace f,g \rbrace:=\sum \left( \frac{\partial {f}}{\partial {q_{i}}}\frac{\partial {g}}{\partial {p_{i}}}-\frac{\partial {f}}{\partial {p_{i}}}\frac{\partial {g}}{\partial {q_{i}}} \right)
@@ -106,7 +110,8 @@ $$
 
 从这里可以看出2维的情形下，最多只允许一个守恒量。
 
----
+==========================================
+
 回到2n维，最多允许多少个守恒量的问题
 
 我们希望了解V的正交补，这里应该使用辛正交补$V^{\omega}$
@@ -120,12 +125,12 @@ $$
 V^{\circ }=\lbrace \alpha \in T_{x}^{\star}M|\alpha(v)=0,\forall v\in V \rbrace
 $$
 我们从V的基底$\lbrace v_{1},\dots,v_{k} \rbrace$出发，延拓出整个$T_{x}M$的一组基$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$. 其中$e_{i}=v_{i}$ , for $i\leq k$, and $e_{n+i}=f_{i}$. 我们从V中元素满足的性质$\omega(v_{i},v_{j})=0$可知$f_{i}=Jv_{i}\not\in V$, 因为$\omega(v_{i},f_{i})=1$.
-与$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$相对应的对偶基底表示为$\lbrace \alpha^{1},\dots,\alpha^{2n} \rbrace$
 
-满足$\alpha^{i}(e_{j})=\delta\_{ij}$
+与$\lbrace e_{1},\dots,e_{k},e_{k+1},\dots,e_{2n} \rbrace$相对应的对偶基底表示为$\lbrace \alpha^{1},\dots,\alpha^{2n} \rbrace$，满足 $\alpha^{i}(e_{j})=\delta\_{ij}$。
 
 由$V^{\circ }$的定义可知，对任意的$\beta \in V^{\circ}$ ,可唯一表示为$\beta=a_{k+1}\alpha^{k+1}+\dots+a_{2n}\alpha^{2n}$
-由此可知$dim\ V^{\circ}=2n-k$
+
+由此可得$dim\ V^{\circ}=2n-k$
 
 ==========================================
 
@@ -143,19 +148,22 @@ $$
 
 由 $\omega(-Je_{i}, e_{j})= \delta_{ij}$ ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
+
 $\Phi$是个满射。
+
 所以$\Phi$是一个同构映射
 
 ==========================================
 
-由$V^{\omega},V^{\circ}$的定义可以知道$\Phi(V^{\omega})=V^{\circ}$， 由$dim\ V^{\omega}=dim\ V^{\circ}=2n-k$
+由$V^{\omega},V^{\circ}$的定义可知$\Phi(V^{\omega})=V^{\circ}$， 由$dim\ V^{\omega}=dim\ V^{\circ}=2n-k$
 
 所以有$\boxed{dim\ V+dim\ V^{\omega}=dim\ T_{x}M}$
 $V\subseteq V^{\omega}$ ,于是有$k\leq 2n-k$， $\implies k\leq n$。
 k的最大值为n。
 所以**在2n维的辛流形上，最多允许有n个 满足相互对易$\lbrace I_{i},I_{j} \rbrace=0$且$\nabla I_{i}$彼此线性独立的守恒量**
 
-***
+==========================================
+
 假设我们找到了k个守恒量 $I_{1},\dots,I_{k}$, $k\leq n$，彼此满足$\lbrace I_{i},I_{j} \rbrace=0$,并且$\nabla I_{i}$彼此线性无关。
 每个守恒量对应着一个约束方程，或者说一个2n维辛流形上的2n-1维的子流形。k个子流形的交最终得到一个2n-k维的子流形。并且满足$\omega(\nabla I_{i},\nabla I_{j})=0$. 当k=n的时候，2n-n=n维的子流形正好是一个拉格朗日子流形，也称为完全可积系统。当 $k<n$ 时，2n-k维子流形的内部也可能包含了一个拉格朗日子流形（这需要能找到n个守恒量，这并不总是必然的）。并且这个2n-k维子流形是一个部分可积系统。
 我们完全还可以凭着自己的兴趣继续提出各种问题往下探索，但作为一个说明的举例，到此或许足够了。
