@@ -146,7 +146,7 @@ $$
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射
 
-\---
+* * *
 
 由$V^{\omega},V^{\circ}$的定义可以知道$\Phi(V^{\omega})=V^{\circ}$， 由$dim\ V^{\omega}=dim\ V^{\circ}=2n-k$
 
