@@ -139,9 +139,9 @@ ___
 
 对任意的$\beta=\sum a_{i}\alpha^{i}\in T_{x}^{\star}M$
 
-已知$\alpha^{i}(e_{j})=\delta_{ij}$
+已知$\alpha^{i}(e_{j})= \delta_{ij}$
 
-由 \(\omega (- J e_{i},e_{j})=\delta_{ij} \) ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
+由 $\omega(- Je_{i}, e_{j})= \delta_{ij}$ ， 可以得到$\alpha^{i}=\omega(-Je_{i},\cdot)=\Phi(-Je_{i})$
 所以$\beta=\sum a_{i}\Phi(-Je_{i})=\Phi\left( \sum -a_{i}Je_{i} \right)$
 $\Phi$是个满射。
 所以$\Phi$是一个同构映射
