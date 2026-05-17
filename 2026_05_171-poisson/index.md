@@ -126,6 +126,7 @@ V^{\omega} = \lbrace u \in T_xM \mid \omega(u,v) = 0, \forall v \in V \rbrace
 $$
 容易知道$V\subseteq V^{\omega}$。 
 如此是否还能有$dim\ V+dim\ V^{\omega}=dim\ T_{x}M$ 这样的结论?
+从对偶向量空间的角度，维度的互补性似乎是比较容易确定的。
 定义
 $$
 V^{\circ }=\lbrace \alpha \in T_{x}^{\star}M|\alpha(v)=0,\forall v\in V \rbrace
@@ -140,7 +141,7 @@ $$
 
 ==========================================
 
-我们希望能在$V^{\omega}$和$V^{\circ}$之间建立映射关系。
+至此，我们自然希望能在$V^{\omega}$和$V^{\circ}$之间建立映射关系，最好是同构。
 
 定义$\Phi:T_{x}M\to T_{x}^{\star}M$,  $\Phi(v)=\omega(v,\cdot)$
 
